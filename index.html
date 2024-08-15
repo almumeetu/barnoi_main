@@ -22,7 +22,7 @@
       <link rel="stylesheet" href="assets/css/ui-icon.css">
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/spacing.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/scss/main.css">
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -48,24 +48,55 @@
       </div>
       <!-- back to top end -->
 
+
+
+
+
+
+
       <!-- header area start -->
       <header>
+         <div class="header__area">
+            <div class="container-fluid">
+               <div class="header__top-area">
+                  <div class="row align-items-center justify-content-center text-center">
+                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
+                        <div class="top__nav">
+                           <ul>
+                              <li class="br"><a href="#">About Us</a></li>
+                              <li class="br"><a href="#">Order Tracking</a></li>
+                              <li><a href="#">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-xxl-6 col-xl-4 col-lg-4 d-none d-xxl-block d-xl-block d-lg-block text-center">
+                        <div class="header__notification">
+                           <p>World's Fastest Online Shopping Destination</p>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12">
+                        <div class="lanCur__changer d-flex">
+                           <select name="Language" id="language">
+                              <option value="English">Language</option>
+                              <option value="English">English</option>
+                              <option value="Bangla">Bangla</option>
+                              <option value="Germany">Germany</option>
+                              <option value="French">French</option>
+                              <option value="Duch">Duch</option>
+                           </select>
+                           <select name="Currency" id="currency">
+                              <option value="EUR">Euro (EUR)</option>
+                              <option value="GBP">British Pound (GBP)</option>
+                              <option value="JPY">Japanese Yen (JPY)</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </header>
       <!-- header area end -->
-
-
-      <main>
-         <div class="container">
-            <h1 class="text-center main-header">
-               Hello Softzino !!!!!!.
-            </h1>
-         </div>
-      </main>
-      
-      <!-- footer area start -->
-      <footer>
-      </footer>
-      <!-- footer area end -->
 
 
       <!-- JS here -->
