@@ -102,18 +102,14 @@
                      </div>
                      <div class="col-xxl-6 col-xl-4 col-lg-4 d-none d-xxl-block d-xl-block d-lg-block text-center">
                         <div class="search-bar">
-                           <form action="/search" method="GET">
-                               <select name="category" class="category-dropdown">
-                                   <option value="">All Categories</option>
-                                   <option value="electronics">Electronics</option>
-                                   <option value="clothing">Clothing</option>
-                                   <option value="home">Home & Kitchen</option>
-                                   <option value="toys">Toys</option>
-                                   <option value="books">Books</option>
-                               </select>
-                               <input type="text" name="query" placeholder="Search for products..." class="search-input" required>
-                               <button type="submit" class="search-button">Search</button>
-                           </form>
+                           <div class="search__category">
+                              <select name="Currency" id="currency">
+                                 <option value="all">All Category</option>
+                                 <option value="man">Man</option>
+                                 <option value="women">Women</option>
+                                 <option value="kid">Kids</option>
+                              </select>
+                           </div>
                        </div>
                      </div>
                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12">
