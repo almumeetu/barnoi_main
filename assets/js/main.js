@@ -413,5 +413,7 @@
 		$(this).addClass('active').parent().siblings().find('.hover__active').removeClass('active');
 	});
 
+	
 
 })(jQuery);
+

@@ -3,7 +3,9 @@
 
 //   02. HEADER CSS START
 
-
+.container-fluid{
+	width: 90% !important;
+}
 .header__area{
 	.header__top-area{
 		background: var(--st-heading-primary);
@@ -60,7 +62,7 @@
 			align-items: center;
 			.search__category {
 				background-color: #F3F3F3;
-				width: 80%;
+				width: 92%;
 				display: flex;
 				align-items: center;
 				border-radius: 10px;

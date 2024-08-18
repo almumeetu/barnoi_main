@@ -57,76 +57,121 @@
       <!-- header area start -->
       <header>
          <div class="header__area">
-            <div class="container-fluid">
+            <div class="header__wrapper">
                <div class="header__top-area">
-                  <div class="row align-items-center">
-                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
-                        <div class="top__nav">
-                           <ul>
-                              <li class="br"><a href="#">About Us</a></li>
-                              <li class="br"><a href="#">Order Tracking</a></li>
-                              <li><a href="#">Contact</a></li>
-                           </ul>
+                  <div class="container-fluid">
+                     <div class="row align-items-center">
+                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
+                           <div class="top__nav">
+                              <ul>
+                                 <li class="br"><a href="#">About Us</a></li>
+                                 <li class="br"><a href="#">Order Tracking</a></li>
+                                 <li><a href="#">Contact</a></li>
+                              </ul>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-xxl-6 col-xl-4 col-lg-4 text-center d-none d-xxl-block d-xl-block d-lg-block text-center">
-                        <div class="header__notification">
-                           <p>World's Fastest Online Shopping Destination</p>
+                        <div class="col-xxl-6 col-xl-4 col-lg-4 text-center d-none d-xxl-block d-xl-block d-lg-block text-center">
+                           <div class="header__notification">
+                              <p>World's Fastest Online Shopping Destination</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 ">
-                        <div class="lanCur__changer justify-content-end d-flex">
-                           <select name="Language">
-                              <option value="English">Language</option>
-                              <option value="English">English</option>
-                              <option value="Bangla">Bangla</option>
-                              <option value="Germany">Germany</option>
-                              <option value="French">French</option>
-                              <option value="Duch">Duch</option>
-                           </select>
-                           <select name="Currency">
-                              <option value="EUR">Euro (EUR)</option>
-                              <option value="GBP">British Pound (GBP)</option>
-                              <option value="JPY">Japanese Yen (JPY)</option>
-                           </select>
+                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 ">
+                           <div class="lanCur__changer justify-content-end d-flex">
+                              <select name="Language">
+                                 <option value="English">Language</option>
+                                 <option value="English">English</option>
+                                 <option value="Bangla">Bangla</option>
+                                 <option value="Germany">Germany</option>
+                                 <option value="French">French</option>
+                                 <option value="Duch">Duch</option>
+                              </select>
+                              <select name="Currency">
+                                 <option value="EUR">Euro (EUR)</option>
+                                 <option value="GBP">British Pound (GBP)</option>
+                                 <option value="JPY">Japanese Yen (JPY)</option>
+                              </select>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="header__mid-area">
-                  <div class="row align-items-center justify-content-center ">
-                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
-                        <div class="logo">
-                           <a href="#"><img src="/assets/img/logo/logo.png" alt="logo"></a>
+                  <div class="container-fluid">
+                     <div class="row align-items-center justify-content-center ">
+                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
+                           <div class="logo">
+                              <a href="#"><img src="/assets/img/logo/logo.png" alt="logo"></a>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-xxl-6 col-xl-4 col-lg-4 d-none d-xxl-block d-xl-block d-lg-block text-center">
-                        <div class="search__bar">
-                           <div class="search__category">
-                              <div class="s__c">
-                                 <select id="select" name="searchCatgory">
-                                    <option value="all">All Category</option>
-                                    <option value="man">Man</option>
-                                    <option value="women">Women</option>
-                                    <option value="kid">Kids</option>
-                                 </select>
-                              </div>
-                              <div class="search__feild d-flex">
-                                 <input type="search" placeholder="Search a item">
-                                 <div class="search__icon">
-                                    <a href="#"><img src="/assets/img/icon/search-refraction.png" alt="search-icon"></a>
+                        <div class="col-xxl-6 col-xl-4 col-lg-4 d-none d-xxl-block d-xl-block d-lg-block text-center">
+                           <div class="search__bar">
+                              <div class="search__category">
+                                 <div class="s__c">
+                                    <select id="select" name="searchCatgory">
+                                       <option value="all">All Category</option>
+                                       <option value="man">Man</option>
+                                       <option value="women">Women</option>
+                                       <option value="kid">Kids</option>
+                                    </select>
+                                 </div>
+                                 <div class="search__feild d-flex">
+                                    <input type="search" placeholder="Search a item">
+                                    <div class="search__icon">
+                                       <a href="#"><img src="/assets/img/icon/search-refraction.png" alt="search-icon"></a>
+                                    </div>
                                  </div>
                               </div>
+                          </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 ">
+                           <div class="wishlist__account">
+                              <ul>
+                                 <li class="account"><a href="#"><img src="/assets/img/icon/account.png" alt="account-icon">Account</a></li>
+                                 <li class="wishlist"><a href="#"><img src="/assets/img/icon/wishlist.png" alt="wishlist-icon">Wishlist</a></li>
+                                 <li class="shop"><a href="#"><img src="/assets/img/icon/shop.png" alt="shop-icon">$00.00</a></li>
+                              </ul>
                            </div>
-                       </div>
+                        </div>
                      </div>
-                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 ">
-                        <div class="wishlist__account">
-                           <ul>
-                              <li class="account"><a href="#"><img src="/assets/img/icon/account.png" alt="account-icon">Account</a></li>
-                              <li class="wishlist"><a href="#"><img src="/assets/img/icon/wishlist.png" alt="wishlist-icon">Wishlist</a></li>
-                              <li class="shop"><a href="#"><img src="/assets/img/icon/shop.png" alt="shop-icon">$00.00</a></li>
-                           </ul>
+                  </div>
+               </div>
+               <div class="header__main-area">
+                  <div class="container-fluid">
+                     <div class="row align-items-center">
+                        <div class="col-xl-3">
+                           <div class="browse__categories">
+                              <img src="/assets/img/icon/category.png" alt="">
+                              <select id="select" name="searchCatgory">
+                                 <option value="all" data-image="/assets/img/icon/category.png" >Browse all categories</option>
+                                 <option value="man">Man</option>
+                                 <option value="women">Women</option>
+                                 <option value="kid">Kids</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-xl-6">
+                           <div class="main__menu">
+                              <nav id="nav">
+                                 <ul>
+                                    <li><a href="#">Home <i class="fa-sharp fa-thin fa-angle-down"></i></a></li>
+                                    <li><a href="#">Shop <i class="fa-sharp fa-thin fa-angle-down"></i></a></li>
+                                    <li><a href="#">Pages <i class="fa-sharp fa-thin fa-angle-down"></i></a></li>
+                                    <li><a href="#">Blog <i class="fa-sharp fa-thin fa-angle-down"></i></a></li>
+                                    <li><a href="#">On Sale</a></li>
+                                    <li><a href="#"><img src="/assets/img/icon/fire.png" alt="hot sale"> Hot Sale</a></li>
+                                    <li><a href="#"><img src="/assets/img/icon/offer.png" alt="offer">Offer</a></li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                        <div class="col-xl-3">
+                           <div class="support__center d-flex align-items-center">
+                              <img src="/assets/img/icon/headphone.png" alt="phone">
+                              <div class="help__no">
+                                 <span>1900-888</span>
+                                 <p>24/7 Support Center</p>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
