@@ -439,3 +439,10 @@ var swiper = new Swiper(".mySwipers", {
 	speed: 1500,
   });
   
+
+  window.addEventListener('load', function() {
+	const preloader = document.getElementById('preloader');
+	preloader.style.opacity = '0';
+	preloader.style.visibility = 'hidden';
+	preloader.style.transition = 'visibility 0s 0.3s, opacity 0.3s linear';
+  });
