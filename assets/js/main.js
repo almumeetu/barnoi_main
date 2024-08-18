@@ -422,7 +422,7 @@ var swiper = new Swiper(".mySwipers", {
 	spaceBetween: 10,
 	centeredSlides: true,
 	autoplay: {
-	  delay: 1000,
+	  delay: 5000,
 	  disableOnInteraction: false,
 	},
 	pagination: {

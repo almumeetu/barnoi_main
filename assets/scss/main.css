@@ -1106,6 +1106,42 @@ input[type=color] {
 .header__area .header__mid-area .wishlist__account ul li a img {
   margin-right: 15px;
 }
+.header__area .header__mid-area .wishlist__account ul .wishlist {
+  position: relative;
+}
+.header__area .header__mid-area .wishlist__account ul .wishlist::before {
+  position: absolute;
+  content: "0";
+  background: var(--st-theme-1);
+  color: #fff;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: -6px;
+  left: 15px;
+}
+.header__area .header__mid-area .wishlist__account ul .shop {
+  position: relative;
+}
+.header__area .header__mid-area .wishlist__account ul .shop::before {
+  position: absolute;
+  content: "5";
+  background: var(--st-theme-1);
+  color: #fff;
+  display: flex;
+  width: 20px;
+  font-size: 12px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: -6px;
+  left: 15px;
+}
 
 .br {
   border-right: 1px solid #fff;
