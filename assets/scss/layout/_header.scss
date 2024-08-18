@@ -57,6 +57,7 @@
 			}
 		}
 		.search__bar{
+			height: 40px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -89,7 +90,7 @@
 				.search__icon{
 						background: var(--st-theme-1);
 						width: 75px;
-						padding: 17px 0;
+						padding: 10px 0;
 						border-radius: 0px 10px 10px 0;
 						@media #{$lg,$xl}{
 							width: 50px;

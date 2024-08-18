@@ -417,23 +417,25 @@
 
 })(jQuery);
 
-
 //HERO SLIDER
-
-var swiper = new Swiper(".mySwiper", {
-	spaceBetween: 30,
-	effect: "fade",
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+var swiper = new Swiper(".mySwipers", {
+	spaceBetween: 10,
+	centeredSlides: true,
+	autoplay: {
+	  delay: 1000,
+	  disableOnInteraction: false,
 	},
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,
+	  renderBullet: function (index, className) {
+		return '<span class="' + className + '">' + (index + 1) + '</span>';
+	  },
 	},
-	autoplay: {
-	  delay: 1000, // Time between transitions in milliseconds
-	  disableOnInteraction: false, // Autoplay won't stop after interactions
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
 	},
-	speed: 1000, // Transition speed in milliseconds for smooth effect
+	speed: 1500,
   });
+  

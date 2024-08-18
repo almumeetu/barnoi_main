@@ -1027,6 +1027,7 @@ input[type=color] {
   width: 200px;
 }
 .header__area .header__mid-area .search__bar {
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1065,7 +1066,7 @@ input[type=color] {
 .header__area .header__mid-area .search__bar .search__feild .search__icon {
   background: var(--st-theme-1);
   width: 75px;
-  padding: 17px 0;
+  padding: 10px 0;
   border-radius: 0px 10px 10px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1169,7 +1170,7 @@ input[type=color] {
 
 .hero__area {
   z-index: -2;
-  padding-top: 100px;
+  padding-top: 70px;
   background-color: #FFF2EB !important;
   background: url(/assets/img/hero/hero-line.png) center center no-repeat, url(/assets/img/hero/hero\ shape.png) top right no-repeat;
 }
@@ -1241,4 +1242,57 @@ input[type=color] {
 .swiper-slide {
   background-position: center;
   background-size: cover;
+  transition: transform 1.5s ease-in-out; /* Match this with your Swiper speed */
+}
+
+/* Navigation arrows (next and previous) */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/* Pagination container */
+.swiper-pagination {
+  bottom: 10px; /* Adjust positioning as needed */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 30px; /* Adjust width to accommodate text and gap */
+  height: 30px; /* Size of the bullet */
+  border-radius: 50%; /* Makes the bullets circular */
+  background-color: #ccc; /* Default background color */
+  color: #000; /* Default text color */
+  font-size: 18px; /* Font size */
+  line-height: 30px; /* Vertical alignment */
+  margin: 0 15px !important; /* Spacing between bullets, half of the 30px gap */
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative; /* For positioning the line */
+}
+
+/* Style for the active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #ff0000; /* Active bullet background color */
+  color: #fff; /* Active bullet text color */
+}
+
+/* Adding a separator line */
+.swiper-pagination-bullet:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 30px; /* Length of the line */
+  height: 3px; /* Thickness of the line */
+  background-color: #ff0000; /* Color of the line */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
 }/*# sourceMappingURL=main.css.map */
