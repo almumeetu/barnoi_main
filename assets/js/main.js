@@ -417,3 +417,23 @@
 
 })(jQuery);
 
+
+//HERO SLIDER
+
+var swiper = new Swiper(".mySwiper", {
+	spaceBetween: 30,
+	effect: "fade",
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	autoplay: {
+	  delay: 1000, // Time between transitions in milliseconds
+	  disableOnInteraction: false, // Autoplay won't stop after interactions
+	},
+	speed: 1000, // Transition speed in milliseconds for smooth effect
+  });
