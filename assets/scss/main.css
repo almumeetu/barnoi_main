@@ -882,6 +882,9 @@ input[type=color] {
   font-weight: 500;
   color: var(--st-heading-primary);
 }
+.header__area .header__mid-area .wishlist__account ul li a:hover {
+  color: var(--st-theme-1);
+}
 .header__area .header__mid-area .wishlist__account ul li a img {
   margin-right: 15px;
 }
@@ -964,6 +967,26 @@ input[type=color] {
 .header__main-area .main__menu ul li a {
   color: #fff;
   font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  position: relative;
+}
+.header__main-area .main__menu ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px; /* Thickness of the line */
+  background-color: #FFF2EB; /* Line color */
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  z-index: 99;
+  transition: width 0.3s; /* Smooth transition for the line width */
+}
+.header__main-area .main__menu ul li a:hover::after {
+  width: 100%;
+}
+.header__main-area .main__menu ul li a:focus::after {
+  width: 100%; /* Line expands to full width on hover */
 }
 .header__main-area .main__menu ul li a img {
   padding-right: 8px;
@@ -986,4 +1009,117 @@ input[type=color] {
   margin: 0;
   font-size: 14px;
   color: #fff;
+}
+
+.menu-item {
+  position: relative;
+}
+.menu-item:hover .mega-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-item .mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -150px;
+  background-color: #fff;
+  color: #0f0a0a;
+  width: 100vh; /* Full viewport width */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(20px);
+  border-top: 6px solid var(--st-theme-1); /* Optional: Adds a colored border at the top */
+}
+.menu-item .mega-menu .mega-menu-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-item .mega-menu .mega-menu-content .section {
+  flex: 1;
+  min-width: 250px; /* Adjust as needed */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.menu-item .mega-menu .mega-menu-content .section ul {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid var(--st-theme-1);
+}
+.menu-item .mega-menu .mega-menu-content .section ul li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.menu-item .mega-menu .mega-menu-content .section ul li a {
+  color: var(--st-heading-1);
+  transition: color 0.3s, border-bottom 0.3s;
+  position: relative;
+}
+.menu-item .mega-menu .mega-menu-content .section ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px; /* Thickness of the line */
+  background-color: rgb(4, 4, 54); /* Line color */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 99;
+  transition: width 0.3s; /* Smooth transition for the line width */
+}
+.menu-item .mega-menu .mega-menu-content .section ul li a:hover {
+  color: var(--st-theme-1);
+}
+.menu-item .mega-menu .mega-menu-content .section ul li a:hover::after {
+  width: 100%;
+}
+.menu-item .mega-menu .mega-menu-content .section ul li a:focus::after {
+  width: 100%; /* Line expands to full width on hover */
+}
+.menu-item .mega-menu .mega-menu-content h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+.menu-item .mega-menu .mega-menu-content .images {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item .mega-menu .mega-menu-content .images img {
+  max-width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-item .mega-menu .mega-menu-content .images img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mega-menu {
+    width: 100%;
+    left: 0;
+  }
+  .mega-menu-content {
+    flex-direction: column;
+  }
+  .section {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+.br-t {
+  border-right: 2px solid var(--st-theme-1);
 }/*# sourceMappingURL=main.css.map */

@@ -43,6 +43,27 @@
                 a{
                     color: #fff;
                     font-weight: 500;
+                    transition: color 0.3s, border-bottom 0.3s;
+                    position: relative; 
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 5px; /* Thickness of the line */
+                        background-color:#FFF2EB; /* Line color */
+                        position: absolute;
+                        bottom: 30px;
+                        left: 0;
+                        z-index: 99;
+                        transition: width 0.3s; /* Smooth transition for the line width */
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                    &:focus::after {
+                        width: 100%; /* Line expands to full width on hover */
+
+                    }
                     img{
                         padding-right: 8px;
                     }
@@ -75,3 +96,123 @@
 
 }
    
+
+
+.menu-item {
+    position: relative;
+    &:hover .mega-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .mega-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -150px;
+        background-color: #fff;
+        color: #0f0a0a;
+        width: 100vh; /* Full viewport width */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(20px);
+        border-top: 6px solid var(--st-theme-1); /* Optional: Adds a colored border at the top */
+        .mega-menu-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .section {
+                flex: 1;
+                min-width: 250px; /* Adjust as needed */
+                margin: 10px;
+                padding: 10px;
+                border-radius: 8px;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    border-right: 2px solid var(--st-theme-1);
+                    li{
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                        a{
+                            color: var(--st-heading-1);
+                            transition: color 0.3s, border-bottom 0.3s;
+                            position: relative; 
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 0;
+                                height: 3px; /* Thickness of the line */
+                                background-color: rgb(4, 4, 54); /* Line color */
+                                position: absolute;
+                                bottom: -5px;
+                                left: 0;
+                                z-index: 99;
+                                transition: width 0.3s; /* Smooth transition for the line width */
+                            }
+                            &:hover{
+                                color: var(--st-theme-1);
+                            }
+                            &:hover::after{
+                                width: 100%;
+                            }
+                            &:focus::after {
+                                width: 100%; /* Line expands to full width on hover */
+
+                            }
+                       }
+                    }
+                }
+            }
+                 h2 {
+                    margin-top: 0;
+                    font-size: 18px;
+                    color: #333;
+                }
+                .images {
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        max-width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        margin-top: 10px;
+                        border-radius: 5px;
+                        transition: transform 0.3s ease-in-out;
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mega-menu {
+        width: 100%;
+        left: 0;
+    }
+
+    .mega-menu-content {
+        flex-direction: column;
+    }
+
+    .section {
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+.br-t{
+    border-right: 2px solid var(--st-theme-1);
+}
