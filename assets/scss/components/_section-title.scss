@@ -1,0 +1,16 @@
+.section__title{
+    span{
+        margin-bottom: 40px;
+    }
+    .sub__title{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--st-theme-1);
+    }
+    .main__title{
+        line-height: 90px;
+        span{
+            color: var(--st-theme-1);
+        }
+    }
+}
