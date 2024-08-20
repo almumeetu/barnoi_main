@@ -436,7 +436,7 @@ var swiper = new Swiper(".mySwipers", {
 	  nextEl: ".swiper-button-next",
 	  prevEl: ".swiper-button-prev",
 	},
-	speed: 1500,
+	speed: 1000,
   });
   
 

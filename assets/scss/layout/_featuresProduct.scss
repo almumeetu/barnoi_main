@@ -1,0 +1,38 @@
+@use '../utils' as *;
+
+
+
+
+//  FEATURES PRODUCTS CSS START
+
+.featured__products{
+    .f__products-wrapper{
+        .product__carousel{
+            .f__product{
+             .f__product-img{
+                img{
+
+                }
+                .f__p-content{
+                    span{
+
+                    }
+                    h6{
+
+                    }
+                    ul{
+                        li{
+
+                        }
+                    }
+                }
+             }   
+            }
+        }
+        .small_p-wrapper{
+            .f__product-small{
+                
+            }
+        }
+    }
+}
