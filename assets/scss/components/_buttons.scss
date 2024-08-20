@@ -213,3 +213,13 @@
 		}
 	}
 }
+.explore__btn{
+	color: #fff;
+	background: var(--st-theme-1);
+	padding: 10px 25px;
+	font-weight: 600;
+	border-radius: 7px;
+	&:hover{
+		color: var(--st-heading-primary);
+	}
+}

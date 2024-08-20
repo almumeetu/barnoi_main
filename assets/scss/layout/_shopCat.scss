@@ -1,21 +1,67 @@
 @use '../utils' as *;
 //   04. SHOP CATEGORY CSS START
-
 .shop__categories{
-    .categores{
-        .categores__overlay{
-            p{
-                font-size: 18px;
+
+    .t-shirt__category{
+        .category{
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+            width: 90%;
+            overflow: hidden;
+            &:hover{
+                box-shadow: 0 4px 8px rgba(128, 128, 128, 0.6); /* Gray shadow on hover */            }
+            .cat_img{
+                text-align: end;
+                padding-top: 50px;
+                &:hover img{
+                    transform: scale(1.2) translate(10px, 10px); /* Zooms in the image and translates it */
+                }
+                img{
+                    width: 80%;
+                    height: 580px;
+                    transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
+                }
+                .cat_overlay{
+                    top: 30px; 
+                    left: 30px;
+                    h5{
+                        padding: 0;
+                        margin: 0;
+                        font-size: 30px !important;
+                    }
+                    .shop-now-btn{
+                        overflow: hidden;
+                        position: relative;
+                        &:hover a > i {
+                            left: 115px;
+                            top: 3px;
+                        }
+                        a{
+                            font-size: 22px;
+                            font-weight: 500;
+                            overflow: hidden;
+                            color: var(--st-heading-primary);
+                            text-decoration: underline;
+                            &:hover{
+                                color: var(--st-theme-1);
+                            }
+                            i{
+                                position: absolute;
+                                left: -10000px;
+                                transition: all ease-in-out .4s;
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
-    .man__cat{
-        background: #EDF7F5;
-    }
-    .women__cat{
-        background: #EDF8FF;
-    }
-    .kids__cat{
-        background: #FAF6E5;
+        .cat_01{
+            background: #EDF7F5;
+        }
+        .cat_02{
+            background: #EDF8FF ;
+        }
+        .cat_03{
+            background: #FAF6E5;
+        }
     }
 }

@@ -60,10 +60,10 @@
   --st-fz-p: 18px;
   --st-fz-h1: 80px;
   --st-fz-h2: 60px;
-  --st-fz-h3: 30px;
-  --st-fz-h4: 20px;
-  --st-fz-h5: 18px;
-  --st-fz-h6: 16px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
 }
 
 * {
@@ -593,6 +593,32 @@ input[type=color] {
   right: auto;
 }
 
+.explore__btn {
+  color: #fff;
+  background: var(--st-theme-1);
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+.explore__btn:hover {
+  color: var(--st-heading-primary);
+}
+
+.section__title span {
+  margin-bottom: 40px;
+}
+.section__title .sub__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--st-theme-1);
+}
+.section__title .main__title {
+  line-height: 90px;
+}
+.section__title .main__title span {
+  color: var(--st-theme-1);
+}
+
 /*----------------------------------------*/
 /*  24. BREADCRUMB CSS START
 /*----------------------------------------*/
@@ -1089,19 +1115,18 @@ input[type=color] {
   list-style: none;
   margin-left: 25px;
   text-align: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--st-heading-primary);
+}
+.header__area .header__mid-area .wishlist__account ul li:hover {
+  color: var(--st-theme-1);
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1600px) {
   .header__area .header__mid-area .wishlist__account ul li {
     margin-left: 20px;
   }
-}
-.header__area .header__mid-area .wishlist__account ul li a {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--st-heading-primary);
-}
-.header__area .header__mid-area .wishlist__account ul li a:hover {
-  color: var(--st-theme-1);
 }
 .header__area .header__mid-area .wishlist__account ul li a img {
   margin-right: 15px;
@@ -1175,33 +1200,6 @@ input[type=color] {
   color: var(--st-heading-primary);
   font-weight: 600;
   font-size: 16px;
-}
-
-.section__title .sub__title {
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--st-theme-1);
-  padding-bottom: 30px;
-}
-.section__title .main__title span {
-  color: var(--st-theme-1);
-}
-
-.explore__btn {
-  color: #FFF;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: capitalize;
-  background: var(--st-theme-1);
-  border-radius: 8px;
-  padding: 12px 25px;
-}
-.explore__btn:hover {
-  color: #000;
 }
 
 .hero__area {
@@ -1331,4 +1329,66 @@ input[type=color] {
   top: 50%;
   transform: translateY(-50%);
   left: 30px;
+}
+
+.shop__categories .t-shirt__category .category {
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+  width: 90%;
+  overflow: hidden;
+}
+.shop__categories .t-shirt__category .category:hover {
+  box-shadow: 0 4px 8px rgba(128, 128, 128, 0.6); /* Gray shadow on hover */
+}
+.shop__categories .t-shirt__category .category .cat_img {
+  text-align: end;
+  padding-top: 50px;
+}
+.shop__categories .t-shirt__category .category .cat_img:hover img {
+  transform: scale(1.2) translate(10px, 10px); /* Zooms in the image and translates it */
+}
+.shop__categories .t-shirt__category .category .cat_img img {
+  width: 80%;
+  height: 580px;
+  transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay {
+  top: 30px;
+  left: 30px;
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px !important;
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn {
+  overflow: hidden;
+  position: relative;
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn:hover a > i {
+  left: 115px;
+  top: 3px;
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn a {
+  font-size: 22px;
+  font-weight: 500;
+  overflow: hidden;
+  color: var(--st-heading-primary);
+  text-decoration: underline;
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn a:hover {
+  color: var(--st-theme-1);
+}
+.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn a i {
+  position: absolute;
+  left: -10000px;
+  transition: all ease-in-out 0.4s;
+}
+.shop__categories .t-shirt__category .cat_01 {
+  background: #EDF7F5;
+}
+.shop__categories .t-shirt__category .cat_02 {
+  background: #EDF8FF;
+}
+.shop__categories .t-shirt__category .cat_03 {
+  background: #FAF6E5;
 }/*# sourceMappingURL=main.css.map */

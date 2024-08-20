@@ -113,16 +113,17 @@
 					list-style: none;
 					margin-left: 25px;
 					text-align: center;
+					display: flex;
+					font-size: 16px;
+					font-weight: 500;
+					color: var(--st-heading-primary);
+					&:hover{
+						color: var(--st-theme-1);
+					}
 					@media #{$xs,$sm,$md,$lg,$xl,$xxl}{
 						margin-left: 20px;
 					}
 					a{
-						font-size: 16px;
-						font-weight: 500;
-						color: var(--st-heading-primary);
-						&:hover{
-							color: var(--st-theme-1);
-						}
 						img{
 							margin-right: 15px;
 						}
