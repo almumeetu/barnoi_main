@@ -1,0 +1,97 @@
+@use '../utils' as *;
+//  FEATURES PRODUCTS CSS START
+// .featured__products{
+//     .f__products-wrapper{
+//         .f__product{
+//             .f__product-img{
+//                 border-radius: 8px;
+//             } 
+//         }
+//     }
+// }
+.f__product-img{
+    border-radius: 8px;
+} 
+.product__carousel{
+ height: 1000px !important;
+}
+.featured__author{
+    justify-content: space-between;
+    padding-top: 10px;
+    .f__p-content{
+        span{
+            font-size: 14px;
+        }
+        h6{
+            font-size: 18px;
+        }
+        ul{
+            li{
+                width: 10px;
+                height: 10px;
+                list-style: none;
+                margin-right: 7px;
+            }
+        }
+    }
+    .f__p-price{
+        .old__price{
+            font-size: 14px;
+            display: flex;
+            justify-content: end;
+            text-decoration: line-through;
+        }
+        .current__price{
+            font-size: 24px;
+            color: var(--st-theme-1);
+            font-weight: 600;
+        }
+
+    }
+}
+
+.small__p-wrapper{
+    .f__product-small{
+        .f__product-img{
+            img{
+                padding: 30px 0;
+                height: 450px;
+            }
+        }
+    }
+}
+.img-80{
+    max-width: 80%;
+}
+
+.f__product-1{
+    background: #EFE8E3;
+}
+.f__product-2{
+    background: #FAF6E5;
+}
+.f__product-3{
+    background: #FFE8F1;
+}
+.f__product-4{
+    background: #E6F1F2;
+}
+.f__product-5{
+    background: #E9F0FF ;
+}
+.f__product-6{
+    background: #FFEDEF;
+}
+
+.brown{
+    background: #D7AE90;
+}
+.green{
+    background: #6A7865;
+}
+.red{
+    background: #88364C;
+}
+.blue{
+    background: #5159BB;
+}
