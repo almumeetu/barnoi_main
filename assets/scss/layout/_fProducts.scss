@@ -12,8 +12,14 @@
 .f__product-img{
     border-radius: 8px;
 } 
+
 .product__carousel{
- height: 1000px !important;
+    height: 1130px !important;
+    .f__product-img{
+        img{
+            height: 1022px;
+        }
+    }
 }
 .featured__author{
     justify-content: space-between;
@@ -59,9 +65,6 @@
             }
         }
     }
-}
-.img-80{
-    max-width: 80%;
 }
 
 .f__product-1{

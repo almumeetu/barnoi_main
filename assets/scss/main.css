@@ -1,25 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Template Name – HTML5 Template
-    Author: SOFTZINO
-    Support: info@softzino.com
-    Description: Template Name  – HTML5 Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-    01. THEME DEFAULT CSS
-    02. HEADER CSS
-
-
-
-**********************************************/
-/*----------------------------------------*/
-/*  01. THEME DEFAULT CSS START
-/*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /**
@@ -34,7 +13,7 @@
   */
   --st-common-white: #ffffff;
   --st-common-black: #000;
-  --st-heading-primary: #00012A;
+  --st-heading-primary: #000248;
   --st-grey-1: #F1F1F1;
   --st-grey-2: #F5F6F8;
   --st-text-body: #757589;
@@ -66,6 +45,27 @@
   --st-fz-h6: 22px;
 }
 
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Template Name – HTML5 Template
+    Author: SOFTZINO
+    Support: info@softzino.com
+    Description: Template Name  – HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+
+
+
+**********************************************/
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -376,6 +376,51 @@ input[type=color] {
   transform: translateY(-50%) rotate(-180deg);
 }
 
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
 /*--
     - Background color
 -----------------------------------------*/
@@ -398,6 +443,51 @@ input[type=color] {
 /*--
     - Spacing
 -----------------------------------------*/
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
 /* pulse btn */
 .pulse-btn {
   display: inline-block;
@@ -617,6 +707,51 @@ input[type=color] {
 }
 .section__title .main__title span {
   color: var(--st-theme-1);
+}
+
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
 }
 
 /*----------------------------------------*/
@@ -1002,6 +1137,51 @@ input[type=color] {
   border-right: 2px solid var(--st-theme-1);
 }
 
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
 .container-fluid {
   width: 90% !important;
 }
@@ -1202,6 +1382,51 @@ input[type=color] {
   font-size: 16px;
 }
 
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
 .hero__area {
   z-index: -2;
   padding-top: 70px;
@@ -1331,6 +1556,51 @@ input[type=color] {
   left: 30px;
 }
 
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
 .shop__categories .t-shirt__category .category {
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
   width: 90%;
@@ -1393,6 +1663,95 @@ input[type=color] {
   background: #FAF6E5;
 }
 
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
+.f__product-img {
+  border-radius: 8px;
+}
+
+.product__carousel {
+  height: 1130px !important;
+}
+.product__carousel .f__product-img img {
+  height: 1022px;
+}
+
+.featured__author {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.featured__author .f__p-content span {
+  font-size: 14px;
+}
+.featured__author .f__p-content h6 {
+  font-size: 18px;
+}
+.featured__author .f__p-content ul li {
+  width: 10px;
+  height: 10px;
+  list-style: none;
+  margin-right: 7px;
+}
+.featured__author .f__p-price .old__price {
+  font-size: 14px;
+  display: flex;
+  justify-content: end;
+  text-decoration: line-through;
+}
+.featured__author .f__p-price .current__price {
+  font-size: 24px;
+  color: var(--st-theme-1);
+  font-weight: 600;
+}
+
+.small__p-wrapper .f__product-small .f__product-img img {
+  padding: 30px 0;
+  height: 450px;
+}
+
 .f__product-1 {
   background: #EFE8E3;
 }
@@ -1415,4 +1774,136 @@ input[type=color] {
 
 .f__product-6 {
   background: #FFEDEF;
+}
+
+.brown {
+  background: #D7AE90;
+}
+
+.green {
+  background: #6A7865;
+}
+
+.red {
+  background: #88364C;
+}
+
+.blue {
+  background: #5159BB;
+}
+
+.bp-1 {
+  background: #FFE8F1;
+}
+
+.bp-2 {
+  background: #FBF4D5;
+}
+
+.bp-3 {
+  background: #E6F1F2;
+}
+
+.bp-4 {
+  background: #EFE8E3;
+}
+
+.bp-5 {
+  background: #D9EDFF;
+}
+
+.bp-6 {
+  background: #FFF2EB;
+}
+
+.bp-7 {
+  background: #F8F8F8;
+}
+
+.bp-8 {
+  background: #FFE8F1;
+}
+
+.bp-9 {
+  background: #F8F8F8;
+}
+
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'Poppins', sans-serif;
+  --st-ff-heading: 'Poppins', sans-serif;
+  --st-ff-p: 'Poppins', sans-serif;
+  --st-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #000;
+  --st-heading-primary: #000248;
+  --st-grey-1: #F1F1F1;
+  --st-grey-2: #F5F6F8;
+  --st-text-body: #757589;
+  --st-text-1: #F3C640;
+  --st-theme-1: #FF3900;
+  --st-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-elight: 200;
+  --st-fw-light: 300;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-h1: 80px;
+  --st-fz-h2: 60px;
+  --st-fz-h3: 32px;
+  --st-fz-h4: 30px;
+  --st-fz-h5: 24px;
+  --st-fz-h6: 22px;
+}
+
+.blog__area {
+  margin-top: 120px;
+}
+.blog__area .blog {
+  cursor: pointer;
+  width: 90%;
+}
+.blog__area .blog .blog__img img {
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
+.blog__area .blog .blog__content .blog__post-date {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.blog__area .blog .blog__content .blog__post-date span {
+  font-size: 18px;
+  color: #757589;
+  word-spacing: 4px;
+}
+.blog__area .blog .blog__content .blog__post-title h4 {
+  line-height: 47px;
+  transition: all ease-in 0.3s;
+}
+.blog__area .blog .blog__content .blog__post-title h4:hover {
+  color: var(--st-theme-1);
+}
+
+.main__title {
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

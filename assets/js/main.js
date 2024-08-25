@@ -446,3 +446,25 @@ var swiper = new Swiper(".mySwipers", {
 	preloader.style.visibility = 'hidden';
 	preloader.style.transition = 'visibility 0s 0.3s, opacity 0.3s linear';
   });
+
+  //Product Carousel
+  var swiper = new Swiper(".mySwiperr", {
+	spaceBetween: 10,
+	centeredSlides: true,
+	autoplay: {
+	  delay: 5000,
+	  disableOnInteraction: false,
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	  renderBullet: function (index, className) {
+		return '<span class="' + className + '">' + (index + 1) + '</span>';
+	  },
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	speed: 1000,
+  });
