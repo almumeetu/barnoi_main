@@ -9,6 +9,7 @@
 //         }
 //     }
 // }
+<<<<<<< Updated upstream
 .f__product-img{
     border-radius: 8px;
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
@@ -21,13 +22,35 @@
     img{
         transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
     }
+=======
+.f__product{
+    border-radius: 10px;
+>>>>>>> Stashed changes
 } 
 
 .product__carousel{
     height: 1130px !important;
+    .swiper-button-next, .swiper-button-prev {
+        &::after{
+            font-size: 30px;
+            color: var(--st-theme-1);
+            border: 1px dashed var(--st-theme-1);
+            border-radius: 50%;
+            line-height: 30px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        display: block;
+
+    }
     .f__product-img{
         img{
             height: 1022px;
+            object-fit: cover;
         }
     }
 
@@ -51,6 +74,18 @@
         &::after{
             display: none;
         }
+    }
+}
+.f__product-img{
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+    &:hover img{
+        transform: scale(0.9) translate(5px, 5px); /* Zooms in the image and translates it */
+    }
+    img{
+        transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
     }
 }
 .featured__author{
@@ -158,5 +193,12 @@
     background: #FFE8F1;
 }
 .bp-9{
+<<<<<<< Updated upstream
     background: #DFF3FF;
+=======
+    background: #F8F8F8;
+}
+.swiper-button-next {
+    right: 33px !important;
+>>>>>>> Stashed changes
 }

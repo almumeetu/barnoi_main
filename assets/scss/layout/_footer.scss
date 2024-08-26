@@ -1,0 +1,100 @@
+@use '../utils' as *;
+
+
+// ----------------------------------
+// -----FOOTER CSS CSS START HERE--------
+
+.footer__area{
+    background: $footer_background;
+    padding-top: 80px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 80px;
+    & h6{
+        color: var(--st-common-white);
+        line-height: 40px;
+        & span{
+            color: $theme_color;
+        }
+    }
+    & .footer__heading{
+        padding-bottom: 80px;
+        & h2{
+            color: var(--st-common-white);
+            & span{
+                color: $theme_color;
+            }
+        }
+    }
+    & .footer{
+        & .footer__logo{
+            a{
+                span{
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+            & p{
+                padding-top: 20px;
+                color: var(--st-common-white);
+            }
+        }
+        & .footer__nav{
+            text-align: center;
+            & ul{
+                & li{
+                    list-style: none;
+                    display: block;
+                    padding-bottom: 20px;
+                    text-align: left;
+                    transition: all ease .3s;
+                    &:hover{
+                        padding-left: 5px;
+                    }
+                    & i{
+                        color: var(--st-common-white);
+                        padding-right: 10px;
+                    }
+                    &:hover a,i{
+                        color: $theme_color;
+                    }
+                    & a{
+                        color: var(--st-common-white);
+                    }
+                }
+            }
+    
+        }
+    }
+    & .footer__icon{
+        padding-top: 30px;
+        & ul{
+            padding-bottom: 50px;
+            & li{
+                display: inline;
+                list-style: none;
+                margin: 0 10px;
+
+                & a{
+                    color: #fff;
+                    font-size: 25px;
+                    padding: 14px 16px;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                    line-height: 25px;
+                    transition: all ease-in 0.3s !important;
+                    &:hover{
+                        color: $theme_color;
+                    }
+                }
+            }
+        }
+        & .copyright_text{
+            & p{
+                color: var(--st-common-white);
+            }
+        }
+    }
+
+}

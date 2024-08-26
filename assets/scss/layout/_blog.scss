@@ -10,12 +10,21 @@
         .blog__img{
             overflow: hidden;
             border-radius: 15px;
+<<<<<<< Updated upstream
             transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
             &:hover{
                 box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
             }
             &:hover img{
                 transform: scale(1.1) translate(4px, 4px); /* Zooms in the image and translates it */
+=======
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            }
+            &:hover img{
+                transform: scale(1.1) translate(2px, 2px); /* Zooms in the image and translates it */
+               
+>>>>>>> Stashed changes
             }
             img{
                 height: 800px;

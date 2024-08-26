@@ -113,8 +113,13 @@ display: none;
     border-radius: 50%; /* Makes the bullets circular */
     background-color: #816a6a; /* Default background color */
     color: #000; /* Default text color */
+<<<<<<< Updated upstream
     font-size: 16px !important; /* Font size */
     line-height: 25px !important; /* Vertical alignment */
+=======
+    font-size: 18px; /* Font size */
+    line-height: 30px; /* Vertical alignment */
+>>>>>>> Stashed changes
     margin: 0 10px !important; /* Spacing between bullets, half of the 30px gap */
     text-align: center;
     cursor: pointer;
@@ -130,6 +135,7 @@ display: none;
   
   /* Adding a separator line */
   .swiper-pagination-bullet:not(:last-child)::after {
+<<<<<<< Updated upstream
     content: "";
     display: block;
     width: 16px !important;
@@ -145,3 +151,19 @@ display: none;
     left: -40.8% !important;
     width: 100% !important;
 } 
+=======
+	content: "";
+	display: block;
+	width: 18px;
+	height: 2px;
+	background-color: #463e3e;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 31px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 55px;
+	left: -41%;
+}
+>>>>>>> Stashed changes
