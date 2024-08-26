@@ -108,23 +108,23 @@ display: none;
   /* Pagination bullets */
   .swiper-pagination-bullet {
     display: inline-block;
-    width: 30px; /* Adjust width to accommodate text and gap */
-    height: 30px; /* Size of the bullet */
+    width: 25px !important; /* Adjust width to accommodate text and gap */
+    height: 25px !important; /* Size of the bullet */
     border-radius: 50%; /* Makes the bullets circular */
-    background-color: #ccc; /* Default background color */
+    background-color: #816a6a; /* Default background color */
     color: #000; /* Default text color */
-    font-size: 18px; /* Font size */
-    line-height: 30px; /* Vertical alignment */
-    margin: 0 15px !important; /* Spacing between bullets, half of the 30px gap */
+    font-size: 16px !important; /* Font size */
+    line-height: 25px !important; /* Vertical alignment */
+    margin: 0 10px !important; /* Spacing between bullets, half of the 30px gap */
     text-align: center;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500 !important;
     position: relative; /* For positioning the line */
   }
   
   /* Style for the active bullet */
   .swiper-pagination-bullet-active {
-    background-color: #ff0000; /* Active bullet background color */
+    background-color: var(--st-theme-1); /* Active bullet background color */
     color: #fff; /* Active bullet text color */
   }
   
@@ -132,12 +132,16 @@ display: none;
   .swiper-pagination-bullet:not(:last-child)::after {
     content: "";
     display: block;
-    width: 30px; /* Length of the line */
-    height: 3px; /* Thickness of the line */
-    background-color: #ff0000; /* Color of the line */
+    width: 16px !important;
+    height: 1px !important;
+    background-color: #6c6a6a !important;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 30px;
-  }
-  
+    left: 27px !important;
+}
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px !important;
+    left: -40.8% !important;
+    width: 100% !important;
+} 
