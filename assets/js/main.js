@@ -452,7 +452,7 @@ var swiper = new Swiper(".mySwipers", {
 	spaceBetween: 10,
 	centeredSlides: true,
 	autoplay: {
-	  delay: 5000,
+	  delay: 3000,
 	  disableOnInteraction: false,
 	},
 	pagination: {
@@ -466,7 +466,7 @@ var swiper = new Swiper(".mySwipers", {
 	  nextEl: ".swiper-button-next",
 	  prevEl: ".swiper-button-prev",
 	},
-	speed: 1000,
+	speed: 1500,
   });
 
     //BEST SELLING Carousel
@@ -502,3 +502,19 @@ var swiper = new Swiper(".mySwipers", {
 		document.getElementById(cityName).style.display = "block";
 		evt.currentTarget.className += " active";
 	  } 
+
+
+	  //Flip SLider JS
+
+	  var swiper = new Swiper(".myFlipSwiper", {
+		effect: "fade",
+		grabCursor: true,
+		speed: 1500, // Slow down the fade effect
+		fadeEffect: {
+		  crossFade: true, // Smooth fade effect
+		},
+		autoplay: {
+		  delay: 3000, // Time between transitions (in milliseconds)
+		  disableOnInteraction: false, // Autoplay won't stop after user interactions
+		},
+	  });
