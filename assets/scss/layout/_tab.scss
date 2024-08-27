@@ -1,0 +1,83 @@
+@use '../utils' as *;
+
+
+//   08. TAB CSS START
+
+.tab__area{
+    .tab__product{
+        .f__product-img{
+            background: #f8f8f8;
+            text-align: center;
+            padding: 25px 0;
+            .img-fluid{
+                width: 80% !important;
+            }
+        }
+    }
+    .swiper-button-next{
+        display: block;
+        right: 20px !important;
+        i {
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+            color: var(--st-theme-1);
+            outline: 1px dashed var(--st-theme-1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+
+        }
+        &::after{
+            display: none;
+        }
+    }
+}
+
+ /* Style the tab */
+ .tab {
+    right: 0;
+    bottom: 80px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    color: #757589;
+    font-size: 28px;
+    line-height: 47px;
+    font-weight: 600;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 40px;
+    border-bottom: 3px solid #ccc;
+    padding: 0 20px;
+    &:last-child{
+        margin-right: 0;
+    }
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border-bottom: 3px solid var(--st-theme-1);
+    color: var(--st-theme-1);
+  }
+  
+
+#London{
+    display: block;
+}
+.tabcontent {
+    display: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

@@ -219,6 +219,22 @@
 	padding: 10px 25px;
 	font-weight: 600;
 	border-radius: 7px;
+	display: block !important;
+	&:hover{
+		color: var(--st-heading-primary);
+	}
+}
+.shop__btn{
+	color: #fff;
+	background: var(--st-theme-1);
+	padding: 8px 15px;
+	font-weight: 600;
+	border-radius: 7px;
+	display: block !important;
+	width: 122px;
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 15px;
 	&:hover{
 		color: var(--st-heading-primary);
 	}

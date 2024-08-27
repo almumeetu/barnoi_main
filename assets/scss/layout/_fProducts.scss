@@ -30,19 +30,6 @@
 .product__carousel{
     height: 1130px !important;
     .swiper-button-next, .swiper-button-prev {
-        &::after{
-            font-size: 30px;
-            color: var(--st-theme-1);
-            border: 1px dashed var(--st-theme-1);
-            border-radius: 50%;
-            line-height: 30px;
-            height: 50px;
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         display: block;
 
     }

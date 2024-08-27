@@ -1,5 +1,49 @@
 @use '../utils'as *;
 
+.category-1{
+    background-color: #E5E6ED !important;
+}
+.category-2{
+    background-color: #FFEBE5 !important;
+}
+.category-3{
+    background-color: #EFEEEE !important;
+}
+.category{
+    overflow: hidden;
+    &:hover .category__img img{
+        transform: scale(1.1) translate(5px, 5px); /* Zooms in the image and translates it */
+    }
+    .category__author{
+        h5{
+            font-size: 30px;
+        }
+        span{
+            margin-bottom: 30px !important;
+        }
+        .count__products{
+            bottom: -110px;
+            a{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 8px;
+                }
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 600;
+                color: var(--st-heading-primary);
+            }
+        }
+    }
+    .category__img{
+        img{
+            transition: transform 0.4s ease, translate 0.4s ease;
+        }
+    }
+    
+}
+
 
 // <!-- Social Media Engagement Section Start -->
 

@@ -599,8 +599,25 @@ input[type=color] {
   padding: 10px 25px;
   font-weight: 600;
   border-radius: 7px;
+  display: block !important;
 }
 .explore__btn:hover {
+  color: var(--st-heading-primary);
+}
+
+.shop__btn {
+  color: #fff;
+  background: var(--st-theme-1);
+  padding: 8px 15px;
+  font-weight: 600;
+  border-radius: 7px;
+  display: block !important;
+  width: 122px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 15px;
+}
+.shop__btn:hover {
   color: var(--st-heading-primary);
 }
 
@@ -1341,8 +1358,49 @@ input[type=color] {
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 55px;
   display: block;
-  text-align: left;
   left: 5%;
+}
+
+.category-1 {
+  background-color: #E5E6ED !important;
+}
+
+.category-2 {
+  background-color: #FFEBE5 !important;
+}
+
+.category-3 {
+  background-color: #EFEEEE !important;
+}
+
+.category {
+  overflow: hidden;
+}
+.category:hover .category__img img {
+  transform: scale(1.1) translate(5px, 5px); /* Zooms in the image and translates it */
+}
+.category .category__author h5 {
+  font-size: 30px;
+}
+.category .category__author span {
+  margin-bottom: 30px !important;
+}
+.category .category__author .count__products {
+  bottom: -110px;
+}
+.category .category__author .count__products a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--st-heading-primary);
+}
+.category .category__author .count__products a img {
+  margin-right: 8px;
+}
+.category .category__img img {
+  transition: transform 0.4s ease, translate 0.4s ease;
 }
 
 .social__engage .social__engage-wrapper {
@@ -1385,18 +1443,6 @@ input[type=color] {
 }
 .product__carousel .swiper-button-next, .product__carousel .swiper-button-prev {
   display: block;
-}
-.product__carousel .swiper-button-next::after, .product__carousel .swiper-button-prev::after {
-  font-size: 30px;
-  color: var(--st-theme-1);
-  border: 1px dashed var(--st-theme-1);
-  border-radius: 50%;
-  line-height: 30px;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .product__carousel .f__product-img img {
   height: 1022px;
@@ -1689,4 +1735,82 @@ input[type=color] {
   font-weight: 600;
   padding: 0;
   margin: 0;
+}
+
+.tab__area .tab__product .f__product-img {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 25px 0;
+}
+.tab__area .tab__product .f__product-img .img-fluid {
+  width: 80% !important;
+}
+.tab__area .swiper-button-next {
+  display: block;
+  right: 20px !important;
+}
+.tab__area .swiper-button-next i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: var(--st-theme-1);
+  outline: 1px dashed var(--st-theme-1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.tab__area .swiper-button-next::after {
+  display: none;
+}
+
+/* Style the tab */
+.tab {
+  right: 0;
+  bottom: 80px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  color: #757589;
+  font-size: 28px;
+  line-height: 47px;
+  font-weight: 600;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 40px;
+  border-bottom: 3px solid #ccc;
+  padding: 0 20px;
+}
+.tab button:last-child {
+  margin-right: 0;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid var(--st-theme-1);
+  color: var(--st-theme-1);
+}
+
+#London {
+  display: block;
+}
+
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
