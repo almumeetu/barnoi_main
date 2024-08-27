@@ -1,80 +1,96 @@
-@use '../utils' as *;
-//   04. SHOP CATEGORY CSS START
-.shop__categories{
+@use '../utils'as *;
 
-    .t-shirt__category{
-        .category{
-            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+//   04. SHOP CATEGORY CSS START
+.shop__categories {
+
+    .t-shirt__category {
+        .category {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            /* Smooth transition for shadow and transform */
             width: 90%;
             border-radius: 8px;
             overflow: hidden;
-            &:hover{
+
+            &:hover {
                 box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 
-               }
+            }
+
+        }
+
+        .cat_img {
+            text-align: end;
+            padding-top: 50px;
+
+            &:hover img {
+
+                transform: scale(1.1) translate(4px, 4px);
+                /* Zooms in the image and translates it */
+
+                transform: scale(1.1) translate(2px, 2px);
+                /* Zooms in the image and translates it */
 
             }
 
-            .cat_img{
-                text-align: end;
+            img {
+                width: 90%;
                 padding-top: 50px;
-                &:hover img{
+                height: 580px;
+                object-fit: contain;
+                transition: transform 0.4s ease, translate 0.4s ease;
+                /* Smooth transition for both scale and translate */
+            }
 
-                    transform: scale(1.1) translate(4px, 4px); /* Zooms in the image and translates it */
+            .cat_overlay {
+                top: 30px;
+                left: 30px;
 
-                    transform: scale(1.1) translate(2px, 2px); /* Zooms in the image and translates it */
-
+                h5 {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 30px !important;
                 }
-                img{
-                    width: 90%;
-                    padding-top: 50px;
-                    height: 580px;
-                    object-fit: contain;
-                    transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
-                }
-                .cat_overlay{
-                    top: 30px; 
-                    left: 30px;
-                    h5 {
-                        padding: 0;
-                        margin: 0;
-                        font-size: 30px !important;
+
+                .shop-now-btn {
+                    overflow: hidden;
+                    position: relative;
+
+                    &:hover a>i {
+                        left: 115px;
+                        top: 3px;
                     }
-                    .shop-now-btn{
+
+                    a {
+                        font-size: 22px;
+                        font-weight: 500;
                         overflow: hidden;
-                        position: relative;
-                        &:hover a > i {
-                            left: 115px;
-                            top: 3px;
+                        color: var(--st-heading-primary);
+                        text-decoration: underline;
+
+                        &:hover {
+                            color: var(--st-theme-1);
                         }
-                        a{
-                            font-size: 22px;
-                            font-weight: 500;
-                            overflow: hidden;
-                            color: var(--st-heading-primary);
-                            text-decoration: underline;
-                            &:hover{
-                                color: var(--st-theme-1);
-                            }
-                            i{
-                                position: absolute;
-                                left: -10000px;
-                                transition: all ease-in-out .4s;
-                            }
+
+                        i {
+                            position: absolute;
+                            left: -10000px;
+                            transition: all ease-in-out .4s;
                         }
                     }
                 }
             }
-        }
-        .cat_01{
-            background: #EDF7F5;
-        }
-        .cat_02{
-            background: #EDF8FF ;
-        }
-        .cat_03{
-            background: #FAF6E5;
         }
     }
-}
 
+    .cat_01 {
+        background: #EDF7F5;
+    }
+
+    .cat_02 {
+        background: #EDF8FF;
+    }
+
+    .cat_03 {
+        background: #FAF6E5;
+    }
+}

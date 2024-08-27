@@ -3,6 +3,24 @@
 //   06.BEST SELLING CSS START
 
 .best__selling-item{
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        i {
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+            color: var(--st-theme-1);
+            outline: 1px dashed var(--st-theme-1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+        &::after{
+            display: none;
+        }
+    }
     .selling__wrapper{
 
         border: 3px solid #F8F8F8 ;
@@ -10,7 +28,14 @@
         @media #{$md, $lg, $sm}{
             margin-bottom: 40px;
         }
-        
+        .swipper__btn{
+            right: 20px;
+            top: 70px;
+            .swiper-button-prev{
+                left: -117px;
+                position: absolute;
+            }
+        }
         h4{
             font-size: 30px;
             line-height: 45px;
@@ -57,8 +82,5 @@
                 }
             }
         }
-    }
-    .top__rated{
-
     }
 }

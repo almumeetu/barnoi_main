@@ -468,3 +468,14 @@ var swiper = new Swiper(".mySwipers", {
 	},
 	speed: 1000,
   });
+
+    //BEST SELLING Carousel
+	var swiper = new Swiper(".mySwiperrr", {
+		spaceBetween: 10,
+		centeredSlides: true,
+		navigation: {
+		  nextEl: ".swiper-button-next",
+		  prevEl: ".swiper-button-prev",
+		},
+		speed: 1000,
+	  });

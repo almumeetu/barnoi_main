@@ -1,4 +1,25 @@
 @charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Template Name – HTML5 Template
+    Author: SOFTZINO
+    Support: info@softzino.com
+    Description: Template Name  – HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+
+
+
+**********************************************/
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /**
@@ -45,27 +66,6 @@
   --st-fz-h6: 22px;
 }
 
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Template Name – HTML5 Template
-    Author: SOFTZINO
-    Support: info@softzino.com
-    Description: Template Name  – HTML5 Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-    01. THEME DEFAULT CSS
-    02. HEADER CSS
-
-
-
-**********************************************/
-/*----------------------------------------*/
-/*  01. THEME DEFAULT CSS START
-/*----------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -376,51 +376,6 @@ input[type=color] {
   transform: translateY(-50%) rotate(-180deg);
 }
 
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
-}
-
 /*--
     - Background color
 -----------------------------------------*/
@@ -443,51 +398,6 @@ input[type=color] {
 /*--
     - Spacing
 -----------------------------------------*/
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
-}
-
 /* pulse btn */
 .pulse-btn {
   display: inline-block;
@@ -707,51 +617,6 @@ input[type=color] {
 }
 .section__title .main__title span {
   color: var(--st-theme-1);
-}
-
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
 }
 
 /*----------------------------------------*/
@@ -1137,51 +1002,6 @@ input[type=color] {
   border-right: 2px solid var(--st-theme-1);
 }
 
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
-}
-
 .container-fluid {
   width: 90% !important;
 }
@@ -1382,56 +1202,16 @@ input[type=color] {
   font-size: 16px;
 }
 
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
-}
-
 .hero__area {
+  /* Navigation arrows (next and previous) */
   z-index: -2;
   padding-top: 70px;
   background-color: #FFF2EB !important;
   background: url(/assets/img/hero/hero-line.png) center center no-repeat, url(/assets/img/hero/hero\ shape.png) top right no-repeat;
+}
+.hero__area .swiper-button-next,
+.hero__area .swiper-button-prev {
+  display: none;
 }
 .hero__area p {
   padding-top: 30px;
@@ -1504,12 +1284,6 @@ input[type=color] {
   transition: transform 1.5s ease-in-out; /* Match this with your Swiper speed */
 }
 
-/* Navigation arrows (next and previous) */
-.swiper-button-next,
-.swiper-button-prev {
-  display: none;
-}
-
 /* Pagination container */
 .swiper-pagination {
   bottom: 10px; /* Adjust positioning as needed */
@@ -1523,23 +1297,25 @@ input[type=color] {
 /* Pagination bullets */
 .swiper-pagination-bullet {
   display: inline-block;
-  width: 30px; /* Adjust width to accommodate text and gap */
-  height: 30px; /* Size of the bullet */
+  width: 25px !important; /* Adjust width to accommodate text and gap */
+  height: 25px !important; /* Size of the bullet */
   border-radius: 50%; /* Makes the bullets circular */
-  background-color: #ccc; /* Default background color */
+  background-color: #816a6a; /* Default background color */
   color: #000; /* Default text color */
+  font-size: 16px !important; /* Font size */
+  line-height: 25px !important; /* Vertical alignment */
   font-size: 18px; /* Font size */
   line-height: 30px; /* Vertical alignment */
   margin: 0 10px !important; /* Spacing between bullets, half of the 30px gap */
   text-align: center;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500 !important;
   position: relative; /* For positioning the line */
 }
 
 /* Style for the active bullet */
 .swiper-pagination-bullet-active {
-  background-color: #ff0000; /* Active bullet background color */
+  background-color: var(--st-theme-1); /* Active bullet background color */
   color: #fff; /* Active bullet text color */
 }
 
@@ -1547,67 +1323,31 @@ input[type=color] {
 .swiper-pagination-bullet:not(:last-child)::after {
   content: "";
   display: block;
-  width: 18px;
-  height: 2px;
-  background-color: #463e3e;
+  width: 16px !important;
+  height: 1px !important;
+  background-color: #6c6a6a !important;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 31px;
+  left: 27px !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 50px !important;
+  left: -40.8% !important;
+  width: 100% !important;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 55px;
-  left: -41%;
-}
-
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
+  display: block;
+  text-align: left;
+  left: 5%;
 }
 
 .shop__categories .t-shirt__category .category {
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Smooth transition for shadow and transform */
   width: 90%;
   border-radius: 8px;
   overflow: hidden;
@@ -1615,106 +1355,79 @@ input[type=color] {
 .shop__categories .t-shirt__category .category:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
-.shop__categories .t-shirt__category .category .cat_img {
+.shop__categories .t-shirt__category .cat_img {
   text-align: end;
   padding-top: 50px;
 }
-.shop__categories .t-shirt__category .category .cat_img:hover img {
-  transform: scale(1.1) translate(2px, 2px); /* Zooms in the image and translates it */
+.shop__categories .t-shirt__category .cat_img:hover img {
+  transform: scale(1.1) translate(4px, 4px);
+  /* Zooms in the image and translates it */
+  transform: scale(1.1) translate(2px, 2px);
+  /* Zooms in the image and translates it */
 }
-.shop__categories .t-shirt__category .category .cat_img img {
+.shop__categories .t-shirt__category .cat_img img {
   width: 90%;
   padding-top: 50px;
   height: 580px;
   -o-object-fit: contain;
      object-fit: contain;
-  transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
+  transition: transform 0.4s ease, translate 0.4s ease;
+  /* Smooth transition for both scale and translate */
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay {
+.shop__categories .t-shirt__category .cat_img .cat_overlay {
   top: 30px;
   left: 30px;
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay h5 {
+.shop__categories .t-shirt__category .cat_img .cat_overlay h5 {
   padding: 0;
   margin: 0;
   font-size: 30px !important;
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn {
+.shop__categories .t-shirt__category .cat_img .cat_overlay .shop-now-btn {
   overflow: hidden;
   position: relative;
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn:hover a > i {
+.shop__categories .t-shirt__category .cat_img .cat_overlay .shop-now-btn:hover a > i {
   left: 115px;
   top: 3px;
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn a {
+.shop__categories .t-shirt__category .cat_img .cat_overlay .shop-now-btn a {
   font-size: 22px;
   font-weight: 500;
   overflow: hidden;
   color: var(--st-heading-primary);
   text-decoration: underline;
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn a:hover {
+.shop__categories .t-shirt__category .cat_img .cat_overlay .shop-now-btn a:hover {
   color: var(--st-theme-1);
 }
-.shop__categories .t-shirt__category .category .cat_img .cat_overlay .shop-now-btn a i {
+.shop__categories .t-shirt__category .cat_img .cat_overlay .shop-now-btn a i {
   position: absolute;
   left: -10000px;
   transition: all ease-in-out 0.4s;
 }
-.shop__categories .t-shirt__category .cat_01 {
+.shop__categories .cat_01 {
   background: #EDF7F5;
 }
-.shop__categories .t-shirt__category .cat_02 {
+.shop__categories .cat_02 {
   background: #EDF8FF;
 }
-.shop__categories .t-shirt__category .cat_03 {
+.shop__categories .cat_03 {
   background: #FAF6E5;
 }
 
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
+.f__product-img {
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+}
+.f__product-img:hover {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.f__product-img:hover img {
+  transform: scale(0.9) translate(4px, 4px); /* Zooms in the image and translates it */
+}
+.f__product-img img {
+  transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
 }
 
 .f__product {
@@ -1743,6 +1456,27 @@ input[type=color] {
   height: 1022px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.product__carousel .swiper-button-next {
+  right: 25px !important;
+}
+.product__carousel .swiper-button-next, .product__carousel .swiper-button-prev {
+  display: block;
+}
+.product__carousel .swiper-button-next i, .product__carousel .swiper-button-prev i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: var(--st-theme-1);
+  outline: 1px dashed var(--st-theme-1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.product__carousel .swiper-button-next::after, .product__carousel .swiper-button-prev::after {
+  display: none;
 }
 
 .f__product-img {
@@ -1856,7 +1590,7 @@ input[type=color] {
 }
 
 .bp-7 {
-  background: #F8F8F8;
+  background: #EDF7F5;
 }
 
 .bp-8 {
@@ -1864,56 +1598,12 @@ input[type=color] {
 }
 
 .bp-9 {
+  background: #DFF3FF;
   background: #F8F8F8;
 }
 
 .swiper-button-next {
   right: 33px !important;
-}
-
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
 }
 
 .blog__area {
@@ -1926,34 +1616,45 @@ input[type=color] {
 .blog__area .blog .blog__img {
   overflow: hidden;
   border-radius: 15px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Smooth transition for shadow and transform */
 }
 .blog__area .blog .blog__img:hover {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .blog__area .blog .blog__img:hover img {
-  transform: scale(1.1) translate(2px, 2px); /* Zooms in the image and translates it */
+  transform: scale(1.1) translate(4px, 4px);
+  /* Zooms in the image and translates it */
 }
-.blog__area .blog .blog__img img {
+.blog__area .blog .blog__img:hover img:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.blog__area .blog .blog__img:hover img:hover img {
+  transform: scale(1.1) translate(2px, 2px);
+  /* Zooms in the image and translates it */
+}
+.blog__area .blog .blog__img:hover img img {
   height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
+  transition: transform 0.4s ease, translate 0.4s ease;
+  /* Smooth transition for both scale and translate */
 }
-.blog__area .blog .blog__content .blog__post-date {
+.blog__area .blog .blog__img .blog__content .blog__post-date {
   padding-top: 10px;
   padding-bottom: 15px;
 }
-.blog__area .blog .blog__content .blog__post-date span {
+.blog__area .blog .blog__img .blog__content .blog__post-date span {
   font-size: 18px;
   color: #757589;
   word-spacing: 4px;
 }
-.blog__area .blog .blog__content .blog__post-title h4 {
+.blog__area .blog .blog__img .blog__content .blog__post-title h4 {
   line-height: 47px;
   transition: all ease-in 0.3s;
 }
-.blog__area .blog .blog__content .blog__post-title h4:hover {
+.blog__area .blog .blog__img .blog__content .blog__post-title h4:hover {
   color: var(--st-theme-1);
 }
 
@@ -1961,124 +1662,84 @@ input[type=color] {
   text-transform: capitalize;
 }
 
-:root {
-  /**
-  @font family declaration
-  */
-  --st-ff-body: 'Poppins', sans-serif;
-  --st-ff-heading: 'Poppins', sans-serif;
-  --st-ff-p: 'Poppins', sans-serif;
-  --st-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-  @color declaration
-  */
-  --st-common-white: #ffffff;
-  --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
-  --st-border-1: #000;
-  /**
-  @font weight declaration
-  */
-  --st-fw-normal: normal;
-  --st-fw-elight: 200;
-  --st-fw-light: 300;
-  --st-fw-regular: 400;
-  --st-fw-medium: 500;
-  --st-fw-sbold: 600;
-  --st-fw-bold: 700;
-  --st-fw-ebold: 800;
-  --st-fw-black: 900;
-  /**
-  @font size declaration
-  */
-  --st-fz-body: 18px;
-  --st-fz-p: 18px;
-  --st-fz-h1: 80px;
-  --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
-  --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
-}
-
-.footer__area {
-  background: #00012A;
-  padding-top: 80px;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 80px;
-}
-.footer__area h6 {
-  color: var(--st-common-white);
-  line-height: 40px;
-}
-.footer__area h6 span {
-  color: #FF3900;
-}
-.footer__area .footer__heading {
-  padding-bottom: 80px;
-}
-.footer__area .footer__heading h2 {
-  color: var(--st-common-white);
-}
-.footer__area .footer__heading h2 span {
-  color: #FF3900;
-}
-.footer__area .footer .footer__logo p {
-  padding-top: 20px;
-  color: var(--st-common-white);
-}
-.footer__area .footer .footer__nav {
-  text-align: center;
-}
-.footer__area .footer .footer__nav ul li {
-  list-style: none;
+.best__selling-item .swiper-button-next, .best__selling-item .swiper-button-prev {
   display: block;
-  padding-bottom: 20px;
-  text-align: left;
-  transition: all ease 0.3s;
 }
-.footer__area .footer .footer__nav ul li:hover {
-  padding-left: 5px;
-}
-.footer__area .footer .footer__nav ul li i {
-  color: var(--st-common-white);
-  padding-right: 10px;
-}
-.footer__area .footer .footer__nav ul li:hover a, .footer__area .footer .footer__nav ul li i {
-  color: #FF3900;
-}
-.footer__area .footer .footer__nav ul li a {
-  color: var(--st-common-white);
-}
-.footer__area .footer__icon {
-  padding-top: 30px;
-}
-.footer__area .footer__icon ul {
-  padding-bottom: 50px;
-}
-.footer__area .footer__icon ul li {
-  display: inline;
-  list-style: none;
-  margin: 0 10px;
-}
-.footer__area .footer__icon ul li a {
-  color: #fff;
-  font-size: 25px;
-  padding: 14px 16px;
+.best__selling-item .swiper-button-next i, .best__selling-item .swiper-button-prev i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: var(--st-theme-1);
+  outline: 1px dashed var(--st-theme-1);
   border-radius: 50%;
-  border: 1px solid #fff;
-  line-height: 25px;
-  transition: all ease-in 0.3s !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 }
-.footer__area .footer__icon ul li a:hover {
-  color: #FF3900;
+.best__selling-item .swiper-button-next::after, .best__selling-item .swiper-button-prev::after {
+  display: none;
 }
-.footer__area .footer__icon .copyright_text p {
-  color: var(--st-common-white);
+.best__selling-item .selling__wrapper {
+  border: 3px solid #F8F8F8;
+  border-radius: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .best__selling-item .selling__wrapper {
+    margin-bottom: 40px;
+  }
+}
+.best__selling-item .selling__wrapper .swipper__btn {
+  right: 20px;
+  top: 70px;
+}
+.best__selling-item .selling__wrapper .swipper__btn .swiper-button-prev {
+  left: -117px;
+  position: absolute;
+}
+.best__selling-item .selling__wrapper h4 {
+  font-size: 30px;
+  line-height: 45px;
+  background: #F8F8F8;
+  padding: 44px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+.best__selling-item .selling__wrapper .b__product {
+  width: 85%;
+  margin: 35px auto;
+  align-items: center;
+  background: #F8F8F8;
+  border-radius: 12px;
+}
+.best__selling-item .selling__wrapper .b__product:hover .b__product-img img {
+  transform: scale(1.1) translate(4px, 4px); /* Zooms in the image and translates it */
+}
+.best__selling-item .selling__wrapper .b__product .b__product-img {
+  padding: 15px 30px;
+  border-radius: 12px 0 0 12px;
+  overflow: hidden;
+}
+.best__selling-item .selling__wrapper .b__product .b__product-img img {
+  width: 100%;
+  transition: transform 0.4s ease, translate 0.4s ease; /* Smooth transition for both scale and translate */
+}
+.best__selling-item .selling__wrapper .b__product .b__product-content {
+  margin-left: 30px;
+}
+.best__selling-item .selling__wrapper .b__product .b__product-content h6 {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 7px !important;
+}
+.best__selling-item .selling__wrapper .b__product .b__product-content span {
+  font-size: 14px;
+}
+.best__selling-item .selling__wrapper .b__product .b__product-content p {
+  padding-top: 12px !important;
+  font-size: 18px;
+  color: var(--st-theme-1);
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
