@@ -451,10 +451,10 @@ var swiper = new Swiper(".mySwipers", {
   var swiper = new Swiper(".mySwiperr", {
 	spaceBetween: 10,
 	centeredSlides: true,
-	autoplay: {
-	  delay: 3000,
-	  disableOnInteraction: false,
-	},
+	// autoplay: {
+	//   delay: 3000,
+	//   disableOnInteraction: false,
+	// },
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,
