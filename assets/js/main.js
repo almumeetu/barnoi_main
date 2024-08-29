@@ -479,6 +479,35 @@ var swiper = new Swiper(".mySwipers", {
 		},
 		speed: 1000,
 	  });
+	  var swiper1 = new Swiper(".mySwiperr1", {
+		spaceBetween: 10,
+		centeredSlides: true,
+		navigation: {
+		  nextEl: ".swiper-button-next-1",
+		  prevEl: ".swiper-button-prev-1",
+		},
+		speed: 1000,
+	  });
+	  
+	  var swiper2 = new Swiper(".mySwiperr2", {
+		spaceBetween: 10,
+		centeredSlides: true,
+		navigation: {
+		  nextEl: ".swiper-button-next-2",
+		  prevEl: ".swiper-button-prev-2",
+		},
+		speed: 1000,
+	  });
+	  
+	  var swiper3 = new Swiper(".mySwiperr3", {
+		spaceBetween: 10,
+		centeredSlides: true,
+		navigation: {
+		  nextEl: ".swiper-button-next-3",
+		  prevEl: ".swiper-button-prev-3",
+		},
+		speed: 1000,
+	  });
 
 	  //TAB JS
 

@@ -54,7 +54,7 @@
     cursor: pointer;
     transition: 0.3s;
     margin-right: 40px;
-    border-bottom: 3px solid #ccc;
+    border-bottom: 2px solid #ccc;
     padding: 0 20px;
     &:last-child{
         margin-right: 0;
@@ -63,7 +63,7 @@
   
   /* Create an active/current tablink class */
   .tab button.active {
-    border-bottom: 3px solid var(--st-theme-1);
+    border-bottom: 2px solid var(--st-theme-1);
     color: var(--st-theme-1);
   }
   
