@@ -8,7 +8,7 @@
 }
 .header__area{
 	.header__top-area{
-		background: var(--st-heading-primary);
+		background: #111827;
 		.top__nav{
 			@media #{$xs}{
 				text-align: start !important;
@@ -31,12 +31,33 @@
 			}
 		}
 		.header__notification{
+			position: relative;
+			width: 100%;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+			height: 40px; /* Adjust as needed */
+			line-height: 40px; 
+			.notification{
+				position: absolute;
+				width: 100%;
+				opacity: 0;
+				transform: translateY(-100%);
+				transition: opacity 0.5s ease-in, transform 0.5s ease-out;
+
+			}
 			p{
 				margin: 0;
 				padding: 0;
 				font-size: 14px;
 				line-height: 21px;
-				color: var(--st-text-1);
+				color: #f5ba68;
+				transition: all ease-in-out .5s;
+				cursor: pointer;
+				&:hover{
+					color: var(--st-theme-1);
+				}
 			}
 		}
 		.lanCur__changer{

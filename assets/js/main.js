@@ -419,12 +419,13 @@
 
 //HERO SLIDER
 var swiper = new Swiper(".mySwipers", {
+	loop: true, // Enable continuous loop mode
 	spaceBetween: 10,
 	centeredSlides: true,
-	// autoplay: {
-	//   delay: 5000,
-	//   disableOnInteraction: false,
-	// },
+	autoplay: {
+	  delay: 5000,
+	  disableOnInteraction: false,
+	},
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,
@@ -449,6 +450,7 @@ var swiper = new Swiper(".mySwipers", {
 
   //Product Carousel
   var swiper = new Swiper(".mySwiperr", {
+	loop: true, // Enable continuous loop mode
 	spaceBetween: 10,
 	centeredSlides: true,
 	// autoplay: {
@@ -472,6 +474,7 @@ var swiper = new Swiper(".mySwipers", {
     //BEST SELLING Carousel
 	var swiper = new Swiper(".mySwiperrr", {
 		spaceBetween: 10,
+		loop: true, // Enable continuous loop mode
 		centeredSlides: true,
 		navigation: {
 		  nextEl: ".swiper-button-next",
@@ -480,6 +483,7 @@ var swiper = new Swiper(".mySwipers", {
 		speed: 1000,
 	  });
 	  var swiper1 = new Swiper(".mySwiperr1", {
+		loop: true, // Enable continuous loop mode
 		spaceBetween: 10,
 		centeredSlides: true,
 		navigation: {
@@ -490,6 +494,7 @@ var swiper = new Swiper(".mySwipers", {
 	  });
 	  
 	  var swiper2 = new Swiper(".mySwiperr2", {
+		loop: true, // Enable continuous loop mode
 		spaceBetween: 10,
 		centeredSlides: true,
 		navigation: {
@@ -500,6 +505,7 @@ var swiper = new Swiper(".mySwipers", {
 	  });
 	  
 	  var swiper3 = new Swiper(".mySwiperr3", {
+		loop: true, // Enable continuous loop mode
 		spaceBetween: 10,
 		centeredSlides: true,
 		navigation: {
@@ -548,34 +554,63 @@ var swiper = new Swiper(".mySwipers", {
 		},
 	  });
 
-	  //type writer
-
-	  // Text to be typed
-	  const text = " Explore  our selection Of Luxury T-Shirts";
-
-	  // Reference to the H1 element
-	  const typewriterText = document.getElementById('typewriter-text');
-
-	  // Function to type each letter
-	  function typeLetter() {
-		  let index = 0;
-
-		  function type() {
-			  if (index < text.length) {
-				  typewriterText.textContent += text.charAt(index);
-				  index++;
-				  setTimeout(type, 200); // Adjust the speed of typing here
-			  } else {
-				  // After typing is complete, clear text after a delay and restart
-				  setTimeout(() => {
-					  typewriterText.textContent = "";
-					  typeLetter(); // Restart the typing effect
-				  }, 2000); // Wait 1 second before restarting
-			  }
-		  }
-
-		  type();
+// Function to apply typewriter effect to a specific element with given text
+function typewriterEffect(elementId, text) {
+	const typewriterText = document.getElementById(elementId);
+	let index = 0;
+  
+	function type() {
+	  if (index < text.length) {
+		typewriterText.textContent += text.charAt(index);
+		index++;
+		setTimeout(type, 200); // Adjust the speed of typing here
+	  } else {
+		// After typing is complete, clear text after a delay and restart
+		setTimeout(() => {
+		  typewriterText.textContent = "";
+		  index = 0; // Reset the character index
+		  type(); // Restart the typing effect
+		}, 1000); // Wait 1 second before restarting
 	  }
+	}
+  
+	type();
+  }
+  
+  // Apply typewriter effect to multiple sliders
+  window.onload = function() {
+	typewriterEffect('typewriter-text1', 'Explore our selection Of Luxury T-Shirts');
+	typewriterEffect('typewriter-text2', 'We Are Discover Premium Quality');
+	typewriterEffect('typewriter-text3', 'Find Your Style with BARNOI......!');
+  };
 
-	  // Start typing after the page loads
-	  window.onload = typeLetter;
+
+
+
+	  //HEADER NOTIFICATIONS
+
+	  document.addEventListener("DOMContentLoaded", function() {
+		const notifications = document.querySelectorAll(".notification");
+		let currentIndex = 0;
+		
+		function showNextNotification() {
+		  // Hide the current notification
+		  notifications[currentIndex].style.opacity = 0;
+		  notifications[currentIndex].style.transform = "translateY(100%)";
+	  
+		  // Update index to the next notification
+		  currentIndex = (currentIndex + 1) % notifications.length;
+	  
+		  // Show the next notification
+		  notifications[currentIndex].style.opacity = 1;
+		  notifications[currentIndex].style.transform = "translateY(0)";
+	  
+		  // Schedule the next notification change
+		  setTimeout(showNextNotification, 5000); // Change notification every 3 seconds
+		}
+	  
+		// Start the notification cycle
+		showNextNotification();
+	  });
+	  
+	  
