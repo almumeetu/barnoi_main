@@ -43,7 +43,7 @@ body {
 	font-size: var(--st-fz-body);
 	font-weight: normal;
 	color: var(--st-text-body);
-	line-height: 26px;
+	line-height: 20px;
 
 }
 
@@ -52,7 +52,7 @@ a{
 }
 
 h1,
-h2,
+h2,      
 h3,
 h4,
 h5,
@@ -67,26 +67,32 @@ h6 {
 
 h1 {
 	font-size: var(--st-fz-h1);
+	line-height: 100px;
 }
   
 h2 {
 font-size: var(--st-fz-h2);
+line-height: 80px;
 }
 
 h3 {
 font-size: var(--st-fz-h3);
+line-height: 60px;
 }
 
 h4 {
 font-size: var(--st-fz-h4);
+line-height: 40px;
 }
 
 h5 {
 font-size: var(--st-fz-h5);
+line-height: 32px;
 }
 
 h6 {
 font-size: var(--st-fz-h6);
+ 
 }
 
 ul {

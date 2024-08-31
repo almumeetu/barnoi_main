@@ -34,12 +34,14 @@
   */
   --st-common-white: #ffffff;
   --st-common-black: #000;
-  --st-heading-primary: #000248;
-  --st-grey-1: #F1F1F1;
-  --st-grey-2: #F5F6F8;
-  --st-text-body: #757589;
-  --st-text-1: #F3C640;
-  --st-theme-1: #FF3900;
+  --st-common-black2: #111827;
+  --st-heading-primary: #002366;
+  --st-grey-1: #70747D;
+  --st-grey-2: #414652;
+  --st-text-body: #414652;
+  --st-text-1: #70747D;
+  --st-theme-1: #F04A00;
+  --st-theme-2: #002366;
   --st-border-1: #000;
   /**
   @font weight declaration
@@ -60,10 +62,10 @@
   --st-fz-p: 18px;
   --st-fz-h1: 80px;
   --st-fz-h2: 60px;
-  --st-fz-h3: 32px;
-  --st-fz-h4: 30px;
+  --st-fz-h3: 48px;
+  --st-fz-h4: 32px;
   --st-fz-h5: 24px;
-  --st-fz-h6: 22px;
+  --st-fz-h6: 20px;
 }
 
 * {
@@ -80,7 +82,7 @@ body {
   font-size: var(--st-fz-body);
   font-weight: normal;
   color: var(--st-text-body);
-  line-height: 26px;
+  line-height: 20px;
 }
 
 a {
@@ -103,22 +105,27 @@ h6 {
 
 h1 {
   font-size: var(--st-fz-h1);
+  line-height: 100px;
 }
 
 h2 {
   font-size: var(--st-fz-h2);
+  line-height: 80px;
 }
 
 h3 {
   font-size: var(--st-fz-h3);
+  line-height: 60px;
 }
 
 h4 {
   font-size: var(--st-fz-h4);
+  line-height: 40px;
 }
 
 h5 {
   font-size: var(--st-fz-h5);
+  line-height: 32px;
 }
 
 h6 {
@@ -805,7 +812,7 @@ input[type=color] {
     - Menu
 -----------------------------------------*/
 .header__main-area {
-  background: var(--st-theme-1);
+  background: var(--st-theme-2);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -823,14 +830,15 @@ input[type=color] {
   height: 25px;
 }
 .header__main-area .browse__categories .nice-select {
-  color: var(--st-theme-1) !important;
+  color: #334F85 !important;
   font-weight: 500;
   font-size: 18px;
   border: none;
   background-color: transparent;
+  line-height: 42px;
 }
 .header__main-area .browse__categories .nice-select::after {
-  color: var(--st-theme-1);
+  color: var(--st-heading-primary);
   font-weight: 600;
   font-size: 16px;
 }
@@ -849,18 +857,18 @@ input[type=color] {
   position: relative;
 }
 .header__main-area .main__menu ul li a:hover {
-  color: var(--st-heading-primary);
+  color: var(--st-theme-1);
 }
 .header__main-area .main__menu ul li a:focus {
-  color: var(--st-heading-primary);
+  color: var(--st-theme-1);
 }
 .header__main-area .main__menu ul li a::after {
   content: "";
   display: block;
   width: 0;
-  height: 5px;
+  height: 3px;
   /* Thickness of the line */
-  background-color: #FFF2EB;
+  background-color: var(--st-theme-1);
   /* Line color */
   position: absolute;
   bottom: 30px;
@@ -1077,14 +1085,10 @@ input[type=color] {
 }
 .header__area .header__mid-area .search__bar .search__category {
   background-color: #F3F3F3;
-  width: 92%;
+  width: 80%;
   display: flex;
   align-items: center;
   border-radius: 10px;
-}
-.header__area .header__mid-area .search__bar .search__category .s__c {
-  border-right: 1px solid #cdbdbd;
-  padding-right: 20px;
 }
 .header__area .header__mid-area .search__bar .search__feild {
   width: 100%;
@@ -1223,8 +1227,7 @@ input[type=color] {
   /* Navigation arrows (next and previous) */
   z-index: -2;
   padding-top: 70px;
-  background-color: #FFF2EB !important;
-  background: url(/assets/img/hero/hero-line.png) center center no-repeat, url(/assets/img/hero/hero\ shape.png) top right no-repeat;
+  background-color: #FEF6F2 !important;
 }
 .hero__area .swiper-button-next,
 .hero__area .swiper-button-prev {
@@ -1250,30 +1253,12 @@ input[type=color] {
 .hero__area .heroBtn__wrapper .play__btn:hover {
   color: var(--st-heading-primary);
 }
-.hero__area .hero__image {
-  z-index: 3;
-}
-.hero__area .hero__image .hero__overlay {
-  position: relative;
-}
-.hero__area .hero__image .hero__overlay::before {
-  position: absolute;
-  content: "";
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: rgba(230, 98, 34, 0.1);
-  top: -30px;
-  left: 30px;
-}
-.hero__area .hero__image .hero__overlay-2::before {
-  background: rgba(122, 38, 58, 0.1);
-}
-.hero__area .hero__image .hero__overlay-3::before {
-  background: rgba(208, 184, 149, 0.25);
-}
 .hero__area .hero__image a img {
-  width: 80%;
+  width: 88%;
+  background-image: url("/assets/img/hero/circle design.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 70px;
 }
 
 .hero__area-2 {
@@ -1350,7 +1335,7 @@ input[type=color] {
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 50px !important;
+  bottom: 9% !important;
   left: -40.8% !important;
   width: 100% !important;
 }
@@ -1606,32 +1591,19 @@ input[type=color] {
   width: 98%;
 }
 .blog__area .blog .blog__img {
-  overflow: hidden;
+  overflow: hidden !important;
   border-radius: 15px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  /* Smooth transition for shadow and transform */
-}
-.blog__area .blog .blog__img:hover {
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .blog__area .blog .blog__img:hover img {
   transform: scale(1.1) translate(4px, 4px);
-  /* Zooms in the image and translates it */
 }
-.blog__area .blog .blog__img:hover img:hover {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-}
-.blog__area .blog .blog__img:hover img:hover img {
-  transform: scale(1.1) translate(2px, 2px);
-  /* Zooms in the image and translates it */
-}
-.blog__area .blog .blog__img:hover img img {
+.blog__area .blog .blog__img img {
   height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  border-radius: 15px;
   transition: transform 0.4s ease, translate 0.4s ease;
-  /* Smooth transition for both scale and translate */
 }
 .blog__area .blog .blog__img .blog__content .blog__post-date {
   padding-top: 10px;
@@ -1664,11 +1636,10 @@ input[type=color] {
   display: flex !important;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
 .best__selling-item .swiper-button-next i, .best__selling-item .swiper-button-prev i {
   font-size: 20px;
-  margin: 1%;
-  background: #fff;
 }
 .best__selling-item .swiper-button-next::after, .best__selling-item .swiper-button-prev::after {
   display: none;
@@ -1773,18 +1744,17 @@ input[type=color] {
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  color: #757589;
-  font-size: 28px;
+  color: var(--st-gray-1);
+  font-size: 32px;
   line-height: 47px;
-  font-weight: 600;
+  font-weight: 500 !important;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   transition: 0.3s;
   margin-right: 40px;
-  border-bottom: 3px solid #ccc;
-  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
 }
 .tab button:last-child {
   margin-right: 0;
@@ -1792,7 +1762,7 @@ input[type=color] {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  border-bottom: 3px solid var(--st-theme-1);
+  border-bottom: 1px solid var(--st-theme-1);
   color: var(--st-theme-1);
 }
 

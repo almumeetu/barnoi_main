@@ -3,7 +3,7 @@
 -----------------------------------------*/
 
 .header__main-area {
-    background: var(--st-theme-1);
+    background: var(--st-theme-2);
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -22,14 +22,15 @@
         }
 
         .nice-select {
-            color: var(--st-theme-1) !important;
+            color: #334F85!important;
             font-weight: 500;
             font-size: 18px;
             border: none;
             background-color: transparent;
+            line-height: 42px;
 
             &::after {
-                color: var(--st-theme-1);
+                color: var(--st-heading-primary);
                 font-weight: 600;
                 font-size: 16px;
             }
@@ -53,10 +54,10 @@
                     position: relative;
 
                     &:hover{
-                        color: var(--st-heading-primary);
+                        color: var(--st-theme-1);
                     }
                     &:focus{
-                        color: var(--st-heading-primary);
+                        color: var(--st-theme-1);
 
                     }
 
@@ -64,9 +65,9 @@
                         content: '';
                         display: block;
                         width: 0;
-                        height: 5px;
+                        height: 3px;
                         /* Thickness of the line */
-                        background-color: #FFF2EB;
+                        background-color: var(--st-theme-1);
                         /* Line color */
                         position: absolute;
                         bottom: 30px;
