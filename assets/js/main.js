@@ -422,10 +422,10 @@ var swiper = new Swiper(".mySwipers", {
 	loop: true, // Enable continuous loop mode
 	spaceBetween: 10,
 	centeredSlides: true,
-	autoplay: {
-	  delay: 5000,
-	  disableOnInteraction: false,
-	},
+	// autoplay: {
+	//   delay: 4000,
+	//   disableOnInteraction: false,
+	// },
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,
@@ -515,7 +515,7 @@ var swiper = new Swiper(".mySwipers", {
 		speed: 1000,
 	  });
 
-	  //TAB JS
+	  // {r033DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFGY	C} JS
 
 	  function openCity(evt, cityName) {
 		// Declare all variables
