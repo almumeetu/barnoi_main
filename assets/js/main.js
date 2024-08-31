@@ -547,3 +547,35 @@ var swiper = new Swiper(".mySwipers", {
 		  disableOnInteraction: false, // Autoplay won't stop after user interactions
 		},
 	  });
+
+	  //type writer
+
+	  // Text to be typed
+	  const text = " Explore  our selection Of Luxury T-Shirts";
+
+	  // Reference to the H1 element
+	  const typewriterText = document.getElementById('typewriter-text');
+
+	  // Function to type each letter
+	  function typeLetter() {
+		  let index = 0;
+
+		  function type() {
+			  if (index < text.length) {
+				  typewriterText.textContent += text.charAt(index);
+				  index++;
+				  setTimeout(type, 200); // Adjust the speed of typing here
+			  } else {
+				  // After typing is complete, clear text after a delay and restart
+				  setTimeout(() => {
+					  typewriterText.textContent = "";
+					  typeLetter(); // Restart the typing effect
+				  }, 2000); // Wait 1 second before restarting
+			  }
+		  }
+
+		  type();
+	  }
+
+	  // Start typing after the page loads
+	  window.onload = typeLetter;

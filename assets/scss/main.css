@@ -1259,6 +1259,7 @@ input[type=color] {
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 70px;
+  animation: moveBackground 4s linear infinite;
 }
 
 .hero__area-2 {
@@ -1344,6 +1345,35 @@ input[type=color] {
   bottom: 55px;
   display: block;
   left: 5%;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(20px) translateX(20px);
+  }
+  50% {
+    transform: translateY(40px) translateX(0);
+  }
+  75% {
+    transform: translateY(20px) translateX(20px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateX(20px);
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .category-1 {
