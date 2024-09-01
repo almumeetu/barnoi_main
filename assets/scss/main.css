@@ -1660,24 +1660,8 @@ input[type=color] {
   right: 33px !important;
 }
 
-.blog__area {
-  margin-top: 120px;
-}
-.blog__area .blog-image {
-  max-width: 100%;
-  height: auto;
-}
-.blog__area .blog-post {
-  padding: 15px;
-}
-.blog__area .blog-date {
-  font-size: 0.9rem;
-  color: #999;
-}
-.blog__area .blog-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin: 10px 0;
+.blog-post > img {
+  width: 100%;
 }
 
 .main__title {

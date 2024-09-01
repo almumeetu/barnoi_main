@@ -2,23 +2,9 @@
 
 // 05 Blog CSS START
 
-.blog__area {
-    margin-top: 120px;
-    .blog-image {
-        max-width: 100%;
-        height: auto;
-    }
-    .blog-post {
-        padding: 15px;
-    }
-    .blog-date {
-        font-size: 0.9rem;
-        color: #999;
-    }
-    .blog-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin: 10px 0;
+.blog-post {
+    > img{
+        width: 100%;
     }
 }
 
