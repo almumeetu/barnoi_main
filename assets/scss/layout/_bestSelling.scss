@@ -54,6 +54,11 @@
             align-items: center;
             background: #F8F8F8;
             border-radius: 12px; 
+            border: 1px solid var(--st-common-white);
+            transition: border-color 0.5s ease, color 0.5s ease;
+            &:hover{
+                border-color: rgba(243, 97, 39, 0.244);
+            }
             &:hover .b__product-img img{
                 transform: scale(1.1) translate(4px, 4px); /* Zooms in the image and translates it */
             }
