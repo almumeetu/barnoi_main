@@ -1663,40 +1663,21 @@ input[type=color] {
 .blog__area {
   margin-top: 120px;
 }
-.blog__area .blog {
-  cursor: pointer;
-  width: 98%;
+.blog__area .blog-image {
+  max-width: 100%;
+  height: auto;
 }
-.blog__area .blog .blog__img {
-  overflow: hidden !important;
-  border-radius: 15px;
+.blog__area .blog-post {
+  padding: 15px;
 }
-.blog__area .blog .blog__img:hover img {
-  transform: scale(1.1) translate(4px, 4px);
+.blog__area .blog-date {
+  font-size: 0.9rem;
+  color: #999;
 }
-.blog__area .blog .blog__img img {
-  height: 800px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  border-radius: 15px;
-  transition: transform 0.4s ease, translate 0.4s ease;
-}
-.blog__area .blog .blog__img .blog__content .blog__post-date {
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-.blog__area .blog .blog__img .blog__content .blog__post-date span {
-  font-size: 18px;
-  color: #757589;
-  word-spacing: 4px;
-}
-.blog__area .blog .blog__img .blog__content .blog__post-title h4 {
-  line-height: 47px;
-  transition: all ease-in 0.3s;
-}
-.blog__area .blog .blog__img .blog__content .blog__post-title h4:hover {
-  color: var(--st-theme-1);
+.blog__area .blog-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .main__title {
@@ -1903,7 +1884,7 @@ input[type=color] {
   }
 }
 .shipping__info .container {
-  max-width: 1500px;
+  max-width: 90%;
 }
 .shipping__info .free__shipping {
   padding: 20px;

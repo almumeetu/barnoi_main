@@ -4,49 +4,21 @@
 
 .blog__area {
     margin-top: 120px;
-
-    .blog {
-        cursor: pointer;
-        width: 98%;
-
-        .blog__img {
-            overflow: hidden !important;
-            border-radius: 15px;
-            &:hover img {
-                transform: scale(1.1) translate(4px, 4px);
-            }
-            img {
-                height: 800px;
-                object-fit: cover;
-                width: 100%;
-                border-radius: 15px;
-                transition: transform 0.4s ease, translate 0.4s ease;
-            }
-
-            .blog__content {
-                .blog__post-date {
-                    padding-top: 10px;
-                    padding-bottom: 15px;
-
-                    span {
-                        font-size: 18px;
-                        color: #757589;
-                        word-spacing: 4px;
-                    }
-                }
-
-                .blog__post-title {
-                    h4 {
-                        line-height: 47px;
-                        transition: all ease-in .3s;
-
-                        &:hover {
-                            color: var(--st-theme-1);
-                        }
-                    }
-                }
-            }
-        }
+    .blog-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .blog-post {
+        padding: 15px;
+    }
+    .blog-date {
+        font-size: 0.9rem;
+        color: #999;
+    }
+    .blog-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 10px 0;
     }
 }
 
