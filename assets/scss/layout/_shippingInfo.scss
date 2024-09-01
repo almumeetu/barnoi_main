@@ -33,6 +33,9 @@
 
 // 10. CTA CSS START HERE
 .cta__section{
+    @media #{$xs,$sm}{
+        padding-bottom: 200px;
+    }
     h3{
         color: var(--st-common-white);
     }
@@ -42,13 +45,17 @@
     form{
         margin-top: 30px;
         input[type="email"]{
-           padding: 0 30px;
+           padding: 0 15px;
             border-radius: 10px 0  0 10px;
             border: none;
             outline: none;
             height: 50px;
             &::placeholder{
                 color: var(--st-grey-1);
+            }
+            @media #{$xs,$sm}{
+                width: 60%;
+               
             }
         }
         button{
@@ -61,6 +68,10 @@
             padding: 0 30px;
             border-radius: 0 10px 10px 0;
             outline: none;
+            @media #{$xs,$sm}{
+                padding: 0 15px;
+               
+            }
         }
     }
 }
@@ -76,13 +87,26 @@
     padding: 30px 20px;
     margin-top: -35px;
     border-radius: 10px;
+    @media #{$xs,$sm}{
+       margin-top: -140px;
+    }
     .social__icon-f{
         nav{
             ul{
                 display: flex;
+                @media #{$lg,$md,$sm,$xs}{
+                    justify-content: center;
+                    margin-bottom: 25px;
+                }
                 li{
                     margin: 0 15px;
                     list-style: none;
+                    @media #{$xs}{
+                        margin: 0 7px;
+                    }
+                    @media #{$sm}{
+                        margin: 0 10px;
+                    }
                     i{
                         font-size: 30px;
                         color: var(--st-heading-primary);
@@ -94,6 +118,16 @@
                         background-color: #F2F4F7;
                         border-radius: 50%;
                         transition: background-color 0.3s ease-in, color 0.3s ease-in-out;
+                        @media #{$xs}{
+                            width: 30px;
+                            height: 30px;
+                            font-size: 24px;
+                        }
+                        @media #{$sm}{
+                            width: 35px;
+                            height: 35px;
+                            font-size: 26px;
+                        }
                         &:hover{
                             background: var(--st-theme-1);
                             color: var(--st-common-white);
@@ -108,12 +142,20 @@
             display: flex;
             justify-content: end;
             align-items: center;
+            @media #{$lg,$md,$sm,$xs}{
+                justify-content: center;
+            }
+            @media #{$xs,$sm}{
+                flex-direction: column;
+            }
             li{
                 list-style: none;
                 padding-left: 27px;
+                @media #{$xs,$sm}{
+                    padding: 10px 0;
+                }
                 a{
                     color: #414652;
-                    font-weight: 500;
                     &:hover{
                         color: var(--st-theme-1);
                     }
