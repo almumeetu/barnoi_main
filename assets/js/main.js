@@ -538,27 +538,48 @@ var swiper = new Swiper(".mySwipers", {
 		evt.currentTarget.className += " active";
 	  } 
 
+
+
+
+
 	  // Single Product Tab
-	  const imgs = document.querySelectorAll('.img-select a');
-	  const imgBtns = [...imgs];
-	  let imgId = 1;
+	  class ProductTab {
+		constructor(tabElement) {
+		  this.tabElement = tabElement;
+		  this.imgs = this.tabElement.querySelectorAll('.img-select a');
+		  this.imgBtns = [...this.imgs];
+		  this.imgId = 1;
+		  this.init();
+		}
 	  
-	  imgBtns.forEach((imgItem) => {
-		  imgItem.addEventListener('click', (event) => {
+		init() {
+		  this.imgBtns.forEach((imgItem) => {
+			imgItem.addEventListener('click', (event) => {
 			  event.preventDefault();
-			  imgId = imgItem.dataset.id;
-			  slideImage();
+			  this.imgId = imgItem.dataset.id;
+			  this.slideImage();
+			});
 		  });
-	  });
 	  
-	  function slideImage(){
-		  const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+		  window.addEventListener('resize', () => this.slideImage());
+		  this.slideImage(); // Initial call to set the correct image on load
+		}
 	  
-		  document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+		slideImage() {
+		  const displayWidth = this.tabElement.querySelector('.img-showcase img:first-child').clientWidth;
+		  this.tabElement.querySelector('.img-showcase').style.transform = `translateX(${- (this.imgId - 1) * displayWidth}px)`;
+		}
 	  }
 	  
-	  window.addEventListener('resize', slideImage);
+	  // Initialize multiple instances
+	  document.addEventListener('DOMContentLoaded', () => {
+		const productTabs = document.querySelectorAll('.product-imgs');
+		productTabs.forEach(tabElement => new ProductTab(tabElement));
+	  });
+	  
 
+
+	  
 
 
 	  //Flip SLider JS
@@ -638,24 +659,24 @@ function typewriterEffect(elementId, text) {
 	  
 //HERO SLIDER
 var swiper = new Swiper(".myProducts", {
-	loop: true, // Enable continuous loop mode
+	// loop: true, // Enable continuous loop mode
 	spaceBetween: 10,
-	centeredSlides: true,
-	autoplay: {
-	  delay: 4000,
-	  disableOnInteraction: false,
-	},
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	  renderBullet: function (index, className) {
-		return '<span class="' + className + '">' + (index + 1) + '</span>';
-	  },
-	},
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
-	},
+	// centeredSlides: true,
+	// autoplay: {
+	//   delay: 4000,
+	//   disableOnInteraction: false,
+	// },
+	// pagination: {
+	//   el: ".swiper-pagination",
+	//   clickable: true,
+	//   renderBullet: function (index, className) {
+	// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
+	//   },
+	// },
+	// navigation: {
+	//   nextEl: ".swiper-button-next",
+	//   prevEl: ".swiper-button-prev",
+	// },
 	speed: 1000,
   });
   
