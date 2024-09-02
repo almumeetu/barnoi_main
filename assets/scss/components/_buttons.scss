@@ -255,3 +255,19 @@
 		color: var(--st-common-white);
 	}
 }
+.main__btn{
+	background-color:  var(--st-theme-1);
+	color: var(--st-common-white);
+	border: 1px solid var(--st-theme-1);
+	font-size: 18px;
+	line-height: 27px;
+	padding: 8px 20px;
+	font-weight: 600;
+	border-radius: 7px;
+	transition: border .4s ease-in-out, color .4s ease-in-out, background-color .4s ease-in-out !important;
+	&:hover{
+		border-color: var(--st-theme-1);
+		background-color: var(--st-common-white);
+		color: var(--st-theme-1);
+	}
+}

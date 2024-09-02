@@ -1,0 +1,105 @@
+@use '../utils' as *;
+
+
+//   10. LIMITED OFFER CSS START
+
+.offer__left{
+    .product-imgs{
+        flex-direction: row-reverse;
+        .img-display{
+            overflow: hidden;
+            .img-showcase{
+                display: flex;
+                width: 100%;
+                transition: all 0.5s ease;
+                background: #FAFAFB;
+
+                img{
+                    min-width: 100%;
+                    height: 645px;
+                    object-fit: contain;
+                    background: #FAFAFB;
+                    padding: 30px 0;
+                }
+            }
+        }
+        .img-select{
+            display: flex;
+            flex-direction: column;
+            .img-item{
+                margin: 0.3rem;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                background: #FAFAFB;
+                border: 1px solid #e7e7f4;
+                padding: 2px 0;
+            }
+        }
+    }
+    .offer__content{
+        background: #FAFAFB;
+    }
+}
+.offer__content{
+    span{
+        font-size: 14px;
+        padding-bottom: 10px;
+        display: block;
+    }
+    h4{
+        padding-bottom: 5px;
+    }
+    .product__reviews{
+        i{
+            color: #FDB022;
+            margin-right: 5px;
+        }
+        padding-bottom: 40px;
+    }
+    p{
+        padding-bottom: 25px;
+    }
+    .price{
+        color: var(--st-theme-1);
+        line-height: 0;
+        margin-bottom: 72px;
+    }
+    .counters{
+        margin-bottom: 40px;
+        .count{
+            width: 108px;
+            height: 124px;
+            border: 1px solid #E6E9F0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h3{
+                margin: 0;
+            }
+            span{}
+        }
+    }
+    .add__cart-btn{
+        i{
+            font-size: 30px;
+            color: var(--st-theme-1);
+            &:hover{
+                color: var(--st-heaing-primary);
+            }
+        }
+    }
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.offer__left img{
+    width: 100%;
+}

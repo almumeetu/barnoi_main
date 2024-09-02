@@ -515,7 +515,7 @@ var swiper = new Swiper(".mySwipers", {
 		speed: 1000,
 	  });
 
-	  // {r033DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFGY	C} JS
+	  // TAB JS
 
 	  function openCity(evt, cityName) {
 		// Declare all variables
@@ -537,6 +537,28 @@ var swiper = new Swiper(".mySwipers", {
 		document.getElementById(cityName).style.display = "block";
 		evt.currentTarget.className += " active";
 	  } 
+
+	  // Single Product Tab
+	  const imgs = document.querySelectorAll('.img-select a');
+	  const imgBtns = [...imgs];
+	  let imgId = 1;
+	  
+	  imgBtns.forEach((imgItem) => {
+		  imgItem.addEventListener('click', (event) => {
+			  event.preventDefault();
+			  imgId = imgItem.dataset.id;
+			  slideImage();
+		  });
+	  });
+	  
+	  function slideImage(){
+		  const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+	  
+		  document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+	  }
+	  
+	  window.addEventListener('resize', slideImage);
+
 
 
 	  //Flip SLider JS
@@ -614,3 +636,26 @@ function typewriterEffect(elementId, text) {
 	  });
 	  
 	  
+//HERO SLIDER
+var swiper = new Swiper(".myProducts", {
+	loop: true, // Enable continuous loop mode
+	spaceBetween: 10,
+	centeredSlides: true,
+	autoplay: {
+	  delay: 4000,
+	  disableOnInteraction: false,
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	  renderBullet: function (index, className) {
+		return '<span class="' + className + '">' + (index + 1) + '</span>';
+	  },
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	speed: 1000,
+  });
+  
