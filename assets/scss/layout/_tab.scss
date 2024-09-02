@@ -100,7 +100,7 @@
   /* Style the buttons that are used to open the tab content */
   .tab button {
     color: var(--st-gray-1);
-    font-size: 32px;
+    font-size: 30px;
     line-height: 47px;
     font-weight: 500 !important;
     float: left;
@@ -108,11 +108,13 @@
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    margin-right: 40px;
+    margin-right: 30px;
     border-bottom: 1px solid #ccc;
-    @media #{$md,$sm,$lg,$xl}{
+    padding: 0 !important;
+    @media #{$md,$sm,$lg,$xl,$xxl}{
         font-size: 24px;
-         
+        padding: 0;
+        margin-right: 20px;
       }
       @media #{$xs}{
         font-size: 18px;

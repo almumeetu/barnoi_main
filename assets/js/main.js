@@ -10,11 +10,12 @@
 	"use strict";
 
 	var windowOn = $(window);
-	////////////////////////////////////////////////////
-	// 01. PreLoader Js
-	windowOn.on('load',function() {
-		$("#loading").fadeOut(500);
-	});
+////////////////////////////////////////////////////
+// 01. PreLoader Js
+windowOn.on('load', function() {
+    $("#loading").fadeOut(500);
+});
+
 
 
 	// const colorInput = document.querySelector('input[type=color]');

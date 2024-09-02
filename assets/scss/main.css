@@ -751,7 +751,7 @@ section {
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .sub__title {
-    font-size: 18px;
+    font-size: 14px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -854,7 +854,9 @@ section {
   z-index: 999999;
   margin-top: 0px;
   top: 0px;
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #loading-center {
@@ -867,23 +869,58 @@ section {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 25%;
+  width: 20%;
   transform: translate(-50%, -50%);
 }
 
+.spinner {
+  animation: rotate 2s linear infinite;
+  width: 100px;
+  height: 100px;
+}
+
+.path {
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: -15;
+  }
+  100% {
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: -125;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   #loading-center-absolute {
-    width: 40%;
+    width: 30%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #loading-center-absolute {
-    width: 40%;
+    width: 30%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #loading-center-absolute {
-    width: 45%;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -894,107 +931,6 @@ section {
 @media (max-width: 575px) {
   #loading-center-absolute {
     width: 60%;
-  }
-}
-#loading {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 999999;
-  margin-top: 0px;
-  top: 0px;
-}
-
-#loading-center {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-#loading-center-absolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.object {
-  width: 20px;
-  height: 20px;
-  background-color: #5f3afc;
-  border-radius: 50% 50% 50% 50%;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: absolute;
-}
-
-#object_one {
-  animation: object 2s linear infinite;
-}
-
-#object_two {
-  animation: object 2s linear infinite -0.4s;
-}
-
-#object_three {
-  animation: object 2s linear infinite -0.8s;
-}
-
-#object_four {
-  animation: object 2s linear infinite -1.2s;
-}
-
-#object_five {
-  animation: object 2s linear infinite -1.6s;
-}
-@keyframes object {
-  0% {
-    left: 100px;
-    top: 0;
-  }
-  80% {
-    left: 0;
-    top: 0;
-  }
-  85% {
-    left: 0;
-    top: -20px;
-    width: 20px;
-    height: 20px;
-  }
-  90% {
-    width: 40px;
-    height: 15px;
-  }
-  95% {
-    left: 100px;
-    top: -20px;
-    width: 20px;
-    height: 20px;
-  }
-  100% {
-    left: 100px;
-    top: 0;
-  }
-}
-.loading-icon .loading-logo {
-  width: 64px;
-  height: 64px;
-  animation: ghurche 4s linear infinite -1.2s;
-}
-
-@media (max-width: 575px) {
-  .loading-icon .loading-logo {
-    margin-bottom: 10px;
-  }
-}
-@keyframes ghurche {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 /*--
@@ -1267,9 +1203,14 @@ section {
   text-align: center;
   padding: 30px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .mobile__menu {
+    top: 145px;
+  }
+}
 @media (max-width: 575px) {
   .mobile__menu {
-    top: 252px;
+    top: 187px;
   }
 }
 .mobile__menu nav ul li {
@@ -1289,6 +1230,11 @@ section {
 
 .header__area .header__top-area {
   background: #111827;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .header__area .header__top-area {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
   .header__area .header__top-area .top__nav {
@@ -1842,6 +1788,8 @@ section {
 .small__p-wrapper .f__product-small .f__product-img img {
   padding: 30px 0;
   height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 575px) {
   .small__p-wrapper .f__product-small .f__product-img img {
@@ -2235,7 +2183,7 @@ section {
 /* Style the buttons that are used to open the tab content */
 .tab button {
   color: var(--st-gray-1);
-  font-size: 32px;
+  font-size: 30px;
   line-height: 47px;
   font-weight: 500 !important;
   float: left;
@@ -2243,12 +2191,15 @@ section {
   outline: none;
   cursor: pointer;
   transition: 0.3s;
-  margin-right: 40px;
+  margin-right: 30px;
   border-bottom: 1px solid #ccc;
+  padding: 0 !important;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1600px) {
   .tab button {
     font-size: 24px;
+    padding: 0;
+    margin-right: 20px;
   }
 }
 @media (max-width: 575px) {

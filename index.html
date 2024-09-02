@@ -23,8 +23,6 @@
    <link rel="stylesheet" href="assets/css/ui-icon.css">
    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="dist/style.css/main.css">
-   <link rel="stylesheet" href="/dist/style.css/main.css">
    <link rel="stylesheet" href="/assets/scss/main.css">
 </head>
 
@@ -36,11 +34,14 @@
    <!-- pre loader area start -->
    <div id="loading">
       <div id="loading-center">
-         <div id="loading-center-absolute">
-            <!-- loading content here -->
-         </div>
+          <div id="loading-center-absolute">
+              <svg class="spinner" viewBox="0 0 50 50">
+                  <circle class="path" cx="25" cy="25" r="20" fill="none" stroke="#5f3afc" stroke-width="5"/>
+              </svg>
+          </div>
       </div>
-   </div>
+  </div>
+  
    <!-- pre loader area end -->
 
    <!-- back to top start -->
@@ -488,7 +489,7 @@
       <section class="tab__area">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+               <div class="col-xl-7 col-lg-12 col-md-12 col-12">
                   <div class="section__title">
                      <span class="sub__title">
                         Discover the latest trends
@@ -498,7 +499,7 @@
                      </h2>
                   </div>
                </div>
-               <div class="col-xl-6 col-lg-12 col-md-12 col-12 p-relative">
+               <div class="col-xl-5 col-lg-12 col-md-12 col-12 p-relative">
                   <!-- Tab links -->
                   <div class="tab p-absolute">
                      <button class="tablinks active" onclick="openCity(event, 'London')">New
@@ -1747,7 +1748,7 @@
             <div class="f__products-wrapper">
                <div class="row">
                   <div class="col-xl-6">
-                     <div class="swiper mySwiperr product__carousel mb-30">
+                     <div class="swiper mySwiperr product__carousel">
                         <div class="swiper-wrapper">
                            <div class="swiper-slide f__product ">
                               <div class="f__product-img f__product-1 text-center">

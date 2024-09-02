@@ -8,6 +8,9 @@
 }
 .header__area{
 	.header__top-area{
+		@media #{$sm,$xs}{
+			display: none;
+		  }
 		background: #111827;
 		.top__nav{
 			@media #{$xs}{

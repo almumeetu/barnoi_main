@@ -116,6 +116,7 @@
             img{
                 padding: 30px 0;
                 height: 450px;
+                object-fit: contain;
                 @media #{$xs}{
                     padding: 5px 0;
                     height: 250px;

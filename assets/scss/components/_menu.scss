@@ -316,8 +316,11 @@
 	top: 188px;
 	text-align: center;
 	padding: 30px;
+    @media #{$sm}{
+        top: 145px;
+      }
     @media #{$xs}{
-        top: 252px;
+        top: 187px;
          
       }
     nav{
