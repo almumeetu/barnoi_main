@@ -42,6 +42,9 @@
     }
 }
 .offer__content{
+    @media #{$xs,$sm,$md, $lg}{
+       padding-left: 0;
+    }
     span{
         font-size: 14px;
         padding-bottom: 10px;

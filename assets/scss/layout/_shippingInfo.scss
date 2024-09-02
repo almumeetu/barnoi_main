@@ -4,6 +4,10 @@
 //   09. Shipping CSS START
 
 .shipping__info{
+    @media #{$xs,$sm}{
+       padding-top: 50px;
+       padding-bottom: 0;
+    }
     .container{
         max-width: 90%;
     }
@@ -35,9 +39,21 @@
 .cta__section{
     @media #{$xs,$sm}{
         padding-bottom: 200px;
+        padding-top: 35px;
     }
     h3{
         color: var(--st-common-white);
+        @media #{$xs,$sm,$md}{
+            font-size: 40px;
+            line-height: 50px;
+            padding-top: 20px;
+           
+        }
+        @media #{$xs,$sm}{
+            padding-top: 50px;
+           
+        }
+        
     }
     p{
         color: var(--st-common-white);

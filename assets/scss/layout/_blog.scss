@@ -2,7 +2,19 @@
 
 // 05 Blog CSS START
 
+.blog-show {
+    .blog__author{
+        a{
+            @media #{$xs,$sm,$md, $lg}{
+                margin-top: 15px;
+            }
+        }
+    }
+}
 .blog-post {
+    @media #{$xs,$sm,$md, $lg}{
+        margin-bottom: 30px;
+    }
     .blog__img{
         border-radius: 24px;
         overflow: hidden;
@@ -20,13 +32,22 @@
         &:hover{
             color: var(--st-theme-1);
         }
+        @media #{$xs,$sm,$md,$lg}{
+            margin-top: 5px;
+        }
         a{
             display: flex;
             align-items: center;
-            word-spacing: 2px;
+            font-size: 14px;
             img{
                 margin-right: 10px;
+                @media #{$xs,$sm,$md,$lg,$xl,$xxl}{
+                    margin-left: 5px;
+                    margin-right: 5px;
+                   
+                }
             }
+
         }
     }
     .small__blog-author {
@@ -34,9 +55,19 @@
         a{
             line-height: 40px;
         }
+        h4{
+            @media #{$xs,$sm,$md,$lg}{
+                margin-top: 15px;
+            }
+        }
     }
     h4{
         transition: color .4s ease-in-out;
+        @media #{$xs,$sm,$md,$lg,$xl}{
+           font-size: 25px;
+           line-height: 40px;
+           
+        }
         &:hover{
             color: var(--st-theme-1);
         }
@@ -49,4 +80,19 @@
 }
 .main__title {
     text-transform: capitalize;
+}
+.f__product-small{
+    @media #{$xs}{
+       margin-bottom: 30px;
+        
+     }
+}
+
+
+.small__p-wrapper{
+    margin-bottom: 30px;
+    @media #{$md,$sm,$lg,$xl,$xxl, $xxxl}{
+       margin-bottom: 30px;
+        
+     }
 }
