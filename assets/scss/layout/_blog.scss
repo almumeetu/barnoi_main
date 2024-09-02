@@ -87,7 +87,13 @@
         
      }
 }
-
+.blog-show{
+    .blog__author{
+        @media #{$xs,$sm}{}
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+}
 
 .small__p-wrapper{
     margin-bottom: 30px;

@@ -220,6 +220,10 @@
 	font-weight: 600;
 	border-radius: 7px;
 	display: block !important;
+	@media #{$xs,$sm}{
+		padding: 10px 15px;
+		font-size: 14px;
+	}
 	&:hover{
 		color: var(--st-heading-primary);
 	}
@@ -235,8 +239,17 @@
 	font-size: 18px;
 	line-height: 27px;
 	margin-top: 15px;
+	@media #{$xs,$sm}{
+		font-size: 14px;
+		width: 102px;
+	}
 	&:hover{
 		color: var(--st-heading-primary);
+	}
+}
+.simple__button{
+	@media #{$xs,$sm}{
+		font-size: 14px !important;
 	}
 }
 .view__btn{
@@ -270,4 +283,18 @@
 		background-color: var(--st-common-white);
 		color: var(--st-theme-1);
 	}
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+
+	@media #{$lg, $md,$sm, $xs}{
+		display: none;
+    }
+}
+#typewriter-text1,
+#typewriter-text2,
+#typewriter-text3{
+	@media #{$lg, $md,$sm, $xs}{
+		margin-bottom: 0 !important;
+    }
 }

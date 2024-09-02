@@ -620,6 +620,12 @@ input[type=color] {
   border-radius: 7px;
   display: block !important;
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .explore__btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
 .explore__btn:hover {
   color: var(--st-heading-primary);
 }
@@ -636,8 +642,20 @@ input[type=color] {
   line-height: 27px;
   margin-top: 15px;
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .shop__btn {
+    font-size: 14px;
+    width: 102px;
+  }
+}
 .shop__btn:hover {
   color: var(--st-heading-primary);
+}
+
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .simple__button {
+    font-size: 14px !important;
+  }
 }
 
 .view__btn {
@@ -674,23 +692,94 @@ input[type=color] {
   color: var(--st-theme-1);
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  #typewriter-text1,
+  #typewriter-text2,
+  #typewriter-text3 {
+    margin-bottom: 0 !important;
+  }
+}
+
+section {
+  padding-top: 7rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  section {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  section {
+    padding-top: 3rem;
+  }
+}
+
+.shipping__info {
+  padding-bottom: 7rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .shipping__info {
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .shipping__info {
+    padding-bottom: 3rem;
+  }
+}
+
 .section__title span {
   margin-bottom: 40px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .section__title span {
+    margin-bottom: 15px;
+  }
 }
 
 .sub__title {
   font-size: 30px;
   font-weight: 600;
   color: var(--st-theme-1);
+  display: block;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .sub__title {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sub__title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sub__title {
+    font-size: 28px;
+  }
 }
 
 .main__title {
   line-height: 90px;
 }
-@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 575px) {
+  .main__title {
+    font-size: 30px !important;
+    line-height: 38px !important;
+    padding-bottom: 20px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .main__title {
     font-size: 35px !important;
     line-height: 45px !important;
+    padding-bottom: 30px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -710,16 +799,22 @@ input[type=color] {
 }
 
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tab__title {
+    padding-bottom: 50px !important;
+  }
+}
+
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   h3 {
-    font-size: 35px !important;
-    line-height: 45px !important;
+    font-size: 30px !important;
+    line-height: 40px !important;
   }
 }
 
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   h4 {
-    font-size: 25px !important;
-    line-height: 35px !important;
+    font-size: 24px !important;
+    line-height: 34px !important;
   }
 }
 
@@ -919,6 +1014,11 @@ input[type=color] {
   padding: 5px 0;
   border-radius: 10px;
 }
+@media (max-width: 575px) {
+  .header__main-area .browse__categories {
+    width: 265px;
+  }
+}
 .header__main-area .browse__categories img {
   width: 25px;
   height: 25px;
@@ -931,6 +1031,12 @@ input[type=color] {
   background-color: transparent;
   line-height: 42px;
 }
+@media (max-width: 575px) {
+  .header__main-area .browse__categories .nice-select {
+    padding-left: 6px;
+    padding-right: 15px;
+  }
+}
 .header__main-area .browse__categories .nice-select::after {
   color: var(--st-heading-primary);
   font-weight: 600;
@@ -939,6 +1045,16 @@ input[type=color] {
 .header__main-area .main__menu ul {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header__main-area .main__menu ul {
+    margin-left: 70px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header__main-area .main__menu ul {
+    margin-left: 100px !important;
+  }
 }
 .header__main-area .main__menu ul li {
   list-style: none;
@@ -949,6 +1065,11 @@ input[type=color] {
   font-weight: 500;
   transition: color 0.3s, border-bottom 0.3s;
   position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header__main-area .main__menu ul li a {
+    font-size: 15px;
+  }
 }
 .header__main-area .main__menu ul li a:hover {
   color: var(--st-theme-1);
@@ -1121,6 +1242,47 @@ input[type=color] {
   border-right: 2px solid var(--st-theme-1);
 }
 
+#mobileMenu i {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .main__menu {
+    display: none;
+  }
+  #mobileMenu i {
+    display: block !important;
+    color: var(--st-common-white);
+  }
+}
+.mobile__menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 70vh;
+  display: none;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.9) !important;
+  top: 188px;
+  text-align: center;
+  padding: 30px;
+}
+@media (max-width: 575px) {
+  .mobile__menu {
+    top: 252px;
+  }
+}
+.mobile__menu nav ul li {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  color: var(--st-theme-1);
+  margin: 20px 0;
+}
+.mobile__menu nav ul li img {
+  margin-right: 5px;
+}
+
 .container-fluid {
   width: 90% !important;
 }
@@ -1266,7 +1428,7 @@ input[type=color] {
   }
 }
 .header__area .header__mid-area .wishlist__account ul li a img {
-  margin-right: 15px;
+  margin-right: 8px;
 }
 .header__area .header__mid-area .wishlist__account ul .wishlist {
   position: relative;
@@ -1345,6 +1507,12 @@ input[type=color] {
   padding-top: 70px;
   background-color: #FEF6F2 !important;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .hero__area {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem;
+  }
+}
 .hero__area .swiper-button-next,
 .hero__area .swiper-button-prev {
   display: none;
@@ -1352,6 +1520,11 @@ input[type=color] {
 .hero__area p {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .hero__area p {
+    padding-top: 0 !important;
+  }
 }
 .hero__area .heroBtn__wrapper .simple__button {
   font-size: 18px;
@@ -1507,8 +1680,23 @@ input[type=color] {
 .category {
   overflow: hidden;
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .category {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .category {
+    height: 320px;
+  }
+}
 .category:hover .category__img img {
   transform: scale(1.1) translate(5px, 5px); /* Zooms in the image and translates it */
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .category .category__author {
+    padding-left: 15px;
+  }
 }
 .category .category__author h5 {
   font-size: 30px;
@@ -1517,7 +1705,12 @@ input[type=color] {
   margin-bottom: 30px !important;
 }
 .category .category__author .count__products {
-  bottom: -110px;
+  bottom: -90px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px), (max-width: 575px) {
+  .category .category__author .count__products {
+    bottom: -40px;
+  }
 }
 .category .category__author .count__products a {
   display: flex;
@@ -1530,8 +1723,14 @@ input[type=color] {
 .category .category__author .count__products a img {
   margin-right: 8px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px), (max-width: 575px) {
+  .category .category__author .count__products a {
+    font-size: 14px;
+  }
+}
 .category .category__img img {
   transition: transform 0.4s ease, translate 0.4s ease;
+  width: 100%;
 }
 
 .social__engage .social__engage-wrapper {
@@ -1844,6 +2043,10 @@ input[type=color] {
   }
 }
 
+.blog-show .blog__author {
+  flex-direction: column !important;
+  align-items: start !important;
+}
 .small__p-wrapper {
   margin-bottom: 30px;
 }
@@ -1940,6 +2143,13 @@ input[type=color] {
   margin: 0;
 }
 
+@media (max-width: 400px) {
+  .tab__area .main__title {
+    font-size: 25px !important;
+    line-height: 30px !important;
+    margin-bottom: 50px !important;
+  }
+}
 .tab__area .tab__product .f__product-img {
   background: #f8f8f8;
   text-align: center;
@@ -2009,6 +2219,18 @@ input[type=color] {
   right: 0;
   bottom: 80px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tab {
+    left: 13px;
+    bottom: -11px;
+  }
+}
+@media (max-width: 575px) {
+  .tab {
+    bottom: 10px;
+    left: 13px;
+  }
+}
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
@@ -2023,6 +2245,22 @@ input[type=color] {
   transition: 0.3s;
   margin-right: 40px;
   border-bottom: 1px solid #ccc;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tab button {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .tab button {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .tab button {
+    margin-right: 15px;
+  }
 }
 .tab button:last-child {
   margin-right: 0;
@@ -2052,12 +2290,23 @@ input[type=color] {
     opacity: 1;
   }
 }
-@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
-  .shipping__info {
-    padding-top: 50px;
-    padding-bottom: 0;
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tabcontent {
+    margin-top: 50px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tabcontent .tab__product {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .current__price {
+    font-size: 18px !important;
+  }
+}
+
 .shipping__info .container {
   max-width: 90%;
 }

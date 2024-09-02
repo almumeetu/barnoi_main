@@ -679,4 +679,10 @@ var swiper = new Swiper(".myProducts", {
 	// },
 	speed: 1000,
   });
-  
+
+
+  $(function() {
+	$('.toggler').on('click', function() {
+	  $('.mobile__menu').stop().slideToggle(500); // Adjust the duration as needed
+	});
+  });

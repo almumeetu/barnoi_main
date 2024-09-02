@@ -4,10 +4,6 @@
 //   09. Shipping CSS START
 
 .shipping__info{
-    @media #{$xs,$sm}{
-       padding-top: 50px;
-       padding-bottom: 0;
-    }
     .container{
         max-width: 90%;
     }
