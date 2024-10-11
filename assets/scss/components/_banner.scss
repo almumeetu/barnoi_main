@@ -1,0 +1,123 @@
+@use '../utils' as *;
+
+//Banner Css Start Here
+
+.banner{
+    .banner__wrapper{
+        overflow: hidden;
+        background: #FAFAFB;
+        .banner__content{
+            padding-left: 100px;
+
+            .section__title{
+                .sub__title{
+                    font-size: 32px !important;
+                    line-height: 40px !important;
+                    margin-bottom: 0 !important;
+                }
+                h1{
+                    font-size: 60px !important;
+                    line-height: 80px !important;
+                    margin-bottom: 15px;
+                }
+            }
+            .banner__p{
+                p{
+                    color: var(--gray-color-60, #70747D);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-bottom: 60px !important;
+                }
+            }
+            .banner__btn{
+                a{
+                    display: inline !important;
+                }
+            }
+            .banner__social{
+                margin-top: 100px;
+                p{
+                    color: var(--gray-color-100, #111827);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                    margin: 0;
+                }
+                .p__social-icon {
+                    padding-left: 8px;
+                }
+    
+            }
+        }
+        .banner__image{
+            padding-bottom: 30px;
+            .main__iimg{
+                position: relative;
+                z-index: 1;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 924px;
+                top: -228px;
+                height: 919px;
+                left: 34px;
+                background-color: var(--st-theme-1);
+                border-radius: 50%;
+            }
+            & > img{
+                width: 920px;
+                height: 920px;
+                border-radius: 50%;
+                margin-top: -242px;
+                margin-left: 48px;
+                position: relative;
+                object-fit: cover;
+                z-index: 1;
+                // width: 100%;
+                // position: relative;
+
+            }
+            .banner__circle{
+                top: -89px;
+                right: -160px;
+                z-index: 2;
+                width: 500px;
+                height: 500px;
+                background: #fafafb;
+                border-radius: 50%;
+                overflow: hidden;
+                padding-left: 115px;
+                padding-top: 100px;
+                h2{
+                    font-size: 4rem;
+                    font-weight: bold;
+                    color: transparent;
+                    -webkit-text-stroke: 2px var(--st-theme-1); 
+                    margin: 20px;
+                    span{
+                        color: var(--st-theme-1);
+                    }
+                }
+            }
+            .banner__playbtn{
+                top: 71%;
+                left: 90px;
+                z-index: 2;
+            }
+            .right__overlay{
+                right: 0;
+                top: 48%;
+                z-index: 9;
+            }
+            .bottom_overlay{
+                z-index: 0;
+                bottom: 25px;
+                left: 155px;
+            }
+        }
+    }
+}
