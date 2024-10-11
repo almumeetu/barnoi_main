@@ -6,6 +6,7 @@
 .container-fluid{
 	width: 90% !important;
 }
+
 .header__area{
 	.header__top-area{
 		@media #{$sm,$xs}{
@@ -80,6 +81,7 @@
 				width: 200px;
 			}
 		}
+		
 		.search__bar{
 			height: 40px;
 			display: flex;

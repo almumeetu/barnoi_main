@@ -1,0 +1,981 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Orders</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/backtotop.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/ui-icon.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="/assets/css/spacing.css">
+    <link rel="stylesheet" href="/assets/scss/main.css">
+    <!-- <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/barnoi_main_v2(24_sept)/assets/scss/main.css"> -->
+    <link rel="stylesheet" href="/barnoi_main_v2(24_sept)/assets/css/style.css">
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+    <!-- pre loader area start -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <svg class="spinner" viewBox="0 0 50 50">
+                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke="#5f3afc" stroke-width="5" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- pre loader area end -->
+
+    <!-- back to top start -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- back to top end -->
+
+    <!-- header area start -->
+    <header>
+        <div class="header__area">
+            <div class="header__wrapper">
+                <div class="header__top-area">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
+                                <div class="top__nav">
+                                    <ul>
+                                        <li class="br"><a href="#">About
+                                                Us</a></li>
+                                        <li class="br"><a href="#">Order
+                                                Tracking</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="col-xxl-6 col-xl-4 col-lg-4 text-center d-none d-xxl-block d-xl-block d-lg-block text-center">
+                                <div class="header__notification">
+                                    <p class="notification">World's Fastest
+                                        Online Shopping Destination</p>
+                                    <p class="notification">Shop the latest
+                                        trends at unbeatable prices!</p>
+                                    <p class="notification">Fast, reliable
+                                        shipping right to your door.</p>
+                                    <p class="notification">Discover
+                                        thousands of products, all in one
+                                        place.</p>
+                                    <p class="notification">Enjoy a seamless
+                                        shopping experience online.</p>
+                                    <p class="notification">Exclusive deals
+                                        and discounts just for you!</p>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 ">
+                                <div class="lanCur__changer justify-content-end d-flex">
+                                    <select name="Language">
+                                        <option value="English">Language</option>
+                                        <option value="English">English</option>
+                                        <option value="Bangla">Bangla</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="French">French</option>
+                                        <option value="Duch">Duch</option>
+                                    </select>
+                                    <select name="Currency">
+                                        <option value="EUR">Euro
+                                            (EUR)</option>
+                                        <option value="GBP">British Pound
+                                            (GBP)
+                                        </option>
+                                        <option value="JPY">Japanese Yen
+                                            (JPY)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__mid-area">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-7 col-sm-7 col-12">
+                                <div class="logo">
+                                    <a href="#"><img src="/assets/img/logo/logo.png" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div
+                                class="col-xxl-6 col-xl-4 col-lg-4 d-none d-xxl-block d-xl-block d-lg-block text-center">
+                                <div class="search__bar">
+                                    <div class="search__category">
+                                        <div class="search__feild d-flex">
+                                            <input type="search" placeholder="Search a item">
+                                            <div class="search__icon">
+                                                <a href="#"><img src="/assets/img/icon/search-refraction.png"
+                                                        alt="search-icon"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 ">
+                                <div class="wishlist__account">
+                                    <ul>
+                                        <li class="account">
+                                            <a href="#"><img src="/assets/img/icon/account.png" alt="account-icon"></a>
+                                            Account
+                                        </li>
+                                        <li class="wishlist">
+                                            <a href="#"><img src="/assets/img/icon/wishlist.png"
+                                                    alt="wishlist-icon"></a>Wishlist
+                                        </li>
+                                        <li class="shop">
+                                            <a href="#"><img src="/assets/img/icon/shop.png" alt="shop-icon"></a>$00.00
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__main-area">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-xxxl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-10 col-sm-10 col-10 text-end">
+                                <div class="browse__categories">
+                                    <img src="/assets/img/icon/category-2.png" alt>
+                                    <select id="select" name="searchCatgory">
+                                        <option value="all" data-image="/assets/img/icon/category.png">Browse
+                                            all categories</option>
+                                        <option value="man">Man</option>
+                                        <option value="women">Women</option>
+                                        <option value="kid">Kids</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xxxl-6 col-xxl-7 col-xl-9 col-lg-9 col-md-2 col-sm-2 col-2">
+                                <div class="mobile__menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Home <i class="fa-sharp fa-thin fa-angle-down"></i></a></li>
+                                            <li>
+                                                <a href="#">Shop <i class="fa-sharp fa-thin fa-angle-down"></i></a>
+                                            </li>
+                                            <li><a href="#">Pages <i class="fa-sharp fa-thin fa-angle-down"></i></a>
+                                            </li>
+                                            <li><a href="#">Blog <i class="fa-sharp fa-thin fa-angle-down"></i></a></li>
+                                            <li><a href="#">On Sale</a></li>
+                                            <li>
+                                                <a href="#"><img src="/assets/img/icon/fire.png" alt="hot sale"> Hot
+                                                    Sale</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="/assets/img/icon/offer.png" alt="offer">
+                                                    Offer</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div id="mobileMenu" class="toggler text-end"><i class="fa fa-bars fa-2x"
+                                        aria-hidden="true"></i></div>
+                                <div class="main__menu">
+                                    <nav id="nav">
+                                        <ul>
+                                            <li class="menu-item">
+                                                <a href="#">Home <i class="fa-sharp fa-thin fa-angle-down"></i></a>
+                                                <div class="mega-menu home-mega-menu">
+                                                    <div class="mega-menu-content">
+                                                        <div class="section">
+                                                            <ul>
+                                                                <li><a href="#">Home
+                                                                        Style
+                                                                        1</a></li>
+                                                                <li><a href="#">Home
+                                                                        Style
+                                                                        2</a></li>
+                                                                <li><a href="#">Home
+                                                                        Style
+                                                                        3</a></li>
+                                                                <li><a href="#">Home
+                                                                        Style
+                                                                        4</a></li>
+                                                                <li><a href="#">Home
+                                                                        Style
+                                                                        5</a></li>
+                                                                <li><a href="#">Home
+                                                                        Style
+                                                                        6</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="section">
+                                                            <h2>Best
+                                                                Sellers</h2>
+                                                            <div class="images">
+                                                                <img src="/assets/img/mega/mega-menu2.png"
+                                                                    alt="Best Seller 2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">Shop <i class="fa-sharp fa-thin fa-angle-down"></i></a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">Pages <i class="fa-sharp fa-thin fa-angle-down"></i></a>
+                                                <div class="mega-menu pages-mega-menu">
+                                                    <div class="mega-menu-content">
+                                                        <div class="section">
+                                                            <h2>Our
+                                                                Services</h2>
+                                                            <div class="images br-t">
+                                                                <img src="/assets/img/mega/mega-menu3.png"
+                                                                    alt="Service 2">
+                                                            </div>
+                                                        </div>
+                                                        <div class="section">
+                                                            <h2>Special
+                                                                Offers</h2>
+                                                            <div class="images">
+                                                                <img src="/assets/img/mega/mega-menu4.png"
+                                                                    alt="Service 2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">Blog <i class="fa-sharp fa-thin fa-angle-down"></i></a>
+                                                <div class="mega-menu home-mega-menu">
+                                                    <div class="mega-menu-content">
+                                                        <div class="section">
+                                                            <ul>
+                                                                <li><a href="#">Blog
+                                                                        1</a></li>
+                                                                <li><a href="#">Blog
+                                                                        2</a></li>
+                                                                <li><a href="#">Blog
+                                                                        3</a></li>
+                                                                <li><a href="#">Blog
+                                                                        4</a></li>
+                                                                <li><a href="#">Blog
+                                                                        5</a></li>
+                                                                <li><a href="#">Blog
+                                                                        6</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="section">
+                                                            <h2>Best
+                                                                Sellers</h2>
+                                                            <div class="images">
+                                                                <img src="/assets/img/mega/mega-menu4.png"
+                                                                    alt="Best Seller 2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">On Sale</a></li>
+                                            <li>
+                                                <a href="#"><img src="/assets/img/icon/fire.png" alt="hot sale"> Hot
+                                                    Sale</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="/assets/img/icon/offer.png" alt="offer">
+                                                    Offer</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xxxl-3 col-xxl-2 d-none d-xxxl-block d-xxl-block">
+                                <div class="support__center d-flex align-items-center">
+                                    <img src="/assets/img/icon/headphone.png" alt="phone">
+                                    <div class="help__no">
+                                        <span>509-847-8119</span>
+                                        <p>24/7 Support Center</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <main>
+
+        <!-- Baner Start Here -->
+        <section class="shop__header"
+            style="background-image: url('assets/img/shop-page/Catagory Background Banner.png');">
+            <div class="container-fluid">
+                <div class="breadcrumb-container text-center">
+                    <h1 class="breadcrumb-title">My Account</h1>
+                    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a><i
+                                    class="fa-solid fa-arrow-right-long"></i></li>
+                            <li class="breadcrumb-item active"><a href="team-members.html">My Account</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Account Page Start Here -->
+        <section class="my__account mt-50">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="account__profile p-relative">
+                            <div class="account__img p-absolute">
+                                <a href="#"><img src="/assets/img/account/Image.png" alt="" srcset=""></a>
+                            </div>
+                            <div class="account__name text-center">
+                                <h5>Cameron Williamson</h5>
+                                <span class="username">
+                                    @cameron
+                                </span>
+                            </div>
+                            <div class="my__settings">
+                                <ul>
+                                    <li><a href="#"><i class="fa-sharp fa-light fa-user"></i> Account
+                                            Details</a>
+                                    </li>
+                                    <li class="active"><a href="#"><i class="fa-light fa-cart-shopping"></i> My
+                                            Orders</a></li>
+                                    <li><a href="#"><i class="fa-light fa-bell"></i> My Notifications</a></li>
+                                    <li><a href="#"><i class="fa-light fa-mobile"></i> My Promo Code</a></li>
+                                    <li><a href="#"><i class="fa-sharp fa-light fa-right-from-bracket"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="account__wrapper">
+                            <div class="title__sorts d-flex justify-content-between">
+                                <div class="wrapper__title">
+                                    <h4>My Orders</h4>
+                                </div>
+                                <div class="dropdown">
+                                    <div role="button" class="dropdown-toggle" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Newest
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                        <li><a class="dropdown-item" href="#">Comming</a></li>
+                                        <li><a class="dropdown-item" href="#">Latest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <details name="faq">
+                                <summary class="p-relative">
+                                    <div class="order__no border_t">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li>Order No: #56465 </li>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-4 col-12">
+                                                <li>Ordered Date: <span>25 June, 2024</span> </li>
+                                            </div>
+                                            <div class="col-xxl-2 col-md-2 col-12">
+                                                <li>Amount: <span> $564</span> </li>
+                                            </div>
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li class="statuss">In Progress</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="ordered__title d-flex justify-content-between align-items-center">
+                                        <h5>Items Ordered</h5>
+                                        <a href="#" class="explore__btn"> View Details</a>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-1.png" alt="Product image"></a>
+
+                                            <div class="products__des">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-2.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex ">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <details name="faq">
+                                <summary class="p-relative">
+                                    <div class="order__no">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li>Order No: #86465 </li>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-4 col-12">
+                                                <li>Ordered Date: <span>05 July, 2024</span> </li>
+                                            </div>
+                                            <div class="col-xxl-2 col-md-2 col-12">
+                                                <li>Amount: <span> $670</span> </li>
+                                            </div>
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li class="statuss completed">Completed</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="ordered__title d-flex justify-content-between align-items-center">
+                                        <h5>Items Ordered</h5>
+                                        <a href="#" class="explore__btn"> View Details</a>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-1.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-2.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <details name="faq">
+                                <summary class="p-relative">
+                                    <div class="order__no">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li>Order No: #26465 </li>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-4 col-12">
+                                                <li>Ordered Date: <span>08 June, 2024</span> </li>
+                                            </div>
+                                            <div class="col-xxl-2 col-md-2 col-12">
+                                                <li>Amount: <span> $164</span> </li>
+                                            </div>
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li class="statuss canceled">Canceled</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="ordered__title d-flex justify-content-between align-items-center">
+                                        <h5>Items Ordered</h5>
+                                        <a href="#" class="explore__btn"> View Details</a>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-1.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-2.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <details name="faq">
+                                <summary class="p-relative">
+                                    <div class="order__no">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li>Order No: #56465 </li>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-4 col-12">
+                                                <li>Ordered Date: <span>25 June, 2024</span> </li>
+                                            </div>
+                                            <div class="col-xxl-2 col-md-2 col-12">
+                                                <li>Amount: <span> $564</span> </li>
+                                            </div>
+                                            <div class="col-xxl-3 col-md-3 col-12">
+                                                <li class="statuss">In Progress</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="ordered__title d-flex justify-content-between align-items-center">
+                                        <h5>Items Ordered</h5>
+                                        <a href="#" class="explore__btn"> View Details</a>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-1.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                        <div class="ordered__product d-flex align-items-center">
+                                            <a class="ordered__product-img" href="#"><img
+                                                    src="/assets/img/account/product-2.png" alt="Product image"></a>
+
+                                            <div class="products__des ">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Floral Embroidery T-Shirt</h6>
+                                                        <div class="mini_reverse d-flex">
+                                                            <ul class="first_ul">
+                                                                <li>Price : <span>$120</span></li>
+                                                                <li>Subtotal : <span>$600</span></li>
+                                                            </ul>
+                                                            <ul class="second_ul">
+                                                                <li>Delivery Type : <span>Fast Delivery</span></li>
+                                                                <li>Estimated Delivery : <span>30 June, 2024 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordered__btn-wrapper">
+                                            <a href="#" class="view__btn"> Cancel Order</a>
+                                            <a href="#" class="explore__btn"> Buy Again</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- My Account Page End Here -->
+
+        <!-- Shipping Author Start Here -->
+        <section class="shipping__info">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="free__shipping d-flex align-items-center">
+                            <a href="#"><img src="/assets/img/shpping/shipping.png" alt="shipping icon"></a>
+                            <div class="shipping__content pl-20">
+                                <a href="#">
+                                    <h6>Free Shipping</h6>
+                                </a>
+                                <p>When ordering over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="free__shipping d-flex align-items-center">
+                            <a href="#"><img src="/assets/img/shpping/help-center.png" alt="shipping icon"></a>
+                            <div class="shipping__content pl-20">
+                                <a href="#">
+                                    <h6>24/7 Online Support</h6>
+                                </a>
+                                <p>Get 24/7 support as you want </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="free__shipping d-flex align-items-center">
+                            <a href="#"><img src="/assets/img/shpping/return.png" alt="shipping icon"></a>
+                            <div class="shipping__content pl-20">
+                                <a href="#">
+                                    <h6>Return & Refund </h6>
+                                </a>
+                                <p>Return money within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="free__shipping d-flex align-items-center">
+                            <a href="#"><img src="/assets/img/shpping/gift-vawcher.png" alt="shipping icon"></a>
+                            <div class="shipping__content pl-20">
+                                <a href="#">
+                                    <h6>Gift Vouchers</h6>
+                                </a>
+                                <p>20% off when you shop online </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shipping Author End Here -->
+
+        <!-- CTA SECTION START -->
+        <section
+            style="background-image: url(/assets/img/footer/cta-banner.png); background-repeat: no-repeat; background-position: center;"
+            class="cta__section pt-100 pb-100">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 text-center">
+                        <h3>Get Latest Updates & Big Deals</h3>
+                        <p>Sign up to your newsletters for all the
+                            latest update and our barnoi exclusive
+                            promotion.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email..." required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer__overlay">
+            <div class="social__events">
+                <div class="row align-items-center">
+                    <div class="col-xl-6">
+                        <div class="social__icon-f">
+                            <nav>
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div class="footer__navigations">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Privacy &
+                                            Cookies</a></li>
+                                    <li><a href="#">Terms &
+                                            Conditions</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA SECTION END -->
+    </main>
+
+    <!-- FOOTER START HERE -->
+    <footer>
+        <div class="footer__area pl-10 pb-0">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer__logo  pr-100">
+                        <div class="f__logo mb-40">
+                            <a href="#"><img src="/assets/img/logo/f-logo.png" alt></a>
+                        </div>
+                        <p>It is a long established fact that a reader will
+                            be distracted by the readable content of a page
+                            when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters, as opposed
+                            it look like readable English.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer__nav">
+                        <h6>Our Company</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Secure Payment</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer__nav">
+                        <h6>Shop</h6>
+                        <ul>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Men Fashion</a></li>
+                            <li><a href="#">Women Fashion</a></li>
+                            <li><a href="#"> Kids</a></li>
+                            <li><a href="#">Shop All</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 ">
+                    <div class="footer__nav footer__contact pl-50">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li class="d-flex"><i class="fa-regular fa-location-dot"></i>
+                                <a href="#">2558 Hardman Road,
+                                    Vermont, South Burlington, USA -
+                                    67452</a>
+                            </li>
+                            <li class="d-flex"> <i class="fa-regular fa-phone-plus"></i> <a
+                                    href="#">+02)-574-328-301</a></li>
+                            <li class="d-flex"> <i class="fa-light fa-envelopes-bulk"></i><a
+                                    href="#">info@yoursite.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright__section pl-10 pt-25">
+            <div class="c__text">
+                <p>Barnoi@ 2024. All Rights Reserved.</p>
+            </div>
+            <div class="payment__methods">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#"><img src="/assets/img/footer/visa.png" alt="paymentmethods-img"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/assets/img/footer/mastercard.png" alt="paymentmethods-img"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/assets/img/footer/amex.png" alt="paymentmethods-img"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/assets/img/footer/gpay.png" alt="paymentmethods-img"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/assets/img/footer/payonieer.png" alt="paymentmethods-img"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/assets/img/footer/satripe.png" alt="paymentmethods-img"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END HERE -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="/assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/shop.js"></script>
+    <script src="assets/js/pages/product__details.js"></script>
+    <script src="assets/js/pages/cart.js"></script>
+
+</body>
+
+</html>

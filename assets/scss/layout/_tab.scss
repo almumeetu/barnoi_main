@@ -4,7 +4,7 @@
 //   08. TAB CSS START
 
 
-.tab__area{
+.tab__area, .related__product{
     .main__title{
         @media #{$xxs}{
             font-size: 25px !important;
@@ -60,7 +60,7 @@
             }
         }
     }
-    .swiper-button-next{
+    .swiper-button-next,.swiper-button-prev{    
         display: block;
         right: 20px !important;
         i {

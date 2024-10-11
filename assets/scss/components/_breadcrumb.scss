@@ -4,3 +4,43 @@
 /*  24. BREADCRUMB CSS START
 /*----------------------------------------*/
 
+.shop__header {
+    background-size: cover; 
+    background-position: center;
+    padding: 80px 0 70px 0;
+    .breadcrumb-container {
+        .breadcrumb {
+            padding-top: 10px;
+            justify-content: center;
+            .active {
+                color: var(--st-theme-1);
+            }
+            .breadcrumb-item {
+                i {
+                    padding: 0 7px 0 20px;
+                }
+            }
+        }
+    }
+}
+@media #{$tab} {
+    .shop__header {
+        padding: 35px 0 40px 0;
+        .breadcrumb-container {
+            .breadcrumb-title {
+                font-size: 32px;
+                line-height: 48px;
+                
+            }
+            .breadcrumb-item {
+                font-size: 16px;
+                i {
+                    padding: 0 5px 0 10px;
+                }
+            }
+            
+        }
+    }
+    
+}
+

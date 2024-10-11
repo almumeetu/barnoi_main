@@ -1,0 +1,159 @@
+@use "../utils"as *;
+
+
+.portfolio__area {
+    .portfolio__btn-wrapper {
+        ul {
+            li {
+                display: inline;
+                margin: 0 20px;
+
+                @media #{$xs} {
+                    margin: 0 5px;
+                }
+
+                @media #{$xxs} {
+                    margin: 0 3px;
+                }
+
+                @media #{$sm} {
+                    margin: 0 10px;
+                }
+
+                .portfolio__btn {
+                    font-size: 24px;
+                    color: #70747D;
+                    line-height: 40px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #70747D;
+                    transition: color 0.3s, font-weight 0.3s;
+
+                    @media #{$tab} {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+
+                    @media #{$xs} {
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+
+                    @media #{$xxs} {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    @media #{$sm} {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .grid {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        @media #{$tab} {
+            margin-top: 30px;
+        }
+
+        @media #{$sm, $xs} {
+            margin-top: 10px;
+        }
+
+        .grid-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all ease-in-out .3s;
+            cursor: pointer;
+            /* Indicates that it's clickable */
+
+            &:hover .grid__overlay {
+                opacity: 1;
+                /* Show overlay on hover */
+                pointer-events: auto;
+                /* Allow interaction */
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                transition: all 0.3s ease;
+                border-radius: 10px;
+
+                &:hover {
+                    transform: scale(1.05);
+                    /* Scale image on hover */
+                }
+            }
+        }
+    }
+}
+
+.grid__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 15, 15, 0.52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    /* Prevent interaction when hidden */
+
+    .overlay__content {
+        text-align: center;
+
+        h3 {
+            color: #FFF;
+
+            @media #{$lg, $md} {
+                font-size: 28px;
+            }
+
+        }
+
+        span {
+            font-size: 18px;
+            color: #FFF;
+        }
+    }
+}
+
+/* Active Button Styles */
+.portfolio__btn.active {
+    color: #ff5733 !important;
+    border-color: #ff5733 !important;
+    font-weight: 700;
+    /* Active font weight */
+}
+
+.portfolio__btn:not(.active) {
+    color: #70747D;
+    /* Default color for inactive buttons */
+    border-color: transparent;
+    /* Default border for inactive buttons */
+}
+
+
+//lIGHTBOX CSS
+.sl-wrapper {
+    z-index: 1040;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000b5 !important;
+    position: fixed;
+}

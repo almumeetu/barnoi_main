@@ -1,0 +1,157 @@
+@use "../utils" as *;
+
+.shop__product-wrapper {
+  .list__products-wrapper {
+    .list__product {
+      background-color: rgba(248, 248, 248, 1);
+      border-radius: 12px;
+      .f__product-img {
+        height: 100%;
+        background: rgba(242, 244, 247, 1);
+        border-radius: 12px;
+        text-align: center;
+        position: relative;
+        &:hover .overlay {
+          opacity: 1;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #c2cada68;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+          .icons {
+            position: absolute;
+            bottom: 40px;
+          }
+          i {
+            font-size: 27px;
+            height: 50px;
+            width: 50px;
+            background: var(--st-common-white);
+            vertical-align: middle;
+            line-height: 50px;
+            color: var(--st-theme-1);
+            font-weight: 400;
+            margin: 0 4px;
+            border-radius: 3px;
+            &:hover {
+              background-color: var(--st-theme-1);
+              color: var(--st-common-white);
+            }
+          }
+        }
+        .img-fluid {
+          width: 90% !important;
+        }
+      }
+      .list__product-content {
+        padding: 25px 30px 15px 15px;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(112, 116, 125, 1);
+        }
+        h4 {
+          font-size: 32px;
+          padding-top: 10px;
+        }
+        p {
+          font-weight: 400;
+          color: rgba(112, 116, 125, 1);
+        }
+        .product-price {
+          padding-bottom: 15px;
+          span {
+            text-decoration: line-through;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(160, 163, 169, 1);
+          }
+          p {
+            display: inline;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--st-theme-1);
+            padding-left: 10px;
+          }
+        }
+        .p-color {
+          ul {
+            li {
+              list-style-type: none;
+              height: 16px;
+              width: 16px;
+              border-radius: 2px;
+              margin-right: 10px;
+            }
+            .brown {
+              background-color: rgba(222, 174, 147, 1);
+              &:hover {
+                outline-offset: 2px;
+                outline: 1px solid rgba(222, 174, 147, 1);
+              }
+            }
+            .green {
+              background-color: rgba(106, 120, 101, 1);
+              &:hover {
+                outline-offset: 2px;
+                outline: 1px solid rgba(106, 120, 101, 1);
+              }
+            }
+            .red {
+              background-color: rgba(136, 54, 76, 1);
+              &:hover {
+                outline-offset: 2px;
+                outline: 1px solid rgba(136, 54, 76, 1);
+              }
+            }
+            .blue {
+              background-color: rgba(81, 89, 187, 1);
+              &:hover {
+                outline-offset: 2px;
+                outline: 1px solid rgba(81, 89, 187, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+    .list__product:nth-child(2) {
+      .f__product-img {
+        background: rgba(242, 244, 247, 1);
+      }
+    }
+    .list__product:nth-child(3) {
+      .f__product-img {
+        background: rgba(254, 246, 242, 1);
+      }
+    }
+    .list__product:nth-child(4) {
+      .f__product-img {
+        background: rgba(254, 237, 230, 1);
+      }
+    }
+    .list__product:nth-child(5) {
+      .f__product-img {
+        background: rgba(230, 233, 240, 1);
+      }
+    }
+    .list__product:nth-child(6) {
+      .f__product-img {
+        background: rgba(254, 237, 230, 1);
+      }
+    }
+    .list__product:nth-child(7) {
+      .f__product-img {
+        background: rgba(230, 233, 240, 1);
+      }
+    }
+  }
+}

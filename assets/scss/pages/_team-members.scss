@@ -1,0 +1,92 @@
+@use "../utils" as *;
+
+.team__area{
+    .team{
+        .team__img{
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            border-radius: 12px 12px 0;
+            box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+            .img-fluid {
+                width: 100%;
+            }
+            .team__content--overlay {
+                position: absolute;
+                z-index: 9;
+                bottom: 0;
+                right: 0;
+                background: #fff;
+                text-align: left;
+                padding: 10px 0 10px 15px;
+                width: 85%;
+                border-left: 4px solid #f04a00;  
+                border-radius: 4px 12px 0 4px !important;      
+                span{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #70747D;
+    
+                }
+                h4{
+                    font-size: 28px;
+                    line-height: 38px;
+                    margin: 0;
+                    @media #{$lg,$xl,$md}{
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                }
+            }
+            &:hover img{
+                transform: scale(1.1) translate(5px, 5px);
+            }
+            &:hover{
+                box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+            }
+            &:hover .overlay {
+                opacity: 1;
+            }
+            img{
+                transition: transform .4s ease, translate .4s ease;
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #2a68df3b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                z-index: 1;
+                transition: opacity .3s ease-in-out;
+                .icons{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    a{
+                        i{
+                            font-size: 24px;
+                            height: 40px;
+                            width: 40px;
+                            background: var(--st-common-white);
+                            vertical-align: middle;
+                            line-height: 41px;
+                            font-weight: 400;
+                            margin: 0 4px;
+                            border-radius: 50%;
+                            &:hover{
+                                background-color: var(--st-theme-1);
+                                color: var(--st-common-white);
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

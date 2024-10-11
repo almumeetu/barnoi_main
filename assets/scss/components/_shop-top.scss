@@ -1,0 +1,107 @@
+@use "../utils" as *;
+
+.shop__product-wrapper {
+  .listing__header {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    .view__options {
+      align-self: center;
+      span {
+        font-size: 18px;
+        color: rgba(112, 116, 125, 1);
+      }
+      .fa-grid {
+        margin: 0 10px;
+      }
+      .fa-list,
+      .fa-grid {
+        color: rgba(160, 163, 169, 1);
+        &:hover {
+          color: rgba(0, 35, 102, 1);
+        }
+      }
+    }
+    .sorting__options {
+      display: flex;
+      align-items: center;
+      .show__label {
+        font-size: 14px;
+        color: #7a7a7a;
+        font-weight: 500;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        padding: 10px;
+      }
+
+      // Dropdown for the number of products per page
+      .products__per-page {
+        position: relative;
+        select {
+          padding: 4px 8px;
+          font-size: 16px;
+          color: rgba(0, 35, 102, 1);
+          font-weight: 500;
+          border: 1px solid #e5e5e5;
+          background-color: #fff;
+          appearance: none;
+
+          &:focus {
+            color: rgba(0, 35, 102, 1);
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      // Dropdown for the sorting order
+      .sort__order {
+        margin-left: 20px;
+        position: relative;
+        select {
+          padding: 4px 8px;
+          font-size: 16px;
+          color: rgba(0, 35, 102, 1);
+          font-weight: 500;
+          border: 1px solid #e5e5e5;
+          border-radius: 4px;
+          appearance: none;
+
+          &:focus {
+            border-color: #0b2a64;
+            outline: none;
+            box-shadow: none;
+          }
+          &:hover {
+            color: rgba(0, 35, 102, 1);
+          }
+        }
+      }
+    }
+  }
+}
+@media #{$tab} {
+  .shop__product-wrapper {
+    .listing__header {
+      padding-top: 15px;
+    }
+  }
+}
+@media #{$sm, $xs} {
+  .shop__product-wrapper {
+    .listing__header {
+      padding-top: 15px;
+    }
+  }
+
+}
+@media #{$sm, $xs} {
+  .shop__product-wrapper {
+    .listing__header {
+      display: block;
+      .view__options {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  24. Pagination CSS START
+/*----------------------------------------*/
+.shop__product-wrapper {
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 55px;
+
+    div,
+    .dots {
+      outline: 1px dashed #f05a24;
+      outline-offset: 4px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      cursor: pointer;
+      color: #6c757d;
+    }
+    div {
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .page.active {
+      background-color: #f05a24;
+      color: white;
+      border: none;
+    }
+
+    .dots {
+      pointer-events: none;
+      font-size: 24px;
+      outline: none;
+    }
+
+    .prev i,
+    .next i {
+      color: #6c757d;
+    }
+
+    .prev:hover i,
+    .next:hover i {
+      color: #f05a24;
+    }
+  }
+}

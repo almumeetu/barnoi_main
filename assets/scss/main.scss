@@ -10,6 +10,9 @@
 @forward 'components/preloader';
 @forward 'components/variables';
 @forward 'components/menu';
+@forward 'components/shop-top';
+@forward 'components/shop-card';
+@forward 'components/pagination';
 @forward 'layout/header';
 @forward 'layout/hero';
 @forward 'layout/shopCat';
@@ -20,5 +23,20 @@
 @forward 'layout/shippingInfo';
 @forward 'layout/limitedOffer';
 @forward 'layout/footer';
+@forward 'pages/shop-listview';
+@forward 'pages/product_details';
+@forward 'pages/cart';
+@forward 'pages/thank_you';
+@forward 'pages/wishlist';
+@forward 'pages/compare';
+@forward 'pages/blog_grid';
+@forward 'pages/blog_list';
+@forward 'pages/blog_details';
+@forward 'pages/team-members';
+@forward 'pages/portfolio';
+@forward 'pages/account';
+@forward 'components/product_details_tab';
+@forward 'components/review_modal';
+
 
 
