@@ -1,0 +1,80 @@
+@use '../utils' as *;
+
+// Image Gallery CSS Start HEre
+.image__gallery{
+    .grid-item{
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all ease-in-out .3s;
+        cursor: pointer;
+        /* Indicates that it's clickable */
+
+        &:hover .grid__overlay {
+            opacity: 1;
+            /* Show overlay on hover */
+            pointer-events: auto;
+            /* Allow interaction */
+            padding: 0;
+        }
+        div{
+            overflow: hidden;
+            border-radius: 12px;
+        }
+       
+    }
+}
+// Image Gallery CSS End HEre
+
+
+// Testimonial CSS Start Here
+.testimonial__wrapper{
+    .swiper {
+        padding: 20px;
+    }
+    .testimonial{
+        padding: 40px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+        @media #{$xl,$lg,$md,$xs} {
+            padding: 20px;
+        }
+        .testimonial__title{
+            border-bottom: 1px solid #E6E9F0;
+            padding-bottom: 16px;
+            .client__author{
+                .client__img{
+                    margin-right: 12px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .client__des{
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .testimonial__content{
+            padding-top: 16px;
+            p{
+                color: #70747D;
+                margin-bottom: 0;
+                @media #{$xl,$lg,$md,$xs,$sm} {
+                    font-size: 14px;
+                }
+            }
+        }
+        .client__reviews{
+            padding-top: 16px;
+            li{
+                margin-right: 5px;
+                i{
+                    color: #FDB022;
+
+                }
+            }
+        }
+    }
+}
+// Testimonial CSS End Here
