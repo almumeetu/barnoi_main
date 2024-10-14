@@ -749,15 +749,34 @@ var swiper = new Swiper(".testimonial-swiper", {
   spaceBetween: 30,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    // el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
     768: {
       slidesPerView: 2,
-    },
+    },           
     1024: {
       slidesPerView: 3,
+    }
+  }
+});
+
+//Testimonial Swiper
+var swiper = new Swiper(".testimonial2-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".post__btn-right",
+    prevEl: ".post__btn-left",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
     }
   }
 });
