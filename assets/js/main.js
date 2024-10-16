@@ -780,3 +780,39 @@ var swiper = new Swiper(".testimonial2-swiper", {
     }
   }
 });
+
+//Coundown Timer JS
+
+let targetDate = new Date("December 31, 2024 23:59:59").getTime();
+
+// Function to update countdown every second
+let countdown = setInterval(function() {
+
+    // Get current time
+    let now = new Date().getTime();
+
+    // Calculate the remaining time
+    let remainingTime = targetDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+    // Display the results in the respective HTML elements
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // When the countdown is over, clear the timer and set values to zero
+    if (remainingTime < 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerHTML = "0";
+        document.getElementById("hours").innerHTML = "0";
+        document.getElementById("minutes").innerHTML = "0";
+        document.getElementById("seconds").innerHTML = "0";
+    }
+}, 1000);
+

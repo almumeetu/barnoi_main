@@ -221,3 +221,94 @@
     }
 }
 // 2nd Testimonial Section End Here
+
+
+// Countdown Timer Css start Here
+.countdown__timer{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    @media #{$md,$sm,$xs}{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 35, 102, 0.5); /* Semi-transparent overlay */
+        z-index: 1;
+    }
+    .counter__wrapper{
+        position: relative;
+        z-index: 2;
+        .subtitle{
+            color: #F04A00;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px; /* 125% */
+            @media #{$md,$sm,$xs}{
+                font-size: 18px;   
+                line-height: 30px;
+           }
+        }
+        .maintitle{
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 80px;
+            @media #{$md}{
+                 font-size: 50px;  
+                 line-height: 60px;     
+            }
+            @media #{$sm}{
+                 font-size: 40px;  
+                 line-height: 50px;     
+            }
+            @media #{$xs}{
+                 font-size: 35px;  
+                 line-height: 45px;     
+            }
+            color: var(--st-common-white);
+        }
+        .counters{
+            padding-top: 60px;
+            @media #{$md,$sm,$xs}{
+                padding-top: 20px;
+            }
+            .count{
+                background:var(--st-heading-primary);
+                width: 110px;
+                height: 124px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 6px;
+                @media #{$xs}{
+                    height: 80px;
+                }
+                @media #{$sm}{
+                    width: 100px;
+                    height: 95px;
+                }
+                h3{
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    color: var(--st-common-white);
+
+                }
+                span{
+                    color: var(--st-common-white);
+                }
+            }
+        }
+    }
+}
+// Countdown Timer Css End Here
