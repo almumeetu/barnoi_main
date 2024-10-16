@@ -66,17 +66,17 @@
             .banner__image-overlay-2 {
                 position: relative;
 
-                &::after {
-                    position: absolute;
-                    content: "";
-                    width: 970px;
-                    top: -19px;
-                    height: 951px;
-                    left: 33px;
-                    background-color: var(--st-theme-1);
-                    border-radius: 50%;
-                    z-index: 1;
-                }
+                // &::after {
+                //     position: absolute;
+                //     content: "";
+                //     width: 970px;
+                //     top: -19px;
+                //     height: 951px;
+                //     left: 33px;
+                //     background-color: var(--st-theme-1);
+                //     border-radius: 50%;
+                //     z-index: 1;
+                // }
             }
 
             .banner__main-img {
@@ -92,6 +92,7 @@
                 -o-object-fit: cover;
                 object-fit: cover;
                 z-index: 2;
+                border: 5px solid var(--st-theme-1);
 
             }
 
