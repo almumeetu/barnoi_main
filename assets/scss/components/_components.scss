@@ -312,3 +312,143 @@
     }
 }
 // Countdown Timer Css End Here
+
+
+// Pricing Plane Css Start Here
+.pricing__plane{
+    .pricing__btnn{
+        margin-bottom: 60px;
+        .pricing__btnn-wrapper{
+            width: 300px;
+            height: 60px;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+            background: #F2F4F7;
+            border-radius: 200px;
+            align-items: center;
+            a{
+                width: 125px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 64px;
+                font-weight: 600;
+                &:hover{
+                    background: #fff;
+                    color: var(--st-theme-1);
+                }
+            }
+            .active{
+                background: #fff;
+                color: var(--st-theme-1);
+            }
+        }
+    }
+    .plane{
+        border-radius: 12px;
+        border: 1px solid #E6E9F0;
+        padding: 40px;
+        margin-bottom: 30px;
+        position: relative;
+        @media #{$lg,$md,$xs}{
+            padding: 20px;
+        }
+        .plane__title{
+            border-bottom: 1px solid #E6E9F0;
+            padding-bottom: 65px;
+            h6{
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 40px;
+            }
+            .popular__overlay{
+                position: absolute;
+                width: 133px;
+                height: 38px;
+                transform: rotate(90deg);
+                background: #F04A00;
+                border-radius: 0px 18px 18px 0px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                justify-content: center;
+                right: -45px;
+                top: 7px;
+                font-size: 14px;
+                @media #{$lg,$md,$xs}{
+                    top: 15px;
+                    width: 110px;
+                }
+            }
+            .pricee{
+                width: 172px;
+                height: 76px;
+                border-radius: 0px 43.5px 43.5px 0px;
+                background:  #FFF;
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+                align-items: center;
+                transition: background ease-in .3s;
+                justify-content: center;
+                bottom: -37px;
+                left: -40px;
+                @media #{$lg,$md,$xs}{
+                    left: -20px;
+                }
+                span{
+                    color: var(--st-heading-primary);
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 32px;
+                }
+                h4{
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 60px;
+                    margin: 0;
+                }
+            }
+            .prefer__color{
+                background: var(--st-heading-primary);
+                span, h4{
+                    color: var(--st-common-white);
+                }
+            }
+        }
+        .plane__content{
+            padding-top: 65px;
+            ul{
+                li{
+                    padding: 20px 0;
+                    border-bottom: 1px solid #E6E9F0;
+                    display: flex;
+                    @media #{$xs,$sm,$md}{
+                        font-size: 14px;
+                    }
+
+                    i{
+                        width: 24px;
+                        font-weight: 600 !important;
+                    }
+                    i.fa-light.fa-check {
+                        color: var(--st-theme-1);
+                    }
+                }
+                .de-active{
+                    color: #70747D;
+                }
+            }        
+        }
+        .pricing__btn{
+            margin-top: 28px;
+            .explore__btn{
+                display: inline-block !important;
+                padding: 16px 44px;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+// Pricing Plane Css End Here

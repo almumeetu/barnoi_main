@@ -781,8 +781,8 @@ var swiper = new Swiper(".testimonial2-swiper", {
   }
 });
 
-//Coundown Timer JS
 
+//Coundown Timer JS
 let targetDate = new Date("December 31, 2024 23:59:59").getTime();
 
 // Function to update countdown every second
