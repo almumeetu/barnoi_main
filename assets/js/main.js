@@ -736,7 +736,15 @@ function decreaseValue() {
 
 
 
+//Light box js
+
 var gallery = $('.gallery .grid-item a').simpleLightbox({
+  
+});
+
+//Light box js
+
+var gallery = $('.gallery .gallery-item a').simpleLightbox({
   
 });
 
@@ -815,4 +823,50 @@ let countdown = setInterval(function() {
         document.getElementById("seconds").innerHTML = "0";
     }
 }, 1000);
+
+
+//Popup button JQuery
+$(document).ready(function() {
+  $("#popupButton").click(function() {
+      $(".product__backdrop").fadeIn(); 
+      $(".sz__popup").fadeIn(); 
+  });
+
+  $(".close__product").click(function() {
+      $(".sz__popup").fadeOut(); 
+      $(".product__backdrop").fadeOut(); 
+  });
+
+  $(window).click(function(event) {
+      if ($(event.target).is(".product__backdrop")) {
+          $(".sz__popup").fadeOut(); 
+          $(".product__backdrop").fadeOut(); 
+      }
+  });
+});
+
+
+ // Get elements
+// Get elements
+const openGalleryBtn = document.getElementById('openGalleryBtn');
+const closeGalleryBtn = document.getElementById('closeGalleryBtn');
+const galleryPopup = document.getElementById('galleryPopup');
+
+// Open gallery popup
+openGalleryBtn.addEventListener('click', function () {
+    galleryPopup.style.display = 'block';
+});
+
+// Close gallery popup
+closeGalleryBtn.addEventListener('click', function () {
+    galleryPopup.style.display = 'none';
+});
+
+// Close gallery if clicked outside content
+window.addEventListener('click', function (event) {
+    if (event.target == galleryPopup) {
+        galleryPopup.style.display = 'none';
+    }
+});
+
 

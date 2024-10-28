@@ -1,0 +1,298 @@
+@use "../utils" as *;
+
+
+.container{
+    display: block !important;
+}
+// Order Details CSS Start Here
+.order__details{
+    .ord__details-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+        .ord__no{
+            h3{
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                        font-size: 32px;
+                        line-height: 42px;
+                }
+            }
+            .breadcrumb {
+                padding-top: 10px;
+                justify-content: center;
+                .active {
+                    color: var(--st-theme-1);
+                }
+                .breadcrumb-item {
+                    @media #{$xl,$lg,$md,$sm,$xs}{
+                        font-size: 14px;
+                        padding-left: 0;
+                    }
+                    i {
+                        padding: 0 7px 0 20px;
+                        @media #{$xl,$lg,$md,$sm,$xs}{
+                            padding: 0 5px 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .ord__c-date{
+            align-items: center;
+            
+            i{
+                font-size: 40px !important;
+                margin-right: 20px;
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                    font-size: 28px !important;
+                    margin-right: 5px;
+                }
+            } 
+            .datee{   
+                h5{
+                    color: #414652;
+                    font-size: 24px;
+                    line-height: 32px; 
+                    @media #{$xl,$lg,$md,$sm,$xs}{
+                        color: #414652;
+                        font-size: 18px;    
+                        line-height: 22px;
+                        margin-bottom: 0px;
+                    }
+                }
+                span{
+                    color: #70747D;
+                    font-size: 18px;
+                    line-height: 28px;
+                    @media #{$xl,$lg,$md,$sm,$xs}{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .ord__btn-wrapper{
+            .view__btn{
+                line-height: 36px;
+                margin-right: 20px;
+            }
+            .explore__btn{
+                line-height: 24px;
+            }
+        }
+    }
+
+    .order_det{
+
+        .content {
+            border: 1px solid #E6E9F0;
+            border-radius: 12px;
+    
+            @media #{$xs,$lg} {
+                padding: 0 20px;
+            }
+    
+            .ordered__title {
+                padding: 30px 40px 20px 40px;
+                border-bottom: 1px solid #E6E9F0;
+    
+                h5 {
+                    margin: 0;
+                }
+    
+                .explore__btn {
+                    @media #{$xl,$md,$lg,$xxl,$sm,$xs} {
+                        font-size: 14px !important;
+                    }
+    
+                    @media #{$xl,$md,$lg,$xs,$sm} {
+                        padding: 5px 5px !important;
+                        font-weight: 500;
+                    }
+                }
+            }
+    
+            .ordered__details {
+                margin: 15px 0;
+                padding: 0 40px;
+                &:last-child{
+                    border-bottom: none;
+                }
+                @media #{$sm,$xs} {
+                    flex-direction: column;
+                }
+    
+                @media #{$xl,$md,$lg,$xxl,$sm,$xs} {
+                    font-size: 14px;
+                }
+    
+                .ordered__product {
+                    padding-bottom: 15px;
+                    @media #{$xs} {
+                        flex-direction: column;
+                        text-align: left;
+                    }
+                }
+    
+                .ordered__product-img {
+                    width: 116px;
+                    height: 140px;
+                    background: #f3f3f4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    img {
+                        width: 90%;
+                        object-fit: contain;
+                    }
+                }
+    
+                .products__des {
+                    margin-left: 30px;
+    
+                    .mini_reverse {
+                        @media #{$xs,$lg, $md} {
+                            flex-direction: column;
+                        }
+                    }
+    
+                    @media #{$xl,$lg,$md} {
+                        margin-left: 12px;
+                    }
+    
+                    h6 {
+                        margin-bottom: 20px;
+                        color: #70747D;
+    
+                        @media #{$xs,$lg,$md} {
+                            margin-bottom: 0;
+                        }
+                    }
+    
+                    .first_ul {
+                        margin-right: 55px;
+                    }
+                    .second_ul{
+                        margin-right: 55px;
+                    }
+                    ul {
+                        li {
+                            margin: 10px 0;
+                            font-weight: 600;
+                            color: #70747D;
+    
+                            span {
+                                font-weight: 400;
+                            }
+                        }
+                        .color__dot{
+                            width: 12px;
+                            height: 12px;
+                            background: red;
+                            display: inline-block;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .commom_details{
+        padding: 40px;
+        border: 1px solid #E6E9F0;
+        border-radius: 12px;
+        height: 320px;
+        @media #{$xl,$lg,$md,$sm,$xs}{
+            padding: 20px;
+        }
+        h5{
+            color:#414652;
+            font-family: Poppins;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 20px;
+            @media #{$xl,$lg,$md,$sm,$xs}{
+                font-size: 18px;
+            }
+        }
+    }
+    .customer__details{
+        .customer__inffo{
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 12px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .namee{
+                      width: 170px;
+                      color: #70747D;
+                      font-weight: 600;
+                      @media #{$xl,$lg,$md,$sm,$xs}{
+                        font-size: 14px;
+                    }
+                    }
+                    .namee__content{
+                     p{
+                        margin-bottom: 0;
+                        color: #A0A3A9;
+                        @media #{$xl,$lg,$md,$sm,$xs}{
+                            font-size: 14px;
+                        }
+                        span{
+                            margin-right: 15px;
+                        }
+                     }   
+                    }
+                }
+            }
+        }
+    }
+    .payment_details{
+        .payment__inffo{
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 12px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .namee{
+                      width: 220px;
+                      color: #70747D;
+                      font-weight: 600;
+                      @media #{$xl,$lg,$md,$sm,$xs}{
+                        font-size: 14px;
+                    }
+                    }
+                    .namee__content{
+                        .paid_color{
+                            color: #5FA745;
+                        }
+                     p{
+                        margin-bottom: 0;
+                        color: #A0A3A9;
+                        @media #{$xl,$lg,$md,$sm,$xs}{
+                            font-size: 14px;
+                        }
+                        span{
+                            margin-right: 15px;
+                        }
+                     }   
+                    }
+                }
+            }
+        }
+    }
+    .customer__address{
+        p{
+            @media #{$xl,$lg,$md,$sm,$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+}
+// Order Details CSS End Here
