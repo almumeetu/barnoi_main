@@ -7816,8 +7816,39 @@ details[open] summary::after {
   font-size: 14px;
 }
 
+.trendss .trends__left {
+  position: relative;
+}
 .trendss .trends__left img {
   width: 100%;
+}
+.trendss .trends__left .trends__features {
+  border: 2px dotted #fff;
+  width: 50px;
+  height: 50px;
+  color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 215px;
+  right: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.trendss .trends__left .trends__features span {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.trendss .trends__left .trends__features span:hover {
+  background: var(--st-theme-1);
+  color: #fff;
 }
 .trendss .trends__right .section__title span {
   font-size: 22px !important;
