@@ -184,6 +184,64 @@
             margin-bottom: 10px !important;
         }
     }
+    .trending__product{
+        align-items: center;
+        background: #FAFAFB;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        .indexing{
+            right: 0;
+            bottom: -30px;
+            h2{
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 100px; 
+                color: #F3F3F4;
+                transform: rotate(-20deg);
+            }
+        }
+        .trending__img{
+            width: 144px;
+            height: 156px;
+            background: #F2F4F7;
+            img{
+                width: 100%;
+            }
+        }
+        .trending__details{
+            padding-left: 24px;
+            h6{
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                margin-bottom: 8px;
+            }
+            span{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+            .price{
+                font-size: 18px;
+                margin-top: 8px; 
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                color: var(--st-theme-1);
+            }
+        }
+    }
+    .buy__all{
+        padding-top: 32px;
+        .explore__btn-2{
+            padding: 18px 48px;
+            text-align: center;
+        }
+    }
    }
 }
 // Trends CSS End Here

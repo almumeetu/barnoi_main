@@ -7822,4 +7822,62 @@ details[open] summary::after {
 .trendss .trends__right .section__title span {
   font-size: 22px !important;
   margin-bottom: 10px !important;
+}
+.trendss .trends__right .trending__product {
+  align-items: center;
+  background: #FAFAFB;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.trendss .trends__right .trending__product .indexing {
+  right: 0;
+  bottom: -30px;
+}
+.trendss .trends__right .trending__product .indexing h2 {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px;
+  color: #F3F3F4;
+  transform: rotate(-20deg);
+}
+.trendss .trends__right .trending__product .trending__img {
+  width: 144px;
+  height: 156px;
+  background: #F2F4F7;
+}
+.trendss .trends__right .trending__product .trending__img img {
+  width: 100%;
+}
+.trendss .trends__right .trending__product .trending__details {
+  padding-left: 24px;
+}
+.trendss .trends__right .trending__product .trending__details h6 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.trendss .trends__right .trending__product .trending__details span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.trendss .trends__right .trending__product .trending__details .price {
+  font-size: 18px;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--st-theme-1);
+}
+.trendss .trends__right .buy__all {
+  padding-top: 32px;
+}
+.trendss .trends__right .buy__all .explore__btn-2 {
+  padding: 18px 48px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
