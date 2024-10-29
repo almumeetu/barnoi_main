@@ -1,6 +1,9 @@
 @use "../utils" as *;
 
 // Home Page V-2 CSS Start Here
+
+
+//Banner CSS Start
 .banner__v2 {
     background: #FAFAFB;
     .banner__wrapper {
@@ -74,7 +77,7 @@
                 margin-bottom: 40px;
             }
     
-            a {
+            .simple__btnn {
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
@@ -82,6 +85,23 @@
                 text-decoration-line: underline;
                 margin-left: 140px;
                 color: var(--st-theme-1);
+            }
+            .banner2__social{
+                position: absolute;
+                bottom: 28px;
+                left: 0;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        list-style-type: none;
+                        a{
+                            font-size: 14px;
+                            padding: 0 14px;
+                            color: #A0A3A9;
+                        }
+                    }
+                }
             }
             .banner__bottom{
                 padding-top: 55px;
@@ -105,5 +125,86 @@
         }
     }
 }
+//Banner CSS End
+
+
+//Shop By Categories CSS Start 
+.shop__by--categories{
+    .section__title{
+        .sub__title{
+            margin-bottom: 20px;
+        }
+    }
+    .categories__wrapper{
+        .categories2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .categories2__img{
+                img{
+                    border-radius: 198px;
+                    width: 100%;
+                }
+            }
+            .categories2__content{
+                flex-direction: column;
+                display: flex;
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+                background: var(--st-common-white);
+                justify-content: center;
+                padding:20px;
+                border-radius: 5px;
+                align-items: self-start;
+                margin-top: -40px;
+                width: 236px;
+                height: 84px;
+                h6{
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+//Shop By Categories CSS End 
+
+// Trends CSS Start Here
+.trendss{
+   .trends__left{
+    img{
+        width: 100%;
+    }
+   } 
+   .trends__right{
+    .section__title{
+        span{
+            font-size: 22px !important;
+            margin-bottom: 10px !important;
+        }
+    }
+   }
+}
+// Trends CSS End Here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Home Page V-2 CSS End Here

@@ -7741,7 +7741,7 @@ details[open] summary::after {
   padding-left: 140px;
   margin-bottom: 40px;
 }
-.banner__v2 .banner__wrapper .middle__title a {
+.banner__v2 .banner__wrapper .middle__title .simple__btnn {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -7749,6 +7749,23 @@ details[open] summary::after {
   text-decoration-line: underline;
   margin-left: 140px;
   color: var(--st-theme-1);
+}
+.banner__v2 .banner__wrapper .middle__title .banner2__social {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+}
+.banner__v2 .banner__wrapper .middle__title .banner2__social ul {
+  display: flex;
+  justify-content: space-between;
+}
+.banner__v2 .banner__wrapper .middle__title .banner2__social ul li {
+  list-style-type: none;
+}
+.banner__v2 .banner__wrapper .middle__title .banner2__social ul li a {
+  font-size: 14px;
+  padding: 0 14px;
+  color: #A0A3A9;
 }
 .banner__v2 .banner__wrapper .middle__title .banner__bottom {
   padding-top: 55px;
@@ -7765,4 +7782,44 @@ details[open] summary::after {
 }
 .banner__v2 .banner__wrapper .right__img img {
   width: 100%;
+}
+
+.shop__by--categories .section__title .sub__title {
+  margin-bottom: 20px;
+}
+.shop__by--categories .categories__wrapper .categories2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shop__by--categories .categories__wrapper .categories2 .categories2__img img {
+  border-radius: 198px;
+  width: 100%;
+}
+.shop__by--categories .categories__wrapper .categories2 .categories2__content {
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  background: var(--st-common-white);
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: self-start;
+  margin-top: -40px;
+  width: 236px;
+  height: 84px;
+}
+.shop__by--categories .categories__wrapper .categories2 .categories2__content h6 {
+  font-size: 18px;
+}
+.shop__by--categories .categories__wrapper .categories2 .categories2__content span {
+  font-size: 14px;
+}
+
+.trendss .trends__left img {
+  width: 100%;
+}
+.trendss .trends__right .section__title span {
+  font-size: 22px !important;
+  margin-bottom: 10px !important;
 }/*# sourceMappingURL=main.css.map */
