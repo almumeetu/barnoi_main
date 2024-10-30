@@ -277,7 +277,101 @@
 
 
 
-
+// CTA section Start Here
+.cta__v2{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #FAFAFB;
+    margin: 7rem 0;
+    .cta__content{
+        .cta__title{
+            h3{
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 60px;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            color: #70747d;
+            margin: 0;
+            padding-bottom: 28px;
+            padding-top: 10px;
+        }
+        .cta__subscribe{
+            position: relative;
+            input{
+                border-radius: 12px;
+                border: 1px solid #E6E9F0;
+                padding: 16px 20px;
+                width: 100%;
+                background-color: #FAFAFB;
+                &::placeholder{       
+                    font-size: 18px;
+                    color: #A0A3A9;
+                }
+            }
+            .subscribe__btn{
+                width: 164px;
+                height: 54px;
+                border-radius: 0px 12px 12px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                background: var(--st-theme-1);
+                padding: 5px 15px;
+                font-weight: 600;
+                transition: all ease .3s;
+                border: 1px solid var(--st-theme-1);
+                position: absolute;
+                top: 0;
+                right: 0;
+                &:hover{
+                    color:  var(--st-theme-1);
+                    background: var(--st-common-white);
+                }
+            }
+        }
+    }
+    .cta__img{
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 390px;
+            height: 390px;
+            background: #E6E9F0;
+            border-radius: 415px;
+            bottom: -50px;
+            right: 125px;
+            z-index: -1;
+        }
+        img{
+            width: 80%;
+            z-index: 9;
+        }
+        .updatee__text{
+            h2{
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100px;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                z-index: -2;
+            }
+        }
+    }
+}
+// CTA section End Here
 
 
 
