@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="assets/scss/main.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 
 <body>
@@ -332,46 +333,54 @@
     <main>
 
         <!-- Order Details Page Start HEre -->
-         <section class="order__details">
-            <div class="container">
-                <div class="ord__details-top">
-                    <div class="ord__no">
-                        <h3>Order No #56465</h3>
-                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">My Account</a><i
-                                        class="fa-solid fa-arrow-right-long"></i></li>
-                                <li class="breadcrumb-item"><a href="#">Order</a><i
-                                    class="fa-solid fa-arrow-right-long"></i></li>
-                                <li class="breadcrumb-item active"><a href="#">Order Details</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="ord__c-date d-flex">
-                        <div>
-                            <i class="ri-shopping-cart-2-line"></i>
-                        </div>
-                        <div class="datee">
-                            <h5>Order Confirm Date</h5>
-                            <span>25 June, 2024</span>
-                        </div>
-                    </div>
-                    <div class="ord__btn-wrapper d-flex">
-                        <div>  <a href="#" class="view__btn">Cancel Order</a></div>
-                        <div>  <a href="#" class="explore__btn">Export Details</a></div>
-                    </div>
-                </div>
-
-
+         <section class="order__details my__account">
+            <div class="container-fluid">
                 <div class="row mt-60">
-                    <div class="col-xl-12">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="account__profile p-relative">
+                            <div class="account__img p-absolute">
+                                <a href="#"><img src="/assets/img/account/Image.png" alt="" srcset=""></a>
+                            </div>
+                            <div class="account__name text-center">
+                                <h5>Cameron Williamson</h5>
+                                <span class="username">
+                                    @cameron
+                                </span>
+                            </div>
+                            <div class="my__settings">
+                                <ul>
+                                    <li><a href="#"><i class="fa-sharp fa-light fa-user"></i> Account
+                                            Details</a>
+                                    </li>
+                                    <li class="active"><a href="#"><i class="fa-light fa-cart-shopping"></i> My
+                                            Orders</a></li>
+                                    <li><a href="#"><i class="fa-light fa-bell"></i> My Notifications</a></li>
+                                    <li><a href="#"><i class="fa-light fa-mobile"></i> My Promo Code</a></li>
+                                    <li><a href="#"><i class="fa-sharp fa-light fa-right-from-bracket"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
                         <div class="order_det">
                             <div class="content">
+                                <div class="ord__details-top">
+                                    <div class="ord__no">
+                                        <h3>Order No #56465</h3>
+                                        <p>Order Confirm Date: <span>25 June, 2024</span></p>
+                                    </div>
+                                    <div class="ord__btn-wrapper d-flex">
+                                        <div>  <a href="#" class="view__btn">Cancel Order</a></div>
+                                        <div>  <a href="#" class="explore__btn">Buy All Again</a></div>
+                                        <div>  <a href="#" class="print__icon"><i class="fa-solid fa-print"></i></a></div>
+                                    </div>
+                                </div> 
                                 <div class="ordered__title d-flex justify-content-between align-items-center">
                                     <h5>Items Ordered</h5>
                                 </div>
                                 <div
-                                    class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                    class="ordered__details border_b ">
                                     <div class="ordered__product d-flex align-items-center">
                                         <a class="ordered__product-img" href="#"><img
                                                 src="/assets/img/account/product-1.png" alt="Product image"></a>
@@ -380,7 +389,7 @@
                                             <ul>
                                                 <li>
                                                     <h6>Floral Embroidery T-Shirt</h6>
-                                                    <div class="mini_reverse d-flex">
+                                                    <div class=" d-flex align-items-center">
                                                         <ul class="first_ul">
                                                             <li>Size : <span>M</span></li>
                                                             <li>Brand : <span>Easy</span></li>
@@ -399,6 +408,9 @@
                                                             <li>Estimated Delivery : <span>30 June, 2024 </span>
                                                             </li>
                                                         </ul>
+                                                        <div class="buy__simple-btn">
+                                                            <a href="#">Buy Again</a>
+                                                        </div>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -407,7 +419,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="ordered__details border_b d-flex justify-content-between align-items-center">
+                                    class="ordered__details border_b ">
                                     <div class="ordered__product d-flex align-items-center">
                                         <a class="ordered__product-img" href="#"><img
                                                 src="/assets/img/account/product-1.png" alt="Product image"></a>
@@ -416,7 +428,7 @@
                                             <ul>
                                                 <li>
                                                     <h6>Floral Embroidery T-Shirt</h6>
-                                                    <div class="mini_reverse d-flex">
+                                                    <div class=" d-flex align-items-center">
                                                         <ul class="first_ul">
                                                             <li>Size : <span>M</span></li>
                                                             <li>Brand : <span>Easy</span></li>
@@ -435,99 +447,96 @@
                                                             <li>Estimated Delivery : <span>30 June, 2024 </span>
                                                             </li>
                                                         </ul>
+                                                        <div class="buy__simple-btn">
+                                                            <a href="#">Buy Again</a>
+                                                        </div>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
+    
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-60">
-                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 mb-30">
-                        <div class="customer__details commom_details">
-                            <h5>Customer Details</h5>
-                            <div class="customer__inffo">
-                                <ul>
-                                    <li>
-                                        <div class="namee"> Name</div>
-                                        <div class="namee__content">
-                                            <p><span>: </span> Ariosjcs Mewsioa</p>
+                                <div class="row info__detailss">
+                                    <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 mb-30">
+                                        <div class="customer__details commom_details">
+                                            <h5>Customer Details</h5>
+                                            <div class="customer__inffo">
+                                                <ul>
+                                                    <li>
+                                                        <div class="namee"> Name</div>
+                                                        <div class="namee__content">
+                                                            <p><span>: </span> Ariosjcs Mewsioa</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> E-mail</div>
+                                                        <div class="namee__content">
+                                                            <p><span>: </span>ariosjcs21133&gmail.com</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Phone</div>
+                                                        <div class="namee__content">
+                                                            <p><span>: </span> +212 56464 3254</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Company Name </div>
+                                                        <div class="namee__content">
+                                                            <p><span>: </span> Ariosjcs Mewsioa</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Payment Method</div>
+                                                        <div class="namee__content">
+                                                            <p><span>: </span>Bank Transfer</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> E-mail</div>
-                                        <div class="namee__content">
-                                            <p><span>: </span>ariosjcs21133&gmail.com</p>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 mb-30">
+                                        <div class="payment_details commom_details">
+                                            <h5>Payment Details</h5>
+                                            <div class="payment__inffo">
+                                                <ul>
+                                                    <li>
+                                                        <div class="namee"> Subtotal</div>
+                                                        <div class="namee__content">
+                                                            <p> $4200</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Tax</div>
+                                                        <div class="namee__content">
+                                                            <p> $42</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Delivary Charge</div>
+                                                        <div class="namee__content">
+                                                            <p> $42</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Total</div>
+                                                        <div class="namee__content">
+                                                            <p> $4284</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="namee"> Payment Status</div>
+                                                        <div class="namee__content">
+                                                            <p class="paid_color"> <i class="ri-checkbox-circle-fill"></i> Paid</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Phone</div>
-                                        <div class="namee__content">
-                                            <p><span>: </span> +212 56464 3254</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Company Name </div>
-                                        <div class="namee__content">
-                                            <p><span>: </span> Ariosjcs Mewsioa</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Payment Method</div>
-                                        <div class="namee__content">
-                                            <p><span>: </span>Bank Transfer</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-30">
-                        <div class="customer__address commom_details">
-                            <h5>Shipping Address</h5>
-                            <p>N123 Maple Street, Springfield, IL 62701, USA</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-30">
-                        <div class="payment_details commom_details">
-                            <h5>Payment Details</h5>
-                            <div class="payment__inffo">
-                                <ul>
-                                    <li>
-                                        <div class="namee"> Subtotal</div>
-                                        <div class="namee__content">
-                                            <p> $4200</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Tax</div>
-                                        <div class="namee__content">
-                                            <p> $42</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Delivary Charge</div>
-                                        <div class="namee__content">
-                                            <p> $42</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Total</div>
-                                        <div class="namee__content">
-                                            <p> $4284</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="namee"> Payment Status</div>
-                                        <div class="namee__content">
-                                            <p class="paid_color"> <i class="ri-checkbox-circle-fill"></i> Paid</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -535,15 +544,6 @@
             </div>
          </section>
         <!-- Order Details Page End HEre -->
-
-
-
-
-
-
-
-
-
 
 
 
@@ -750,6 +750,7 @@
     <!-- FOOTER END HERE -->
 
     <!-- JS here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/waypoints.js"></script>
     <script src="assets/js/bootstrap-bundle.js"></script>

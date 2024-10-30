@@ -10,11 +10,20 @@
         display: flex;
         justify-content: space-between;
         align-items: self-start;
+        padding: 40px;
+        border-bottom: 1px solid #E6E9F0;
         .ord__no{
             h3{
                 @media #{$xl,$lg,$md,$sm,$xs}{
                         font-size: 32px;
                         line-height: 42px;
+                }
+            }
+            p{
+                margin-bottom: 0;
+                color: #70747D;
+                span{
+                    color: #414652;
                 }
             }
             .breadcrumb {
@@ -78,6 +87,15 @@
             .explore__btn{
                 line-height: 24px;
             }
+            .print__icon{
+                font-size: 24px;
+                line-height: 38px;
+                margin-left: 20px;
+                color: var(--st-theme-1);
+                &:hover{
+                    color: var(--st-heading-primary);
+                }
+            }
         }
     }
 
@@ -92,7 +110,7 @@
             }
     
             .ordered__title {
-                padding: 30px 40px 20px 40px;
+                padding: 20px 40px 20px 40px;
                 border-bottom: 1px solid #E6E9F0;
     
                 h5 {
@@ -127,6 +145,7 @@
     
                 .ordered__product {
                     padding-bottom: 15px;
+                    justify-content: space-around;
                     @media #{$xs} {
                         flex-direction: column;
                         text-align: left;
@@ -175,6 +194,21 @@
                     .second_ul{
                         margin-right: 55px;
                     }
+                    .buy__simple-btn{
+                        a{
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 28px; 
+                            text-decoration-line: underline;
+                            cursor: pointer;
+                            color: var(--st-theme-1);
+                            transition: all ease-in-out .3s;
+                            &:hover{
+                                color: var(--st-heading-primary);
+                            }
+                        }
+                    }
                     ul {
                         li {
                             margin: 10px 0;
@@ -197,13 +231,22 @@
             }
         }
     }
+    .info__detailss{
+        padding: 40px;
+        @media #{$xs}{
+            padding: 0;
+        }
+    }
     .commom_details{
         padding: 40px;
         border: 1px solid #E6E9F0;
         border-radius: 12px;
-        height: 320px;
+        height: 300px;
         @media #{$xl,$lg,$md,$sm,$xs}{
             padding: 20px;
+        }
+        @media #{$xl,$lg,$md,$sm,$xs}{
+            height: 275px;
         }
         h5{
             color:#414652;
@@ -230,17 +273,16 @@
                       width: 170px;
                       color: #70747D;
                       font-weight: 600;
-                      @media #{$xl,$lg,$md,$sm,$xs}{
-                        font-size: 14px;
-                    }
+                      font-size: 14px;
+                      @media #{$xl}{
+                         width: 130px;
+                     }
                     }
                     .namee__content{
                      p{
                         margin-bottom: 0;
+                        font-size: 14px;
                         color: #A0A3A9;
-                        @media #{$xl,$lg,$md,$sm,$xs}{
-                            font-size: 14px;
-                        }
                         span{
                             margin-right: 15px;
                         }
@@ -261,11 +303,12 @@
                         margin-bottom: 0;
                     }
                     .namee{
-                      width: 220px;
+                      width: 200px;
                       color: #70747D;
                       font-weight: 600;
-                      @media #{$xl,$lg,$md,$sm,$xs}{
-                        font-size: 14px;
+                      font-size: 14px;
+                      @media #{$xl}{
+                        width: 175px;
                     }
                     }
                     .namee__content{
@@ -275,9 +318,7 @@
                      p{
                         margin-bottom: 0;
                         color: #A0A3A9;
-                        @media #{$xl,$lg,$md,$sm,$xs}{
-                            font-size: 14px;
-                        }
+                        font-size: 14px;
                         span{
                             margin-right: 15px;
                         }
