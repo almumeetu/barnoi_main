@@ -393,7 +393,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-color: #FAFAFB;
-    margin: 7rem 0;
+    margin: 7rem 0 0 0;
     .cta__content{
         .cta__title{
             h3{
@@ -583,6 +583,81 @@
 // Blog CSS End Here
 
 
+// Comming Soon Area Start Here
+
+.comming__soon-v2{
+    background: #FAFAFB;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    position: relative;
+    .right__image{
+        position: absolute;
+        right: 0;
+        top: -75px;
+        text-align: end;
+        img{
+            width: 85%;
+        }
+        .overlay__wrappers{
+            .overlay__pro{
+                img{
+                    width: 400px;
+                    height: 480px;
+                    border-radius: 12px 12px 0px 0px;
+                    background: #d3ac8b;
+                }
+            }
+        }
+    }
+    .upcoming__wrapper{
+        .section__title{
+            .main__title{
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 80px; 
+                margin-bottom: 24px;
+            }
+            .sub__title{
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 0;
+            }
+        }
+        p{
+            margin-bottom: 40px;
+        }
+
+        .counters{
+            margin-bottom: 40px;
+            .count{
+                width: 108px;
+                height: 124px;
+                border: 1px solid #E6E9F0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    margin: 0;
+                }
+                span{}
+            }
+        }
+        div{
+            .explore__btn-2{
+                display: inline-block !important;
+                padding: 16px 44px !important;
+            }
+        }
+    }
+}
+
+
+
+// Comming Soon Area End Here
 
 
 
