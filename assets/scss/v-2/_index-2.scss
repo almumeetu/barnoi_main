@@ -205,6 +205,117 @@
             }
         }
     }
+    .trends__features-2{
+        border: 2px dotted #fff;
+        width: 50px;
+        height: 50px;
+        color: #000;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 275px;
+        right: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span{
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background: var(--st-theme-1);
+                color: #fff;
+            }
+        }
+    }
+    .trends__features:hover + .overlay__trends {
+        opacity: 1 !important;
+        border-radius: 12px;
+    }
+    .trends__features-2:hover .p-relative .overlay__trends-2 {
+        opacity: 1 !important;
+        border-radius: 12px;
+    }
+    .overlay__trends{
+        position: absolute;
+        top: 8px;
+        right: 93px;
+        opacity: 0;
+        transition: all ease-in .3s;
+        img{
+            width: 140px;
+            height: 140px;
+            background: #E6E9F0;
+        }
+        .trends__author-overlay{
+            text-align: center;
+            width: 140px;
+            background: #fff;
+            padding: 4px 19px;
+            h6{
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0;
+            }
+            span{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                color: var(--st-theme-1);
+            }
+        }
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+            border-top: 15px solid #fff;
+            margin: 0 auto;
+        }
+    }
+    .overlay__trends-2{
+        position: absolute;
+        top: -230px;
+        right: -50px;
+        opacity: 1;
+        transition: all ease-in .3s;
+        img{
+            width: 140px;
+            height: 140px;
+            background: #E6E9F0;
+        }
+        .trends__author-overlay{
+            text-align: center;
+            width: 140px;
+            background: #fff;
+            padding: 4px 19px;
+            h6{
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                color: var(--st-theme-1);
+                margin: 0;
+            }
+        }
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+            border-top: 15px solid #fff;
+            margin: 0 auto;
+        }
+    }
    } 
    .trends__right{
     .section__title{
@@ -374,7 +485,102 @@
 // CTA section End Here
 
 
+// Blog CSS Start Here
+.blog__v2-wrapper{
+    padding-bottom: 7rem;
+    .blog__v2{
+        .blog__img{
+            position: relative;
+            img{
+                width: 80%;
+            }
+            .blogimg__content{
+                position: absolute;
+                background-color: #fff;
+                bottom: -50px;
+                -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+                border-radius: 8px;
+                padding: 40px;
+                left: 150px;
+                .publish__details{
+                    margin-bottom: 12px;
+                    .date{
+                        color: #70747D;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                    .by__admin{
+                        color: #70747D;
+                        margin-left: 30px;
+                        svg{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                h6{
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                }
+                p{
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                }
+                .simple__btn{
+                    cursor: pointer;
+                    color: var(--st-theme-1);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .small__blog{
+        .blogimg__content-small{
+            margin-left: 40px;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+            border-radius: 8px;
+            padding: 40px;
+            .publish__details{
+                margin-bottom: 12px;
+                .date{
+                    color: #70747D;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                .by__admin{
+                    color: #70747D;
+                    margin-left: 30px;
+                    svg{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            h6{
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                margin-bottom: 25px;
+            }
 
+            .simple__btn{
+                cursor: pointer;
+                color: var(--st-theme-1);
+                font-weight: 600;
+            }
+        }
+    }
+}
+// Blog CSS End Here
 
 
 
