@@ -291,14 +291,14 @@
 
 
 //Mobile Menu CSS
-#mobileMenu i{
+#mobileMenu {
     display: none;
 }
 @media only screen and (max-width: 991px){
     .main__menu{
         display: none;
     }
-    #mobileMenu i{
+    #mobileMenu {
         display: block !important;
         color: var(--st-common-white);
     }
