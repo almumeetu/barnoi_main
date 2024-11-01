@@ -1,6 +1,4 @@
-
-
-@use '../utils' as *;
+@use '../utils'as *;
 
 /*--
     - Menu
@@ -19,10 +17,11 @@
         justify-content: center;
         padding: 5px 0;
         border-radius: 10px;
-        @media #{$xs}{
+
+        @media #{$xs} {
             width: 265px;
-             
-          }
+
+        }
 
         img {
             width: 25px;
@@ -30,17 +29,18 @@
         }
 
         .nice-select {
-            color: #334F85!important;
+            color: #334F85 !important;
             font-weight: 500;
             font-size: 18px;
             border: none;
             background-color: transparent;
             line-height: 42px;
-            @media #{$xs}{
-               padding-left: 6px;
-               padding-right: 15px;
-                 
-              }
+
+            @media #{$xs} {
+                padding-left: 6px;
+                padding-right: 15px;
+
+            }
 
             &::after {
                 color: var(--st-heading-primary);
@@ -55,10 +55,12 @@
         ul {
             display: flex;
             justify-content: space-between;
-            @media #{$xl}{
+
+            @media #{$xl} {
                 margin-left: 70px;
             }
-            @media #{$lg}{
+
+            @media #{$lg} {
                 margin-left: 100px !important;
             }
 
@@ -72,14 +74,16 @@
                     font-weight: 500;
                     transition: color 0.3s, border-bottom 0.3s;
                     position: relative;
-                    @media #{$xl,$lg}{
+
+                    @media #{$xl,$lg} {
                         font-size: 15px;
                     }
 
-                    &:hover{
+                    &:hover {
                         color: var(--st-theme-1);
                     }
-                    &:focus{
+
+                    &:focus {
                         color: var(--st-theme-1);
 
                     }
@@ -294,10 +298,12 @@
 #mobileMenu {
     display: none;
 }
-@media only screen and (max-width: 991px){
-    .main__menu{
+
+@media only screen and (max-width: 991px) {
+    .main__menu {
         display: none;
     }
+
     #mobileMenu {
         display: block !important;
         color: var(--st-common-white);
@@ -305,36 +311,40 @@
 }
 
 
-  .mobile__menu {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	height: 70vh;
+.mobile__menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 70vh;
     display: none;
-	z-index: 99;
-	background: rgba(0, 0, 0, 0.9) !important;
-	top: 188px;
-	text-align: center;
-	padding: 30px;
-    @media #{$sm}{
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.9) !important;
+    top: 188px;
+    text-align: center;
+    padding: 30px;
+
+    @media #{$sm} {
         top: 145px;
-      }
-    @media #{$xs}{
+    }
+
+    @media #{$xs} {
         top: 187px;
-         
-      }
-    nav{
-        ul{
-            li{
+
+    }
+
+    nav {
+        ul {
+            li {
                 list-style: none;
                 display: flex;
                 font-size: 20px;
                 color: var(--st-theme-1);
                 margin: 20px 0;
-                img{
+
+                img {
                     margin-right: 5px;
                 }
             }
         }
     }
-}   
+}
