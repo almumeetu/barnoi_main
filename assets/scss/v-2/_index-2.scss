@@ -330,9 +330,13 @@
         border-radius: 8px;
         overflow: hidden;
         margin-bottom: 28px;
+        &:hover .indexing{
+            bottom: -15px;
+        }
         .indexing{
             right: 0;
-            bottom: -30px;
+            bottom: -35px;
+            transition: all ease-in .3s;
             h2{
                 font-size: 80px;
                 font-style: normal;
