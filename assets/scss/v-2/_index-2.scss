@@ -380,7 +380,7 @@
         }
     }
     .buy__all{
-        padding-top: 32px;
+        padding-top: 25px;
         .explore__btn-2{
             padding: 16px 48px;
             text-align: center;
@@ -817,7 +817,24 @@
 
 
 
-
+// Shipping Info Start Here
+.shipping__info-v2{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .shiping{
+        padding: 35px 85px;
+        border-width: 1px 1px 1px 0;
+        border-color: #E6E9F0;
+        border-style: solid;
+        .free__shipping{
+            border: none;
+            &:hover{
+                border: none;
+            }
+        }
+    }
+}
+// Shipping Info End Here
 
 
 
