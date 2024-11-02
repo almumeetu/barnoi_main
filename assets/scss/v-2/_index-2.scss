@@ -682,9 +682,11 @@
     .slider__btn--wrapper{
         position: relative;
         display: flex;
+        margin-bottom: 65px;
 
-        .swiper-button-next,.swiper-button-prev{    
+        .swiper-button-nexts,.swiper-button-prevs{    
             display: block;
+            position: absolute;
             i {
                 font-size: 20px;
                 height: 40px;
@@ -702,11 +704,11 @@
                 display: none;
             }
         }
-        .swiper-button-next {
+        .swiper-button-nexts {
             right: 0;
         }
-        .swiper-button-prev {
-            left: 150px;
+        .swiper-button-prevs {
+            left: 170px;
         }
     }
     .tab__wrapper{
@@ -748,6 +750,18 @@
                     &:hover .overlay {
                         opacity: 1;
                       }
+                      .base {
+                        font-size: 14px;
+                        background: var(--st-heading-primary);
+                        width: 100px;
+                        color: #fff;
+                        position: absolute;
+                        border-radius: 4px;
+                        top: 20px;
+                        left: 20px;
+                        z-index: 9;
+                        opacity: 9;
+                    }
                     .overlay {
                         position: absolute;
                         top: 0;
