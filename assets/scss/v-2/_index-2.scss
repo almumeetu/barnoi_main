@@ -672,12 +672,134 @@
     }
 }
 
-
-
 // Comming Soon Area End Here
 
 
+//New Arrivals Tab CSS Start Here
+.arrivals__tab{
+    padding-bottom: 7rem;
+    overflow: hidden;
+    .slider__btn--wrapper{
+        position: relative;
+        display: flex;
 
+        .swiper-button-next,.swiper-button-prev{    
+            display: block;
+            i {
+                font-size: 20px;
+                height: 40px;
+                width: 40px;
+                color: var(--st-theme-1);
+                outline: 1px dashed var(--st-theme-1);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+    
+            }
+            &::after{
+                display: none;
+            }
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+        .swiper-button-prev {
+            left: 150px;
+        }
+    }
+    .tab__wrapper{
+        display: flex;
+        .tab__btn{
+            width: 250px;
+            ul{
+                li{
+                    margin-bottom: 28px;
+                    
+                    button{
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        color: #70747D;
+                        border-bottom: 1px solid #70747D;
+                        transition: all ease-in .3s;
+                        &:hover{
+                            color: var(--st-theme-1);
+                            border-bottom: 1px solid var(--st-theme-1);
+                        }
+                    }
+
+                }
+                .active{
+                    color: var(--st-theme-1);
+                    border-bottom: 1px solid var(--st-theme-1);
+                }
+            }
+        }
+        .tab__contents{
+            width: 100%;
+            margin-left: 200px;
+            .tab__product{
+                .f__product-img{
+                    background: #f8f8f8;
+                    text-align: center;
+                    position: relative;
+                    &:hover .overlay {
+                        opacity: 1;
+                      }
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #c2cada68;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: opacity 0.3s ease-in-out;
+                        .icons{
+                            position: absolute;
+                            bottom: 40px;
+        
+                        }
+                        i{
+                            font-size: 27px;
+                            height: 50px;
+                            width: 50px;
+                            background: var(--st-common-white);
+                            vertical-align: middle;
+                            line-height: 50px;
+                            color: var(--st-theme-1);
+                            font-weight: 400;
+                            margin: 0 4px;
+                            border-radius: 3px;
+                            &:hover{
+                                background-color: var(--st-theme-1);
+                                color: var(--st-common-white);
+                            }
+                        }
+                      }
+                    .img-fluid{
+                        width: 90% !important;
+                    }
+                }
+            }
+            // .swiper{
+            //     padding: 70px 0;
+            // }
+            // .slider__btn--wrapper{
+            //     position: absolute;
+            //     right: 5%;
+            //     top: 26px;
+            // }
+
+        }
+    }
+}
+//New Arrivals Tab CSS End Here
 
 
 

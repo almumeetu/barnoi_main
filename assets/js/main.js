@@ -477,6 +477,79 @@ var swiper = new Swiper(".mySwipers", {
   speed: 1000,
 });
 
+
+
+//TAB SLIDER-2
+var swiper = new Swiper(".mySwipersTabs1", {
+  loop: true, // Enable continuous loop mode
+  spaceBetween: 10,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-1",
+    prevEl: ".swiper-button-prev-1",
+  },
+  speed: 1000,
+});
+
+
+//TAB SLIDER-3
+var swiper = new Swiper(".mySwipersTabs2", {
+  loop: true, // Enable continuous loop mode
+  spaceBetween: 10,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
+  },
+  speed: 1000,
+});
+
+
+//TAB SLIDER-4
+var swiper = new Swiper(".mySwipersTabs3", {
+  loop: true, // Enable continuous loop mode
+  spaceBetween: 10,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-3",
+    prevEl: ".swiper-button-prev-3",
+  },
+  speed: 1000,
+});
+
 window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   preloader.style.opacity = "0";
@@ -573,6 +646,44 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+// TAB2 JS
+
+function openTab(evt, tabName, sliderNavigationId) {
+  // Declare variables
+  var i, tabContents, tabLinks, sliderNavigations;
+
+  // Hide all tab contents
+  tabContents = document.getElementsByClassName("tab__contents");
+  for (i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = "none";
+  }
+
+  // Remove "active" class from all tab links
+  tabLinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+  }
+
+  // Hide all slider navigation wrappers
+  sliderNavigations = document.getElementsByClassName("slider-navigation");
+  for (i = 0; i < sliderNavigations.length; i++) {
+    sliderNavigations[i].style.display = "none";
+  }
+
+  // Show the selected tab content and slider navigation, and add "active" class to the clicked tab link
+  var selectedTabContent = document.getElementById(tabName);
+  var selectedSliderNavigation = document.getElementById(sliderNavigationId);
+
+  if (selectedTabContent && selectedSliderNavigation) {
+    selectedTabContent.style.display = "block";
+    selectedSliderNavigation.style.display = "block";
+    evt.currentTarget.className += " active";
+  } 
+}
+
+
 
 // Single Product Tab
 class ProductTab {
