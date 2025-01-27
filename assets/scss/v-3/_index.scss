@@ -1,0 +1,51 @@
+@use "../utils" as *;
+
+
+.shop__now-small-btn {
+	color: #fff;
+	background: var(--st-theme-1);
+	padding: 4px 16px;
+	font-weight: 600;
+	border-radius: 7px;
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 15px;
+	@media #{$xs,$sm}{
+		font-size: 14px;
+		width: 102px;
+	}
+	&:hover{
+		color: var(--st-heading-primary);
+	}
+}
+
+.discount__banner{
+    .discount__banner-wrapper{
+       padding: 80px 60px;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       @media #{$lg,$sm,$xs}{
+        padding: 40px 30px;
+    }
+    @media #{$md, $sm, $xs}{
+        margin-bottom: 30px;
+    }
+       h4{
+        margin: 0;
+       }
+       p{
+        width: 52%;
+        color: #70747D;
+        font-weight: 400;
+        margin-top: 17px;
+        margin-bottom: 28px;
+        @media #{$xl}{
+            width: 70%;
+        }
+        @media #{$lg,$md,$sm,$xs}{
+            width: 80%;
+        }
+       }
+    }
+}
