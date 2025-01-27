@@ -1,0 +1,29 @@
+@use "../utils" as *;
+
+.header__area-v2 {
+    border-bottom: 1px solid #E6E9F0;
+    .top__nav{
+        p{
+            font-size: 14px;
+            color: var(--st-common-white);
+        }
+    }
+    .header__main-area {
+        background: #fff;
+        .main__menu{
+            ul{
+                justify-content: center;
+                li{
+                    padding: 0 5px;
+                    margin: 0 10px;
+                    a{
+                        color: var(--st-heading-primary);
+                        &:hover{
+                            color: var(--st-theme-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

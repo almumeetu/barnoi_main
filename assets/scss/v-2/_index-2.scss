@@ -205,6 +205,117 @@
             }
         }
     }
+    .trends__features-2{
+        border: 2px dotted #fff;
+        width: 50px;
+        height: 50px;
+        color: #000;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 275px;
+        right: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span{
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background: var(--st-theme-1);
+                color: #fff;
+            }
+        }
+    }
+    .trends__features:hover + .overlay__trends {
+        opacity: 1 !important;
+        border-radius: 12px;
+    }
+    .trends__features-2:hover .p-relative .overlay__trends-2 {
+        opacity: 1 !important;
+        border-radius: 12px;
+    }
+    .overlay__trends{
+        position: absolute;
+        top: 8px;
+        right: 93px;
+        opacity: 0;
+        transition: all ease-in .3s;
+        img{
+            width: 140px;
+            height: 140px;
+            background: #E6E9F0;
+        }
+        .trends__author-overlay{
+            text-align: center;
+            width: 140px;
+            background: #fff;
+            padding: 4px 19px;
+            h6{
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0;
+            }
+            span{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                color: var(--st-theme-1);
+            }
+        }
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+            border-top: 15px solid #fff;
+            margin: 0 auto;
+        }
+    }
+    .overlay__trends-2{
+        position: absolute;
+        top: -230px;
+        right: -50px;
+        opacity: 1;
+        transition: all ease-in .3s;
+        img{
+            width: 140px;
+            height: 140px;
+            background: #E6E9F0;
+        }
+        .trends__author-overlay{
+            text-align: center;
+            width: 140px;
+            background: #fff;
+            padding: 4px 19px;
+            h6{
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                color: var(--st-theme-1);
+                margin: 0;
+            }
+        }
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+            border-top: 15px solid #fff;
+            margin: 0 auto;
+        }
+    }
    } 
    .trends__right{
     .section__title{
@@ -219,9 +330,13 @@
         border-radius: 8px;
         overflow: hidden;
         margin-bottom: 28px;
+        &:hover .indexing{
+            bottom: -15px;
+        }
         .indexing{
             right: 0;
-            bottom: -30px;
+            bottom: -35px;
+            transition: all ease-in .3s;
             h2{
                 font-size: 80px;
                 font-style: normal;
@@ -265,7 +380,7 @@
         }
     }
     .buy__all{
-        padding-top: 32px;
+        padding-top: 25px;
         .explore__btn-2{
             padding: 16px 48px;
             text-align: center;
@@ -282,7 +397,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-color: #FAFAFB;
-    margin: 7rem 0;
+    margin: 7rem 0 0 0;
     .cta__content{
         .cta__title{
             h3{
@@ -374,16 +489,352 @@
 // CTA section End Here
 
 
+// Blog CSS Start Here
+.blog__v2-wrapper{
+    padding-bottom: 7rem;
+    .blog__v2{
+        .blog__img{
+            position: relative;
+            img{
+                width: 80%;
+            }
+            .blogimg__content{
+                position: absolute;
+                background-color: #fff;
+                bottom: -50px;
+                -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+                border-radius: 8px;
+                padding: 40px;
+                left: 150px;
+                .publish__details{
+                    margin-bottom: 12px;
+                    .date{
+                        color: #70747D;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                    .by__admin{
+                        color: #70747D;
+                        margin-left: 30px;
+                        svg{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                h6{
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                }
+                p{
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                }
+                .simple__btn{
+                    cursor: pointer;
+                    color: var(--st-theme-1);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .small__blog{
+        .blogimg__content-small{
+            margin-left: 40px;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+            border-radius: 8px;
+            padding: 40px;
+            .publish__details{
+                margin-bottom: 12px;
+                .date{
+                    color: #70747D;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                .by__admin{
+                    color: #70747D;
+                    margin-left: 30px;
+                    svg{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            h6{
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                margin-bottom: 25px;
+            }
+
+            .simple__btn{
+                cursor: pointer;
+                color: var(--st-theme-1);
+                font-weight: 600;
+            }
+        }
+    }
+}
+// Blog CSS End Here
+
+
+// Comming Soon Area Start Here
+
+.comming__soon-v2{
+    background: #FAFAFB;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 9rem;
+    .right__image{
+        position: absolute;
+        right: 0;
+        top: -75px;
+        text-align: end;
+        img{
+            width: 85%;
+        }
+        .overlay__wrappers{
+            .overlay__pro{
+                bottom: 125px;
+                left: -130px;
+                img{
+                    width: 360px;
+                    height: 400px;
+                    border-radius: 12px 12px 0px 0px;
+                    background: #FEF6F2;
+                }
+                .pro__content{
+                    text-align: center;
+                    padding: 18px 40px;
+                    background: #fff;
+                    border-radius: 0 0 12px 12px;
+                    h6{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .upcoming__wrapper{
+        .section__title{
+            .main__title{
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 80px; 
+                margin-bottom: 24px;
+            }
+            .sub__title{
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 0;
+            }
+        }
+        p{
+            margin-bottom: 40px;
+        }
+
+        .counters{
+            margin-bottom: 40px;
+            .count{
+                width: 108px;
+                height: 124px;
+                border: 1px solid #E6E9F0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    margin: 0;
+                }
+                span{}
+            }
+        }
+        div{
+            .explore__btn-2{
+                display: inline-block !important;
+                padding: 16px 44px !important;
+            }
+        }
+    }
+}
+
+// Comming Soon Area End Here
+
+
+//New Arrivals Tab CSS Start Here
+.arrivals__tab{
+    padding-bottom: 7rem;
+    overflow: hidden;
+    .slider__btn--wrapper{
+        position: relative;
+        display: flex;
+        margin-bottom: 65px;
+
+        .swiper-button-nexts,.swiper-button-prevs{    
+            display: block;
+            position: absolute;
+            i {
+                font-size: 20px;
+                height: 40px;
+                width: 40px;
+                color: var(--st-theme-1);
+                outline: 1px dashed var(--st-theme-1);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+    
+            }
+            &::after{
+                display: none;
+            }
+        }
+        .swiper-button-nexts {
+            right: 0;
+        }
+        .swiper-button-prevs {
+            left: 170px;
+        }
+    }
+    .tab__wrapper{
+        display: flex;
+        .tab__btn{
+            width: 250px;
+            ul{
+                li{
+                    margin-bottom: 28px;
+                    
+                    button{
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        color: #70747D;
+                        border-bottom: 1px solid #70747D;
+                        transition: all ease-in .3s;
+                        &:hover{
+                            color: var(--st-theme-1);
+                            border-bottom: 1px solid var(--st-theme-1);
+                        }
+                    }
+
+                }
+                .active{
+                    color: var(--st-theme-1);
+                    border-bottom: 1px solid var(--st-theme-1);
+                }
+            }
+        }
+        .tab__contents{
+            width: 100%;
+            margin-left: 200px;
+            .tab__product{
+                .f__product-img{
+                    background: #f8f8f8;
+                    text-align: center;
+                    position: relative;
+                    &:hover .overlay {
+                        opacity: 1;
+                      }
+                      .base {
+                        font-size: 14px;
+                        background: var(--st-heading-primary);
+                        width: 100px;
+                        color: #fff;
+                        position: absolute;
+                        border-radius: 4px;
+                        top: 20px;
+                        left: 20px;
+                        z-index: 9;
+                        opacity: 9;
+                    }
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #c2cada68;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: opacity 0.3s ease-in-out;
+                        .icons{
+                            position: absolute;
+                            bottom: 40px;
+        
+                        }
+                        i{
+                            font-size: 27px;
+                            height: 50px;
+                            width: 50px;
+                            background: var(--st-common-white);
+                            vertical-align: middle;
+                            line-height: 50px;
+                            color: var(--st-theme-1);
+                            font-weight: 400;
+                            margin: 0 4px;
+                            border-radius: 3px;
+                            &:hover{
+                                background-color: var(--st-theme-1);
+                                color: var(--st-common-white);
+                            }
+                        }
+                      }
+                    .img-fluid{
+                        width: 90% !important;
+                    }
+                }
+            }
+            // .swiper{
+            //     padding: 70px 0;
+            // }
+            // .slider__btn--wrapper{
+            //     position: absolute;
+            //     right: 5%;
+            //     top: 26px;
+            // }
+
+        }
+    }
+}
+//New Arrivals Tab CSS End Here
 
 
 
-
-
-
-
-
-
-
+// Shipping Info Start Here
+.shipping__info-v2{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .shiping{
+        padding: 35px 85px;
+        border-width: 1px 1px 1px 0;
+        border-color: #E6E9F0;
+        border-style: solid;
+        .free__shipping{
+            border: none;
+            &:hover{
+                border: none;
+            }
+        }
+    }
+}
+// Shipping Info End Here
 
 
 

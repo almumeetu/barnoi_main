@@ -22,7 +22,7 @@ section{
 }
 .section__title{
     span{
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         @media #{$xs,$sm,$md}{
             margin-bottom: 15px;
         }
@@ -73,28 +73,28 @@ section{
     }
 
 }
-h3{
-    @media #{$xs,$sm}{
-        font-size: 30px !important;
-        line-height: 40px !important;
-    }
-}
-h4{
-    @media #{$xs,$sm}{
-        font-size: 24px !important;
-        line-height: 34px !important;
-    }
-}
+// h3{
+//     @media #{$xs,$sm}{
+//         font-size: 30px !important;
+//         line-height: 40px !important;
+//     }
+// }
+// h4{
+//     @media #{$xs,$sm}{
+//         font-size: 24px !important;
+//         line-height: 34px !important;
+//     }
+// }
 
-h5{
-    @media #{$xs,$sm}{
-        font-size: 20px !important;
-        line-height: 30px !important;
-    }
-}
-h6{
-    @media #{$xs,$sm}{
-        font-size: 18px !important;
-        line-height: 28px !important;
-    }
-}
+// h5{
+//     @media #{$xs,$sm}{
+//         font-size: 20px !important;
+//         line-height: 30px !important;
+//     }
+// }
+// h6{
+//     @media #{$xs,$sm}{
+//         font-size: 18px !important;
+//         line-height: 28px !important;
+//     }
+// }
