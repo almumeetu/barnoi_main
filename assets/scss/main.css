@@ -8088,6 +8088,29 @@ details[open] summary::after {
   color: var(--st-heading-primary);
 }
 
+.view__categories-btn {
+  color: #fff;
+  background: var(--st-common-white);
+  padding: 16px 44px;
+  font-weight: 600;
+  border-radius: 7px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 15px;
+  color: var(--st-theme-1);
+  border: 1px solid var(--st-theme-1);
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .view__categories-btn {
+    font-size: 14px;
+    width: 102px;
+  }
+}
+.view__categories-btn:hover {
+  color: var(--st-common-white);
+  background: var(--st-theme-1);
+}
+
 .discount__banner .discount__banner-wrapper {
   padding: 80px 60px;
   background-repeat: no-repeat;
@@ -8123,4 +8146,30 @@ details[open] summary::after {
   .discount__banner .discount__banner-wrapper p {
     width: 80%;
   }
+}
+
+.category-v3 .cat__title {
+  margin-bottom: 70px;
+}
+.category-v3 .cat__title .section__title span {
+  margin-bottom: 16px;
+}
+.category-v3 .cat__v3-wrapper .cat__3 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+.category-v3 .cat__v3-wrapper .cat__3 .cat__3-img {
+  margin-top: -40px;
+}
+.category-v3 .cat__v3-wrapper .cat__3 .cat__3-img img {
+  width: 100%;
+}
+.category-v3 .cat__v3-wrapper .cat__3 .cat__3-name {
+  margin-left: 20px;
+}
+.category-v3 .cat__v3-wrapper .cat__3 .cat__3-name h6 {
+  margin-bottom: 8px;
+}
+.category-v3 .cat__v3-wrapper .cat__3 .cat__3-name span {
+  color: #70747D;
 }/*# sourceMappingURL=main.css.map */
