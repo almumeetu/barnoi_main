@@ -81,6 +81,11 @@
         .section__title span {
             margin-bottom: 16px;
         }
+        .view__categories-btn-wrapper{
+            @media #{$sm,$xs}{
+                text-align: start  !important;
+            }
+        }
     }
     .cat__v3-wrapper{
         .cat__3{
