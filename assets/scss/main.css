@@ -8068,6 +8068,10 @@ details[open] summary::after {
   z-index: -2;
 }
 
+.simple__btn-v3 {
+  color: var(--st-theme-1);
+}
+
 .shop__now-small-btn {
   color: #fff;
   background: var(--st-theme-1);
@@ -8086,6 +8090,23 @@ details[open] summary::after {
 }
 .shop__now-small-btn:hover {
   color: var(--st-heading-primary);
+}
+
+.shop__btn-v3 {
+  background-color: var(--st-theme-1);
+  color: var(--st-common-white);
+  border: 1px solid var(--st-theme-1);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 36px;
+  font-weight: 600;
+  border-radius: 7px;
+  transition: border 0.4s ease-in-out, color 0.4s ease-in-out, background-color 0.4s ease-in-out !important;
+}
+.shop__btn-v3:hover {
+  border-color: var(--st-theme-1);
+  background-color: var(--st-common-white);
+  color: var(--st-theme-1);
 }
 
 .view__categories-btn {
@@ -8177,4 +8198,53 @@ details[open] summary::after {
 }
 .category-v3 .cat__v3-wrapper .cat__3 .cat__3-name span {
   color: #70747D;
+}
+
+.blog__v3 .section__title .sub__title {
+  margin-bottom: 16px !important;
+}
+.blog__v3 .blog__v3-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image {
+  position: relative;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image img {
+  width: 70%;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image .blog__v3-content {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 30px 28px;
+  width: 80%;
+  bottom: 20px;
+  right: -30px;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image .blog__v3-content .date__author {
+  margin-bottom: 8px;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image .blog__v3-content .date__author .date p {
+  margin: 0;
+  font-size: 18px;
+  color: #70747D;
+  padding-left: 8px;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image .blog__v3-content .date__author .author {
+  margin-left: 56px;
+  position: relative;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image .blog__v3-content .date__author .author::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #A0A3A9;
+  border-radius: 50%;
+  left: -15px;
+  top: 5px;
+}
+.blog__v3 .blog__v3-wrapper .single__blog .blog__image .blog__v3-content .blog__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

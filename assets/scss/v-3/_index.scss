@@ -1,6 +1,8 @@
 @use "../utils" as *;
 
-
+.simple__btn-v3{
+    color: var(--st-theme-1);
+}
 .shop__now-small-btn {
 	color: #fff;
 	background: var(--st-theme-1);
@@ -16,6 +18,22 @@
 	}
 	&:hover{
 		color: var(--st-heading-primary);
+	}
+}
+.shop__btn-v3{
+	background-color:  var(--st-theme-1);
+	color: var(--st-common-white);
+	border: 1px solid var(--st-theme-1);
+	font-size: 18px;
+	line-height: 27px;
+	padding: 12px 36px;
+	font-weight: 600;
+	border-radius: 7px;
+	transition: border .4s ease-in-out, color .4s ease-in-out, background-color .4s ease-in-out !important;
+	&:hover{
+		border-color: var(--st-theme-1);
+		background-color: var(--st-common-white);
+		color: var(--st-theme-1);
 	}
 }
 .view__categories-btn{
@@ -104,6 +122,65 @@
                 }
                 span{
                     color: #70747D;
+                }
+            }
+        }
+    }
+}
+
+//Blog Version 3 section Start Here
+.blog__v3{
+    .section__title{
+        .sub__title{
+            margin-bottom: 16px !important;
+        }
+    }
+    .blog__v3-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        .single__blog{
+            .blog__image{
+                position: relative;
+                img{
+                    width: 70%;
+                }
+                .blog__v3-content{
+                    position: absolute;
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+                    background: #fff;
+                    padding: 30px 28px;
+                    width: 80%;
+                    bottom: 20px;
+                    right: -30px;
+                    .date__author{
+                        margin-bottom: 8px;
+                        .date{
+                            p{
+                                margin: 0;
+                                font-size: 18px;
+                                color: #70747D;
+                                padding-left: 8px;
+                            }
+                        }
+                        .author{
+                            margin-left: 56px;
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                width: 8px;
+                                height: 8px;
+                                background: #A0A3A9;
+                                border-radius: 50%;
+                                left: -15px;
+                                top: 5px;
+                            }
+                        }
+                    }
+                    .blog__title{
+                        margin-bottom: 20px;
+                    }
+
                 }
             }
         }
