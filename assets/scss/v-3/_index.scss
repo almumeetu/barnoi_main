@@ -3,6 +3,24 @@
 .simple__btn-v3{
     color: var(--st-theme-1);
 }
+.view__btn-v3{
+    color: var(--st-theme-1);
+	background: var(--st-common-white);
+	padding: 10px 24px;
+	font-weight: 600;
+	border-radius: 7px;
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 15px;
+    border: 1px solid var(--st-theme-1);
+	@media #{$xs,$sm}{
+		font-size: 14px;
+		width: 102px;
+	}
+	&:hover{
+		color: var(--st-heading-primary);
+	}
+}
 .shop__now-small-btn {
 	color: #fff;
 	background: var(--st-theme-1);
@@ -59,7 +77,6 @@
 
 
 //Discount Banner Css Start Here
-
 .discount__banner{
     .discount__banner-wrapper{
        padding: 80px 60px;
@@ -130,6 +147,7 @@
 
 //Blog Version 3 section Start Here
 .blog__v3{
+    margin-bottom: 80px;
     .section__title{
         .sub__title{
             margin-bottom: 16px !important;
@@ -139,6 +157,7 @@
         margin-top: 60px;
         margin-bottom: 60px;
         .single__blog{
+            margin-right: 40px;
             .blog__image{
                 position: relative;
                 img{
@@ -148,6 +167,7 @@
                     position: absolute;
                     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
                     background: #fff;
+                    border-radius: 8px;
                     padding: 30px 28px;
                     width: 80%;
                     bottom: 20px;
@@ -185,4 +205,79 @@
             }
         }
     }
+}
+
+
+//Slider V3 CSS Start Here
+.slider__v3{
+    background: #FAFAFB;
+
+    .slider__main-wrapper{
+        background-position:  top right, bottom right !important;
+        background-repeat: no-repeat, no-repeat !important;
+        .slider__left-image{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        .slider__middle-wrapper{
+            width: 40%;
+            padding: 100px 80px;
+            .section__title{
+                .sub__title{
+                    margin-bottom: 16px;
+                }
+                p{
+                    margin-bottom: 40px;
+                }
+                .heroBtn__wrapper{
+                    .shop__btn-v3{
+                        margin-right: 40px;
+                    }
+                    .simple__button{
+                        color: #70747D;
+                        font-weight: 600;
+                        margin-right: 12px;
+                        &:hover{
+                            color: var(--st-theme-1);
+                        }
+                    }
+                    .play__btn{
+                        font-size: 45px;
+                        color: var(--st-theme-1);
+                        transition: .3s;
+                    }
+                }
+            }
+            .slider__paginations{
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+            }
+        }
+        .slider__single-card{
+            .card__image{
+                margin-top: 40px;
+                img{
+                    background: #FEEDE6;
+                    width: 100%;
+                    max-width: 340px;
+                    border-radius: 12px 12px 0 0;
+                }
+            }
+            .card__author{
+                background: #fff;
+                padding: 24px 32px;
+                border-radius: 0px 0px 12px 12px;
+                span{
+                    font-size: 14px;
+                }
+                p{
+                    font-weight: 600;
+                    color: var(--st-heading-primary);
+                }
+            }
+        }
+    }
+
 }
