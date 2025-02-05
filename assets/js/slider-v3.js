@@ -118,5 +118,5 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlider();
 
     // Automatically change slider content every 0.5 seconds
-    setInterval(updateSlider, 2500);
+    setInterval(updateSlider, 10000000000);
 });

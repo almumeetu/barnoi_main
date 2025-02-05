@@ -241,6 +241,9 @@
         background-repeat: no-repeat, no-repeat !important;
         .slider__left-image{
             width: 30%;
+            @media #{$md,$sm,$xs}{
+                width: 0;
+            }
             img{
                 width: 100%;
                 max-height: 800px;
@@ -251,6 +254,14 @@
             width: 42%;
             padding: 100px 80px;
             position: relative;
+            @media #{$md,$sm,$xs}{
+                width: 60%;
+                background-image: url("/assets/img/slider-v3/Image.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 50px 20px;
+            }
             .section__title{
                 .sub__title{
                     margin-bottom: 16px;
@@ -307,6 +318,12 @@
         }
         .slider__card-wrapper{
             position: relative;
+            width: 28%;
+            @media #{$md,$sm,$xs}{
+                width: 50%;
+                margin-left: 40px;
+                
+            }
             .slider__single-card{
                 .card__image{
                     margin-top: 40px;
@@ -314,10 +331,18 @@
                         background: #FEEDE6;
                         width: 100%;
                         max-width: 340px;
+                        @media #{$md,$sm,$xs}{
+                            max-width: 240px;
+                            
+                        }
                         border-radius: 12px 12px 0 0;
                     }
                 }
                 .card__author{
+                    @media #{$md,$sm,$xs}{
+                        width: 240px;
+                        
+                    }
                     background: #fff;
                     padding: 24px 32px;
                     border-radius: 0px 0px 12px 12px;
@@ -334,6 +359,11 @@
                 position: absolute;
                 right: -380px;
                 top: 65px;
+                @media #{$md,$sm,$xs}{
+                    max-width: 240px;
+                    right: -150px;
+                    
+                }
             }
         }
 
