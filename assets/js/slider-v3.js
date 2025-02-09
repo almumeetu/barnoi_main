@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sliderData = [
         {
             background: ["assets/img/slider-v3/fashion-shape.png", "assets/img/slider-v3/product-bgg-shape.png"],
-            middleBackground: "assets/img/slider-v3/Image.png", // Add this line
+            middleBackground: "assets/img/slider-v3/Image.png",
             leftImage: "assets/img/slider-v3/Image.png",
             subTitle: "Our Latest Offerings",
             mainTitle: "Exclusive Series <span>Collection</span>",
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             background: ["assets/img/slider-v3/fashion-shape.png", "assets/img/slider-v3/product-bgg-shape.png"],
-            middleBackground: "assets/img/slider-v3/slider-v3-02.png", // Add this line
+            middleBackground: "assets/img/slider-v3/slider-v3-02.png",
             leftImage: "assets/img/slider-v3/slider-v3-02.png",
             subTitle: "Our Latest Offerings",
             mainTitle: "Exclusive Series <span>Collection- 02</span>",
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             background: ["assets/img/slider-v3/fashion-shape.png", "assets/img/slider-v3/product-bgg-shape.png"],
-            middleBackground: "assets/img/slider-v3/slider-v3-04.png", // Add this line
+            middleBackground: "assets/img/slider-v3/slider-v3-04.png",
             leftImage: "assets/img/slider-v3/slider-v3-04.png",
             subTitle: "Our Latest Offerings",
             mainTitle: "Exclusive Series <span>Collection -03</span>",
@@ -50,22 +50,28 @@ document.addEventListener("DOMContentLoaded", function () {
             pagination: { current: "03", total: "03" }
         }
     ];
+
     // Get the slider container
     const sliderContainer = document.getElementById("sliderContainer");
 
     let currentIndex = 0;
+    let autoSlideInterval;
 
     function updateSlider() {
         const slide = sliderData[currentIndex];
 
-        sliderContainer.innerHTML = `
+        // Calculate the progress bar width based on the current index
+        const progressWidth = ((currentIndex + 1) / sliderData.length) * 100;
+
+        // Create the slider content
+        const sliderContent = `
             <div class="slider__main-wrapper d-flex" style="background: url('${slide.background[0]}'), url('${slide.background[1]}');">
                 
                 <div class="slider__left-image">
                     <img src="${slide.leftImage}" alt="">
                 </div>
-
-                <div class="slider__middle-wrapper ${window.innerWidth <= 1199 ? 'middle-background-visible' : ''}">
+    
+                <div class="slider__middle-wrapper" style="background-image: ${window.innerWidth <= 1199 ? `url('${slide.middleBackground}')` : 'none'};">
                     <div class="section__title">
                         <span class="sub__title">${slide.subTitle}</span>
                         <h2 class="main__title">${slide.mainTitle}</h2>
@@ -76,13 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             <a href="#" class="play__btn"><i class="${slide.videoIcon}"></i></a>
                         </div>
                     </div>
-
+    
                     <div class="slider__paginations" style="background: url('assets/img/slider-v3/Shape.png');">
                         <h4><span class="active__pagination">${slide.pagination.current}</span> 
                         <span class="upcomming__pagination">/${slide.pagination.total}</span></h4>
                     </div>
                 </div>
-
+    
                 <div class="slider__card-wrapper p-relative">
                     <div class="slider__single-card">
                         <div class="card__image">
@@ -102,23 +108,51 @@ document.addEventListener("DOMContentLoaded", function () {
                             <p>${slide.cardText}</p>
                         </div>
                     </div>
-
+    
                     <div class="progress-container">
-                        <div class="progress-bar"></div>
+                        <div class="progress-bar" style="width: ${progressWidth}%;"></div>
                     </div>
                 </div>
             </div>
         `;
 
-        // Move to the next slide
-        currentIndex = (currentIndex + 1) % sliderData.length;
+        // Add fade-out transition before updating the slider
+        sliderContainer.style.opacity = 0;
+        setTimeout(() => {
+            sliderContainer.innerHTML = sliderContent;
+            sliderContainer.style.opacity = 1; // Fade in the new content
+        }, 300); // Match this duration with the CSS transition duration
+
+        // Add click event listener to the pagination element
+        const paginationElement = sliderContainer.querySelector('.slider__paginations');
+        if (paginationElement) {
+            paginationElement.addEventListener('click', () => {
+                // Pause auto-slide
+                clearInterval(autoSlideInterval);
+
+                // Move to the next slide
+                currentIndex = (currentIndex + 1) % sliderData.length;
+                updateSlider();
+
+                // Restart auto-slide after 2 seconds
+                autoSlideInterval = setInterval(updateSlider, 2000);
+            });
+        }
+    }
+
+    // Function to start autoplay
+    function startAutoPlay() {
+        autoSlideInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % sliderData.length;
+            updateSlider();
+        }, 2000);
     }
 
     // Initial load
     updateSlider();
 
-    // Automatically change slider content every 3 seconds
-    setInterval(updateSlider, 3000);
+    // Start autoplay
+    startAutoPlay();
 
     // Update slider on window resize
     window.addEventListener('resize', updateSlider);
