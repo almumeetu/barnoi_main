@@ -283,6 +283,10 @@
     .slider__main-wrapper {
         background-position: top right, bottom right !important;
         background-repeat: no-repeat, no-repeat !important;
+        @media #{$xs} {
+            flex-direction: column-reverse;
+        }
+
 
         .slider__left-image {
             width: 30%;
@@ -302,6 +306,9 @@
             width: 42%;
             padding: 100px 80px;
             position: relative;
+            @media #{$xs} {
+               width: 100%;
+            }
 
             @media #{$xxl,$xl,$lg,$md} {
                 padding: 20px 30px;
@@ -408,19 +415,22 @@
         .slider__card-wrapper {
             position: relative;
             width: 28%;
-
+            @media #{$xs} {
+                width: 100%;
+             }
             @media #{$lg,$md,$sm} {
                 width: 40%;
                 margin-left: 40px;
 
             }
 
-            @media #{$xs} {
-                width: 100%;
-
-            }
-
             .slider__single-card {
+                @media #{$xs} {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: center;
+                 }
                 .card__image {
                     margin-top: 40px;
 
@@ -499,6 +509,27 @@
     background: rgba(240, 74, 0, 1);
     border-radius: 2px;
     transition: width 0.5s ease-in-out;
+}
+
+
+/* Add this CSS to your stylesheet */
+@media (max-width: 1199px) {
+    .slider__middle-wrapper {
+        background-image: url('${slide.middleBackground}') !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slider__middle-wrapper {
+        background-image: none !important;
+    }
+}
+.slider__middle-wrapper.middle-background-visible {
+    background-image: url('${slide.middleBackground}') !important;
+}
+
+.slider__middle-wrapper:not(.middle-background-visible) {
+    background-image: none !important;
 }
 
 // Animation css

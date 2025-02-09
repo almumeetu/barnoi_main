@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sliderData = [
         {
             background: ["assets/img/slider-v3/fashion-shape.png", "assets/img/slider-v3/product-bgg-shape.png"],
+            middleBackground: "assets/img/slider-v3/Image.png", // Add this line
             leftImage: "assets/img/slider-v3/Image.png",
             subTitle: "Our Latest Offerings",
             mainTitle: "Exclusive Series <span>Collection</span>",
@@ -18,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             background: ["assets/img/slider-v3/fashion-shape.png", "assets/img/slider-v3/product-bgg-shape.png"],
-            leftImage: "assets/img/slider-v3/Image.png",
+            middleBackground: "assets/img/slider-v3/slider-v3-02.png", // Add this line
+            leftImage: "assets/img/slider-v3/slider-v3-02.png",
             subTitle: "Our Latest Offerings",
             mainTitle: "Exclusive Series <span>Collection- 02</span>",
             description: "Shop our selection of luxury t-shirts and polo shirts, the ultimate casual garments. We offer exclusive fabrics in cashmere.",
@@ -33,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             background: ["assets/img/slider-v3/fashion-shape.png", "assets/img/slider-v3/product-bgg-shape.png"],
-            leftImage: "assets/img/slider-v3/Image.png",
+            middleBackground: "assets/img/slider-v3/slider-v3-04.png", // Add this line
+            leftImage: "assets/img/slider-v3/slider-v3-04.png",
             subTitle: "Our Latest Offerings",
             mainTitle: "Exclusive Series <span>Collection -03</span>",
             description: "Shop our selection of luxury t-shirts and polo shirts, the ultimate casual garments. We offer exclusive fabrics in cashmere.",
@@ -46,10 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cardText: "New Polo T-Shirt",
             pagination: { current: "03", total: "03" }
         }
-
-
     ];
-
     // Get the slider container
     const sliderContainer = document.getElementById("sliderContainer");
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img src="${slide.leftImage}" alt="">
                 </div>
 
-                <div class="slider__middle-wrapper">
+                <div class="slider__middle-wrapper ${window.innerWidth <= 1199 ? 'middle-background-visible' : ''}">
                     <div class="section__title">
                         <span class="sub__title">${slide.subTitle}</span>
                         <h2 class="main__title">${slide.mainTitle}</h2>
@@ -117,6 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial load
     updateSlider();
 
-    // Automatically change slider content every 0.5 seconds
-    setInterval(updateSlider, 10000000000);
+    // Automatically change slider content every 3 seconds
+    setInterval(updateSlider, 3000);
+
+    // Update slider on window resize
+    window.addEventListener('resize', updateSlider);
 });
