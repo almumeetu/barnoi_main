@@ -468,7 +468,7 @@
                         width: 100%;
                         max-width: 340px;
 
-                        @media #{$xl,$lg,$md,$sm,$xs} {
+                        @media #{$xxl,$xl,$lg,$md,$sm,$xs} {
                             max-width: 240px;
 
                         }
@@ -480,7 +480,7 @@
                 .card__author {
                     width: 340px;
 
-                    @media #{$xl,$lg,$md,$sm,$xs} {
+                    @media #{$xxl,$xl,$lg,$md,$sm,$xs} {
                         width: 240px;
 
                     }
