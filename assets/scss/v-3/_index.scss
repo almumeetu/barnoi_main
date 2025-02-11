@@ -55,7 +55,11 @@
     font-weight: 600;
     border-radius: 7px;
     transition: border .4s ease-in-out, color .4s ease-in-out, background-color .4s ease-in-out !important;
+    @media #{$md,$sm,$xs} {
+        font-size: 16px;
+        padding: 8px 9px;
 
+    }
     &:hover {
         border-color: var(--st-theme-1);
         background-color: var(--st-common-white);
@@ -283,8 +287,11 @@
     .slider__main-wrapper {
         background-position: top right, bottom right !important;
         background-repeat: no-repeat, no-repeat !important;
+        max-height: 800px;
+        height: 100%;
         @media #{$xs} {
             flex-direction: column-reverse;
+            max-height: 1000px;
         }
 
 
@@ -306,8 +313,10 @@
             width: 42%;
             padding: 100px 80px;
             position: relative;
+
             @media #{$xs} {
-               width: 100%;
+                width: 100%;
+                margin-top: 5rem;
             }
 
             @media #{$xxl,$xl,$lg,$md} {
@@ -316,7 +325,6 @@
 
             @media #{$lg,$md,$sm} {
                 width: 60%;
-                background-image: url("/assets/img/slider-v3/Image.png");
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -326,11 +334,11 @@
 
             @media #{$xs} {
                 width: 100% !important;
-                background-image: url("/assets/img/slider-v3/Image.png");
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 padding: 50px 20px;
+                height: 590px;
 
             }
 
@@ -351,6 +359,10 @@
                 .heroBtn__wrapper {
                     .shop__btn-v3 {
                         margin-right: 40px;
+                        @media #{$md,$sm,$xs} {
+                            margin-right: 20px;
+        
+                        }
                     }
 
                     .simple__button {
@@ -382,10 +394,16 @@
                 position: absolute;
                 left: 0;
                 bottom: 20px;
-
+                cursor: pointer;
                 @media #{$xl,$lg,$md,$sm,$xs} {
                     width: 180px;
                     height: 100px;
+                    bottom: 0;
+
+                }
+                @media #{$md,$sm,$xs} {
+                    width: 165px;
+                    height: 90px;
                     bottom: 0;
 
                 }
@@ -395,15 +413,16 @@
                     color: transparent;
                     text-shadow:
                         1px 1px 0 rgba(255, 255, 255, 0.9),
-                        /* Shadow for a light effect */
                         -1px -1px 0 rgba(255, 255, 255, 0.7),
                         1px -1px 0 rgba(255, 255, 255, 0.7),
                         -1px 1px 0 rgba(255, 255, 255, 0.7),
                         0 0 8px rgba(0, 0, 0, 0.1);
-                    /* Final glow effect */
                     text-align: center;
-                    /* Center the text */
                     line-height: 1;
+                    @media #{$md,$sm,$xs} {
+                        font-size: 48px;
+    
+                    }
                 }
 
                 .upcomming__pagination {
@@ -415,9 +434,11 @@
         .slider__card-wrapper {
             position: relative;
             width: 28%;
+
             @media #{$xs} {
                 width: 100%;
-             }
+            }
+
             @media #{$lg,$md,$sm} {
                 width: 40%;
                 margin-left: 40px;
@@ -426,11 +447,12 @@
 
             .slider__single-card {
                 @media #{$xs} {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: start;
-                        align-items: center;
-                 }
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                }
+
                 .card__image {
                     margin-top: 40px;
 
@@ -477,9 +499,11 @@
                 top: 65px;
 
                 @media #{$lg} {
-                    right: -100px;;
+                    right: -100px;
+                    ;
 
                 }
+
                 @media #{$md,$sm,$xs} {
                     display: none;
 
@@ -492,7 +516,7 @@
 }
 
 .progress-container {
-    width: 280px;
+    width: 250px;
     height: 4px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 2px;
@@ -500,20 +524,33 @@
     overflow: hidden;
     position: absolute;
     bottom: 60px;
+    @media #{$xs} {
+        width: 80%;
+        bottom: -40px;
+        left: 10%;
+
+    }
+    @media #{$lg, $md} {
+        width: 200px;
+
+    }
 }
 
 .progress-bar {
     height: 100%;
     background: rgba(240, 74, 0, 1);
     border-radius: 2px;
-    transition: width 0.5s ease-in-out; /* Smooth transition */
+    transition: width 0.5s ease-in-out;
+    /* Smooth transition */
 }
 
 
 /* Add this CSS to your stylesheet */
 @media (max-width: 1199px) {
     .slider__middle-wrapper {
-        background-image: url('${slide.middleBackground}') !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -522,13 +559,15 @@
         background-image: none !important;
     }
 }
+
 .slider__middle-wrapper.middle-background-visible {
-    background-image: url('${slide.middleBackground}') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.slider__middle-wrapper:not(.middle-background-visible) {
-    background-image: none !important;
-}
+
+
 
 // Animation css
 #sliderContainer {
@@ -543,10 +582,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateX(100%); /* Start off-screen to the right */
-    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
 }
 
 .progress-bar {
-    transition: width 0.5s ease-in-out; /* Smooth progress bar transition */
+    transition: width 0.5s ease-in-out;
 }

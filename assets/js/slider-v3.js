@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Get the slider container
     const sliderContainer = document.getElementById("sliderContainer");
-
+    sliderContainer.style.opacity = '0'
     let currentIndex = 0;
     let autoSlideInterval;
 
@@ -62,10 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Calculate the progress bar width based on the current index
         const progressWidth = ((currentIndex + 1) / sliderData.length) * 100;
-
-        // Create the slider content
-        const sliderContent = `
-            <div class="slider__main-wrapper d-flex" style="background: url('${slide.background[0]}'), url('${slide.background[1]}');">
+        // sliderContainer.style.background = 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,81,29,0.7091211484593838) 0%, rgba(252,176,69,1) 100%)';
+        sliderContainer.innerHTML = `
+            <div class="slider-opacity slider__main-wrapper d-flex" style="opacity: 0.2; background: url('${slide.background[0]}'), url('${slide.background[1]}');">
                 
                 <div class="slider__left-image">
                     <img src="${slide.leftImage}" alt="">
@@ -116,13 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `;
 
-        // Add fade-out transition before updating the slider
-        sliderContainer.style.opacity = 0;
-        setTimeout(() => {
-            sliderContainer.innerHTML = sliderContent;
-            sliderContainer.style.opacity = 1; // Fade in the new content
-        }, 300); // Match this duration with the CSS transition duration
-
         // Add click event listener to the pagination element
         const paginationElement = sliderContainer.querySelector('.slider__paginations');
         if (paginationElement) {
@@ -135,9 +127,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateSlider();
 
                 // Restart auto-slide after 2 seconds
-                autoSlideInterval = setInterval(updateSlider, 2000);
+                autoSlideInterval = setInterval(updateSlider, 4000);
             });
         }
+
+        const childNode = sliderContainer.childNodes[1]
+
+        console.log('children', childNode)
+        // sliderContainer.style.opacity = "1",
+
+        sliderContainer.style.transition = "opacity 1s ease-in-out ";
+        childNode.style.transition = "opacity 1s ease-in-out ";
+
+        setTimeout(() => {
+            sliderContainer.style.background = 'white'
+            sliderContainer.style.opacity = "1";
+            childNode.style.opacity = "1";
+        }, 300)
     }
 
     // Function to start autoplay
@@ -145,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         autoSlideInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % sliderData.length;
             updateSlider();
-        }, 2000);
+        }, 4000);
     }
 
     // Initial load
