@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
             sliderContainer.style.background = 'white'
             sliderContainer.style.opacity = "1";
             childNode.style.opacity = "1";
-        }, 300)
+        }, 400)
     }
 
     // Function to start autoplay

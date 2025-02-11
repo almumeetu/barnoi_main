@@ -55,11 +55,13 @@
     font-weight: 600;
     border-radius: 7px;
     transition: border .4s ease-in-out, color .4s ease-in-out, background-color .4s ease-in-out !important;
+
     @media #{$md,$sm,$xs} {
         font-size: 16px;
         padding: 8px 9px;
 
     }
+
     &:hover {
         border-color: var(--st-theme-1);
         background-color: var(--st-common-white);
@@ -289,6 +291,7 @@
         background-repeat: no-repeat, no-repeat !important;
         max-height: 800px;
         height: 100%;
+
         @media #{$xs} {
             flex-direction: column-reverse;
             max-height: 1000px;
@@ -359,9 +362,10 @@
                 .heroBtn__wrapper {
                     .shop__btn-v3 {
                         margin-right: 40px;
+
                         @media #{$md,$sm,$xs} {
                             margin-right: 20px;
-        
+
                         }
                     }
 
@@ -395,12 +399,14 @@
                 left: 0;
                 bottom: 20px;
                 cursor: pointer;
+
                 @media #{$xl,$lg,$md,$sm,$xs} {
                     width: 180px;
                     height: 100px;
                     bottom: 0;
 
                 }
+
                 @media #{$md,$sm,$xs} {
                     width: 165px;
                     height: 90px;
@@ -419,9 +425,10 @@
                         0 0 8px rgba(0, 0, 0, 0.1);
                     text-align: center;
                     line-height: 1;
+
                     @media #{$md,$sm,$xs} {
                         font-size: 48px;
-    
+
                     }
                 }
 
@@ -524,12 +531,14 @@
     overflow: hidden;
     position: absolute;
     bottom: 60px;
+
     @media #{$xs} {
         width: 80%;
         bottom: -40px;
         left: 10%;
 
     }
+
     @media #{$lg, $md} {
         width: 200px;
 
