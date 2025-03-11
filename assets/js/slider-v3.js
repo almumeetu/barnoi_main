@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateSlider();
 
                 // Restart auto-slide after 2 seconds
-                autoSlideInterval = setInterval(updateSlider, 4000);
+                autoSlideInterval = setInterval(updateSlider, 50000000);
             });
         }
 
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         autoSlideInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % sliderData.length;
             updateSlider();
-        }, 4000);
+        }, 50000000);
     }
 
     // Initial load
@@ -162,4 +162,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Update slider on window resize
     window.addEventListener('resize', updateSlider);
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 20,
+    slidesPerView: 3, 
+    slidesPerGroup: 1, 
+    freeMode: false, 
+    watchSlidesProgress: true,
+    watchOverflow: true, 
+    loop: true,
+    autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false, 
+    },
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+    loop: true,
+    autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false, 
+    },
+});
+
+var swiperThumbs = new Swiper(".mySwiper.card-swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3, 
+    loop: true,
+    autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false, 
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
