@@ -8817,6 +8817,7 @@ details[open] summary::after {
     margin-bottom: 20px;
   }
 }
+
 .card-slider-wrpper {
   width: 50%;
   position: absolute;
@@ -8832,12 +8833,6 @@ details[open] summary::after {
     position: relative;
     width: 100%;
   }
-}
-
-.card-slider {
-  display: flex;
-  align-items: center !important;
-  justify-content: center !important;
 }
 
 .swiper {
@@ -8874,33 +8869,22 @@ details[open] summary::after {
 }
 
 .card-next {
-  width: 106px !important;
-  height: 106px !important;
+  width: 40px !important;
+  height: 40px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   background: rgb(218, 161, 76);
-  top: 47px !important;
+  top: 83% !important;
   position: absolute !important;
   color: #fff !important;
 }
 .card-next i {
   font-size: 24px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .card-next {
-    width: 80px !important;
-    height: 78px !important;
-    top: 61px !important;
-  }
-}
-
-.swiper-button-prev {
-  left: var(--swiper-navigation-sides-offset, 34px) !important;
-}
 
 .swiper-button-next {
-  right: var(--swiper-navigation-sides-offset, 52px) !important;
+  right: var(--swiper-navigation-sides-offset, 10px) !important;
   left: auto;
 }
 

@@ -167,12 +167,15 @@ document.addEventListener("DOMContentLoaded", function () {
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 20,
     slidesPerView: 3,
+    slidesPerGroup: 1, // Ekbar e ekta kore slide agabe
+    loop: true,
     freeMode: true,
     watchSlidesProgress: true,
-    // autoplay: {  
-    //     delay: 3000, 
-    //     disableOnInteraction: false, 
-    // }
+    centeredSlides: true, // Active slide center e thakbe
+    autoplay: {  
+        delay: 3000, 
+        disableOnInteraction: false, 
+    }
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
@@ -189,4 +192,5 @@ var swiper2 = new Swiper(".mySwiper2", {
         disableOnInteraction: false,  
     }
 });
+
 
