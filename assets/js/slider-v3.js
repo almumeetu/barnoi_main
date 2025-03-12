@@ -164,19 +164,15 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', updateSlider);
 });
 
-
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 20,
-    slidesPerView: 3, 
-    slidesPerGroup: 1, 
-    freeMode: false, 
+    slidesPerView: 3,
+    freeMode: true,
     watchSlidesProgress: true,
-    watchOverflow: true, 
-    loop: true,
-    autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false, 
-    },
+    // autoplay: {  
+    //     delay: 3000, 
+    //     disableOnInteraction: false, 
+    // }
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
@@ -188,23 +184,9 @@ var swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
-    loop: true,
-    autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false, 
-    },
+    autoplay: {  
+        delay: 3000,  
+        disableOnInteraction: false,  
+    }
 });
 
-var swiperThumbs = new Swiper(".mySwiper.card-swiper", {
-    spaceBetween: 10,
-    slidesPerView: 3, 
-    loop: true,
-    autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false, 
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});

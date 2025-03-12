@@ -83,6 +83,7 @@
     --st-lh-h5-mob: 34px;
     --st-lh-h6-mob: 30px;
 }
+
 .jewelry__btn {
     display: inline-block;
     position: relative;
@@ -96,30 +97,35 @@
     z-index: 1;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+
     &::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            background: var(--st-theme-btn-hover);
-            z-index: -1;
-            transition: all 0.3s ease-in-out;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background: var(--st-theme-btn-hover);
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
     }
+
     i {
-            display: inline-block;
-            font-size: 24px;
-            line-height: 24px;
-            margin-left: 4px;
-            transition: all 0.3s ease-in-out;
-            position: absolute;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 24px;
+        margin-left: 4px;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
     }
+
     &:hover {
         color: var(--st-text-btn-hover);
+
         &::after {
             left: 0;
         }
+
         i {
             transform: rotate(45deg);
         }
@@ -128,7 +134,7 @@
 
 // Sanitary Slider Css Start Here
 
-.sanitary__slider-content-wrapper{
+.sanitary__slider-content-wrapper {
     width: 51%;
     --p: 120px;
     height: 100%;
@@ -142,29 +148,35 @@
     position: absolute;
     top: 0;
     justify-content: center;
+
     @media #{$md} {
         width: 80%;
     }
+
     @media #{$sm,$xs} {
         width: 100%;
         margin-left: 10px;
     }
+
     @media #{$xs} {
         --p: 45px;
     }
 
-    .sanitary__slider-content{
+    .sanitary__slider-content {
         padding: 0 85px;
+
         @media #{$xs} {
             padding: 0 35px;
         }
-        .sanitary__sub-title{
-            span{
+
+        .sanitary__sub-title {
+            span {
                 display: block;
                 font-size: 24px;
                 line-height: 32px;
                 margin-bottom: 8px;
                 color: rgba(65, 70, 82, 1);
+
                 @media #{$xs} {
                     font-size: 20px;
                     line-height: 28px;
@@ -172,43 +184,49 @@
                 }
             }
         }
-        .sanitary__main-title{
-            h2{
+
+        .sanitary__main-title {
+            h2 {
                 font-size: 80px;
                 line-height: 100px;
                 color: rgba(17, 24, 39, 1);
                 font-weight: 400;
                 margin-bottom: 16px;
+
                 @media #{$lg,$md,$sm} {
                     font-size: 50px;
                     line-height: 60px;
                 }
+
                 @media #{$xs} {
                     font-size: 30px;
                     line-height: 37px;
                     margin-bottom: 8px;
                 }
+
                 @media #{$xl} {
                     font-size: 55px;
                     line-height: 78px;
                 }
             }
         }
-        p{
+
+        p {
             font-size: 18px;
             line-height: 28px;
             margin-bottom: 40px;
             color: rgba(112, 116, 125, 1);
+
             @media #{$xs} {
                 margin-bottom: 20px;
             }
         }
-        .sanitary__slider-btn{
 
-        }
+        .sanitary__slider-btn {}
     }
- }
- .card-slider-wrpper {
+}
+
+.card-slider-wrpper {
     width: 50%;
     position: absolute;
     right: 0;
@@ -217,52 +235,61 @@
     z-index: 1;
     opacity: 1;
     height: 156px;
+
     @media #{$md,$sm,$xs} {
-       position: relative;
-       width: 100%;
+        position: relative;
+        width: 100%;
 
     }
 }
-.card-slider{
+
+.card-slider {
     display: flex;
     align-items: center !important;
     justify-content: center !important;
 }
-.card-slide{
-    width: 171px !important;
-    height: 108px !important;
+
+.card-slide {
+    // width: 171px !important;
+    // height: 108px !important;
+    // @media #{$xl,$lg,$md,$sm,$xs}{
+    //     width: 130px !important;
+    //     height: 80px !important;
+    // }
 }
 
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .mySwiper .swiper-slide {
-    opacity: 0.4;
-  }
+}
 
-  .mySwiper .swiper-slide-thumb-active {
+.mySwiper .swiper-slide {
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
     opacity: 1;
     border: 2px solid rgba(218, 161, 76, 1);
-  }
-
-  .swiper-button-prev:after, .swiper-button-next:after {
-   display: none ;
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
+}
+
 .card-next {
     width: 106px !important;
     height: 106px !important;
@@ -273,24 +300,36 @@
     top: 47px !important;
     position: absolute !important;
     color: #fff !important;
-    i{
+
+    i {
         font-size: 24px;
     }
+
+    @media #{$xl,$lg,$md,$sm,$xs} {
+        width: 80px !important;
+        height: 78px !important;
+        top: 61px !important;
+    }
 }
+
 .swiper-button-prev {
     left: var(--swiper-navigation-sides-offset, 34px) !important;
 }
+
 .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset,52px) !important;
+    right: var(--swiper-navigation-sides-offset, 52px) !important;
     left: auto;
 }
+
 .slider-mainbg {
     position: relative;
     display: inline-block;
     height: 800px;
+
     @media #{$md,$sm,$xs} {
         height: 550px;
     }
+
     @media #{$lg, $xl} {
         height: 650px;
     }
@@ -305,25 +344,30 @@
     left: 0;
     background: rgba(0, 0, 0, 0.4);
 }
+
 .swiper-button-next.swiper-button-disabled,
- .swiper-button-prev.swiper-button-disabled {
+.swiper-button-prev.swiper-button-disabled {
     opacity: 1 !important;
     cursor: pointer !important;
     pointer-events: auto !important;
 }
-.sanitary-slider-wrapper{
+
+.sanitary-slider-wrapper {
     [data-animate] {
         opacity: 0;
         transition: all 1s ease-out;
     }
+
     [data-animate="left"] {
         transform: translate3d(50px, 0, 0);
     }
+
     [data-animate="right"] {
         transform: translate3d(-50px, 0, 0);
     }
-    
+
 }
+
 .sanitary-slider-wrapper .swiper-slide-active [data-animate] {
     opacity: 1;
     transform: none;
