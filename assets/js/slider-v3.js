@@ -165,30 +165,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 20,
+    spaceBetween: 10,
     slidesPerView: 3,
-    slidesPerGroup: 1, // Ekbar e ekta kore slide agabe
+    slidesPerGroup: 1,
     loop: true,
-    freeMode: true,
-    watchSlidesProgress: true,
-    centeredSlides: true, // Active slide center e thakbe
+    watchSlidesVisibility: true, 
+    watchSlidesProgress: true, 
+    centeredSlides: true, 
     autoplay: {  
-        delay: 3000, 
-        disableOnInteraction: false, 
+        delay: 5000,
+        disableOnInteraction: false,
     }
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
+    // effect: "fade",  
+    // fadeEffect: {
+    //     crossFade: true 
+    // },
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     thumbs: {
-        swiper: swiper,
+        swiper: swiper, 
     },
     autoplay: {  
-        delay: 3000,  
+        delay: 5000,  
         disableOnInteraction: false,  
     }
 });

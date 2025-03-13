@@ -8763,7 +8763,7 @@ details[open] summary::after {
 }
 @media (max-width: 575px) {
   .sanitary__slider-content-wrapper .sanitary__slider-content {
-    padding: 0 35px;
+    padding: 0 15px;
   }
 }
 .sanitary__slider-content-wrapper .sanitary__slider-content .sanitary__sub-title span {
@@ -8786,6 +8786,9 @@ details[open] summary::after {
   color: rgb(17, 24, 39);
   font-weight: 400;
   margin-bottom: 16px;
+}
+.sanitary__slider-content-wrapper .sanitary__slider-content .sanitary__main-title h2 span {
+  display: block;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .sanitary__slider-content-wrapper .sanitary__slider-content .sanitary__main-title h2 {
@@ -8832,6 +8835,28 @@ details[open] summary::after {
   .card-slider-wrpper {
     position: relative;
     width: 100%;
+    height: 110px;
+  }
+}
+.card-slider-wrpper .white-shape-overlay {
+  position: relative;
+}
+.card-slider-wrpper .white-shape-overlay::after {
+  content: "";
+  position: absolute;
+  width: 109px;
+  height: 156px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 21% 0, 0 98%);
+  z-index: 2;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .card-slider-wrpper .white-shape-overlay::after {
+    -webkit-clip-path: polygon(0 0, 19% 0, 0 70%);
+            clip-path: polygon(0 0, 19% 0, 0 70%);
   }
 }
 
@@ -8930,6 +8955,12 @@ details[open] summary::after {
 }
 .sanitary-slider-wrapper [data-animate=right] {
   transform: translate3d(-50px, 0, 0);
+}
+.sanitary-slider-wrapper [data-animate=top] {
+  transform: translate3d(0, -50px, 0);
+}
+.sanitary-slider-wrapper [data-animate=bottom] {
+  transform: translate3d(0, 50px, 0);
 }
 
 .sanitary-slider-wrapper .swiper-slide-active [data-animate] {
