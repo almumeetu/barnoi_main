@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', updateSlider);
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".sanitarySwiper", {
     spaceBetween: 10,
     slidesPerView: 3,
     slidesPerGroup: 1,
@@ -173,12 +173,12 @@ var swiper = new Swiper(".mySwiper", {
     watchSlidesProgress: true, 
     centeredSlides: true, 
     autoplay: {  
-        delay: 5000,
+        delay: 4000,
         disableOnInteraction: false,
     }
 });
 
-var swiper2 = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".sanitarySwiper-2", {
     spaceBetween: 10,
     // effect: "fade",  
     // fadeEffect: {
@@ -193,7 +193,7 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper, 
     },
     autoplay: {  
-        delay: 5000,  
+        delay: 4000,  
         disableOnInteraction: false,  
     }
 });
