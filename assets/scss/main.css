@@ -8982,7 +8982,9 @@ details[open] summary::after {
 }
 .top-categories .single-category .category-img img {
   transition: transform 0.6s ease, filter 0.6s ease;
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 .top-categories .single-category .category-img::after {
   content: "";
