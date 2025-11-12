@@ -652,14 +652,17 @@ function typewriterEffect(elementId, text) {
 }
 
 // Apply typewriter effect to multiple sliders
-window.onload = function () {
-  typewriterEffect(
-    "typewriter-text1",
-    "Explore our selection Of Luxury T-Shirts"
-  );
-  typewriterEffect("typewriter-text2", "We Are Discover Premium Quality");
-  typewriterEffect("typewriter-text3", "Find Your Style with BARNOI......!");
-};
+document.addEventListener('DOMContentLoaded', function() {
+  // Add small delay to ensure swiper is initialized
+  setTimeout(function() {
+    typewriterEffect(
+      "typewriter-text1",
+      "Explore our selection Of Luxury T-Shirts"
+    );
+    typewriterEffect("typewriter-text2", "We Are Discover Premium Quality");
+    typewriterEffect("typewriter-text3", "Find Your Style with BARNOI......!");
+  }, 500);
+});
 
 //HEADER NOTIFICATIONS
 
@@ -852,22 +855,29 @@ const openGalleryBtn = document.getElementById('openGalleryBtn');
 const closeGalleryBtn = document.getElementById('closeGalleryBtn');
 const galleryPopup = document.getElementById('galleryPopup');
 
-// Open gallery popup
-openGalleryBtn.addEventListener('click', function () {
-    galleryPopup.style.display = 'block';
-});
+// Only add event listeners if elements exist
+if (openGalleryBtn && galleryPopup) {
+    // Open gallery popup
+    openGalleryBtn.addEventListener('click', function () {
+        galleryPopup.style.display = 'block';
+    });
+}
 
-// Close gallery popup
-closeGalleryBtn.addEventListener('click', function () {
-    galleryPopup.style.display = 'none';
-});
+if (closeGalleryBtn && galleryPopup) {
+    // Close gallery popup
+    closeGalleryBtn.addEventListener('click', function () {
+        galleryPopup.style.display = 'none';
+    });
+}
 
 // Close gallery if clicked outside content
-window.addEventListener('click', function (event) {
-    if (event.target == galleryPopup) {
-        galleryPopup.style.display = 'none';
-    }
-});
+if (galleryPopup) {
+    window.addEventListener('click', function (event) {
+        if (event.target == galleryPopup) {
+            galleryPopup.style.display = 'none';
+        }
+    });
+}
 
 
 
